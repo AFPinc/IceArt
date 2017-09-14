@@ -25,14 +25,24 @@ public class DemoController {
     //strengnum demo/demo sem kallar í viðeigandi .jsp skrá sem birtir vefinn
     @RequestMapping("/page")
     public String demoPage(){
-        return "demo/demo";
+        return "demo/MainPage";
     }
 
     //Fallið hver tekur inn nafn og bætir því við modelið, það skilar síðan strengnum
-    //demo/synaNotandi sem kallar í viðeigandi .jsp skrá sem birtir á vefinn með nafninu.
-    @RequestMapping(value = "/hver", method = RequestMethod.POST)
-    public String hver(@RequestParam(value = "nafn", required=false) String nafn, ModelMap model){
-        model.addAttribute("nafn", nafn);
-        return "demo/synaNotandi";
+    //demo/addEvent sem kallar í viðeigandi .jsp skrá sem birtir á vefinn með nafninu á viðburðinum.
+    @RequestMapping(value = "/addEvent", method = RequestMethod.POST)
+    public String addEvent(@RequestParam(value = "eventName", required=false) String eventName, ModelMap model){
+        model.addAttribute("eventName", eventName);
+        return "demo/addEvent";
     }
+
+    //Fallið hver tekur inn nafn og bætir því við modelið, það skilar síðan strengnum
+    //demo/addLocation sem kallar í viðeigandi .jsp skrá sem birtir á vefinn með nafninu á staðsetningunni.
+    @RequestMapping(value = "/addLocation", method = RequestMethod.POST)
+    public String addLocation(@RequestParam(value = "locationName", required=false) String locationName, ModelMap model){
+        model.addAttribute("locationName", locationName);
+        return "demo/addLocation";
+    }
+
+
 }
