@@ -43,4 +43,6 @@ public class DemoController {
         model.addAttribute("locationName", locationName);
         return "demo/addLocation";
     }
+
+
 }
