@@ -19,15 +19,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Góðan daginn</title>
+    <title>Main Page</title>
 </head>
 <body>
 
-<h1>Góðan daginn</h1>
+<h1>Welcome to IceArt</h1>
 
-<form method="POST" action="/demo/hver">
-    Hvað heitiru? <input name="nafn" type="text" placeholder="Nafn"\>
-    <input type="submit" value="Í lagi"/>
+<form method="POST" action="/demo/addEvent">
+    <input type="submit" value="Add Event"/>
+</form>
+
+<form method="POST" action="/demo/addLocation">
+    <input type="submit" value="Add Location"/>
 </form>
 
 </body>
