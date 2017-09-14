@@ -1,40 +1,35 @@
 package main.repository;
 
 import main.model.Event;
-import java.util.ArrayList;
 import java.util.List;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author Valgerdur Sigfinnsdottir
  * @date September 2017
  * Háskóli Íslands
  *
- * Safn af event-um
+ * Geymsla fyrir alla Event-a.
  */
 
-@Repository
-public class IEventRepository interface EventRepository {
+public interface IEventRepository {
+    /**
+     * Nær í alla event-a
+     * @return listi af event-um
+     */
+    List<Event> getAll();
 
-    // Listi af Event-um
-    private final List<Event> event;
+    /**
+     * Bætir við event
+     * @param event
+     */
+    void add(Event event);
 
-    piblic IEventRepository() {
-        this.event = new ArrayList<Event>();
-    }
+    /**
+     *
+     *  Nær í event efitr Id-i.
+     * @return event
+     */
+     Event getById(int id);
 
-    @Override
-    public List<Event> getAll(){
-        return event<
-    }
 
-    @Override
-    public void add (Event event) {
-        event.add(event);
-    }
-
-    @Override
-    public event getById() {
-        return event;
-    }
 }

@@ -1,35 +1,30 @@
 package main.repository;
 
 import main.model.Event;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Valgerdur Sigfinnsdottir
- * @date September 2017
- * Háskóli Íslands
- *
- * Geymsla fyrir alla Event-a.
- */
+public class EventRepository implements IEventRepository{
 
-public class EventRepository {
-    /**
-     * Nær í alla event-a
-     * @return listi af event-um
-     */
-    List <Event> getAll();
+    // Listi af Event-um
+    private final List<Event> events;
 
-    /**
-     * Bætir við event
-     * @param event
-     */
-    void add (Event event);
+    public EventRepository() {
+        this.events = new ArrayList<Event>();
+    }
 
-    /**
-     *
-     *  Nær í event efitr Id-i.
-     * @return event
-     */
-     Event getById();
+    @Override
+    public List<Event> getAll(){
+        return events;
+    }
 
+    @Override
+    public void add (Event event) {
+        events.add(event);
+    }
 
+    @Override
+    public Event getById(int id) {
+        return events.get(id);
+    }
 }
