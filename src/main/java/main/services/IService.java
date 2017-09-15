@@ -1,5 +1,9 @@
 package main.services;
 
-public interface IService {
+import main.model.Event;
 
+public interface IService {
+    void addEvent(Event event);
+
+    Event getEventById(int id);
 }
