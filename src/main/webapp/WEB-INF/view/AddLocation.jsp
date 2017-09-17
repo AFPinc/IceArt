@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
-<!--
-    Pakkinn vefvidmot geymir allar .jsp skrár sem segja til um hvað er á vefnum.
-
-    Höfundar
-
-    Ása Júlía Aðalsteinsdóttir - aja11@hi.is
-
--->
+/**
+* @author Ása Júlía Aðalsteinsdóttir - aja11@hi.is
+* @date September 2017
+* Háskóli Íslands
+*
+*
+*/
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
