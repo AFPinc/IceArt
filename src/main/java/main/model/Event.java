@@ -48,7 +48,7 @@ public class Event {
     public String getArtist() {
         return artist;
     }
-    
+
     public Date getTimeBegin() {
         return timeBegin;
     }
