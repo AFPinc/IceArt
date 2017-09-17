@@ -17,12 +17,12 @@ public class Event {
     private String title;           // Titill á viðburði
     private String location;        // Staðsetning viðburðar
     private String artist;          // Listamaður viðburðar
-    private Date timeBegin;         // Dagsetning og tími sem viðburður byrjar
-    private Date timeEnd;           // Dagsetning og tími sem viðburður endar
+    private String timeBegin;         // Dagsetning og tími sem viðburður byrjar
+    private String timeEnd;           // Dagsetning og tími sem viðburður endar
     private String description;     // Lýsing á viðburðinum
     private boolean deleted;        // Segir til um hvort að búið sé að eyða viðburði eða ekki
 
-    public Event(int id, String title, String location, String artist, Date timeBegin, Date timeEnd, String description, boolean deleted) {
+    public Event(int id, String title, String location, String artist, String timeBegin, String timeEnd, String description, boolean deleted) {
         this.id = id;
         this.title = title;
         this.location = location;
@@ -49,11 +49,11 @@ public class Event {
         return artist;
     }
 
-    public Date getTimeBegin() {
+    public String getTimeBegin() {
         return timeBegin;
     }
 
-    public Date getTimeEnd() {
+    public String getTimeEnd() {
         return timeEnd;
     }
 

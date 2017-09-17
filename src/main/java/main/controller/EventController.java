@@ -30,8 +30,8 @@ public class EventController {
     public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location", required=false) String location,
                            @RequestParam(value = "artist", required=false) String artist,
-                           @RequestParam(value = "timeBegin", required=false) Date timeBegin,
-                           @RequestParam(value = "timeEnd", required=false) Date timeEnd,
+                           @RequestParam(value = "timeBegin", required=false) String timeBegin,
+                           @RequestParam(value = "timeEnd", required=false) String timeEnd,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
         Event event = new Event(1, title, location, artist, timeBegin, timeEnd, description, false);
@@ -49,6 +49,12 @@ public class EventController {
     public String getEventById(@RequestParam(value = "id", required=false) int id, ModelMap model){
         Event event = service.getEventById(id);
         model.addAttribute("event", event);
-        return "showEvent";
+        return "view/ShowEvent";
+    }
+
+    //Þetta fall birtir upphafssíðuna
+    @RequestMapping(value = "/event")
+    public String showPage(){
+        return "view/AddEvent";
     }
 }
