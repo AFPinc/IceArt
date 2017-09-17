@@ -49,6 +49,6 @@ public class EventController {
     public String getEventById(@RequestParam(value = "id", required=false) int id, ModelMap model){
         Event event = service.getEventById(id);
         model.addAttribute("event", event);
-        return "demo/showEvent";
+        return "showEvent";
     }
 }
