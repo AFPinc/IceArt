@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <!--
-    Pakkinn vefvidmot geymir allar .jsp skrár sem segja til um hvað er á vefnum.
+@author Ása Júlía Aðalsteinsdóttir
+@date September 2017
+Háskóli Íslands
 
-    Höfundar
-
-    Ása Júlía Aðalsteinsdóttir - aja11@hi.is
-
+Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
+Þessi klasi geymir uppbyggingu notendaviðmóts á viðburðum
 -->
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
