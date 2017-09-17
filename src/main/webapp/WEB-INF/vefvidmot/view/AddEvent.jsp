@@ -23,7 +23,7 @@
 
 <h1>Add a new event</h1>
 
-<form action="/event/add" method="get">
+<form action="/event/add" method="POST">
     Title: <input type="text" name="title"\><br>
     Location: <input type="text" name="location"\><br>
     Name of artist: <input type="text" name="artist"\><br>
