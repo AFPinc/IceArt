@@ -34,17 +34,17 @@ public class EventController {
                            @RequestParam(value = "timeEnd", required=false) Date timeEnd,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
-        //Vantar að bæta artist í smiðinn á Event
-        Event event = new Event(title, location, timeBegin, timeEnd, description, 1, false);
+        Event event = new Event(1, title, location, artist, timeBegin, timeEnd, description, false);
         int id = service.addEvent(event);
         return getEventById(id, model);
     }
 
-    //Þetta fall bætir eyðir viðburði
+    //Þetta fall eyðir viðburði
     public void deleteEvent(){
 
     }
 
+    //Þetta fall nær í viðbuðr eftir auðkenni hans
     @RequestMapping(value = "/show", method = RequestMethod.GET)
     public String getEventById(@RequestParam(value = "id", required=false) int id, ModelMap model){
         Event event = service.getEventById(id);
