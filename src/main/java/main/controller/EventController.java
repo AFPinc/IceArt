@@ -27,14 +27,15 @@ public class EventController {
 
     //Þetta fall bætir við nýjum viðburði
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public void addEvent(@RequestParam(value = "title", required=false) String title,
-                         @RequestParam(value = "location", required=false) String location,
-                         @RequestParam(value = "timeBegin", required=false) Date timeBegin,
-                         @RequestParam(value = "timeEnd", required=false) Date timeEnd,
-                         @RequestParam(value = "description", required=false) String description,
-                         @RequestParam(value = "deleted", required=false) boolean deleted ){
-        Event event = new Event(title, location, timeBegin, timeEnd, description, 1, deleted);
-        service.addEvent(event);
+    public String addEvent(@RequestParam(value = "title", required=false) String title,
+                           @RequestParam(value = "location", required=false) String location,
+                           @RequestParam(value = "timeBegin", required=false) Date timeBegin,
+                           @RequestParam(value = "timeEnd", required=false) Date timeEnd,
+                           @RequestParam(value = "description", required=false) String description,
+                           ModelMap model){
+        Event event = new Event(title, location, timeBegin, timeEnd, description, 1, false);
+        int id = service.addEvent(event);
+        return getEventById(id, model);
     }
 
     //Þetta fall bætir eyðir viðburði
@@ -46,6 +47,6 @@ public class EventController {
     public String getEventById(@RequestParam(value = "id", required=false) int id, ModelMap model){
         Event event = service.getEventById(id);
         model.addAttribute("event", event);
-        return "event/showEvent";
+        return "demo/showEvent";
     }
 }

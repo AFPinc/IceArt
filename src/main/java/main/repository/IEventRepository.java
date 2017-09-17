@@ -22,7 +22,7 @@ public interface IEventRepository {
      * Bætir við event
      * @param event
      */
-    void add(Event event);
+    int add(Event event);
 
     /**
      *

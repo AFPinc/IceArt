@@ -12,8 +12,8 @@ public class Service implements IService{
     EventRepository eventRepo;
 
     @Override
-    public void addEvent(Event event) {
-        eventRepo.add(event);
+    public int addEvent(Event event) {
+        return eventRepo.add(event);
     }
 
     @Override

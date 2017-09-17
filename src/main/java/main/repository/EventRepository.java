@@ -22,8 +22,9 @@ public class EventRepository implements IEventRepository{
     }
 
     @Override
-    public void add (Event event) {
+    public int add (Event event) {
         events.add(event);
+        return events.indexOf(event);
     }
 
     @Override

@@ -3,7 +3,7 @@ package main.services;
 import main.model.Event;
 
 public interface IService {
-    void addEvent(Event event);
+    int addEvent(Event event);
 
     Event getEventById(int id);
 }
