@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Search.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -489,7 +485,7 @@
       <workItem from="1504631885749" duration="2423000" />
       <workItem from="1505668683651" duration="7465000" />
       <workItem from="1505686795258" duration="7000" />
-      <workItem from="1505686829716" duration="974000" />
+      <workItem from="1505686829716" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -554,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505687077561</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="comment hjá klösunum sem ég gerði">
+      <created>1505687829684</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1505687829684</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26046000" />
+    <option name="totallyTimeSpent" value="26074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -609,7 +612,8 @@
     <MESSAGE value="færa klasa í view" />
     <MESSAGE value="author" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="comment hjá klösunum sem ég gerði" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment hjá klösunum sem ég gerði" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
