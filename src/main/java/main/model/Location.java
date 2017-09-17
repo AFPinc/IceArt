@@ -1,19 +1,19 @@
 package main.model;
 
-//Pakkinn Location geymir
-
-/*
-    Höfundar
-
-    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-
+/**
+ * @author Melkorka Mjöll
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Klasinn Location sem heldur utan um gögn staðanna sem viðburðirnir eru á
+ *
  */
 
 public class Location {
-    private String name;
-    private String description;
-    private String openHours;
-    private int maxPeople;
+    private String name;                // Heiti staðar
+    private String description;         // Lýsing staðar
+    private String openHours;           // Opnunartími staðar
+    private int maxPeople;              // Hámarksfjöldi fólks sem staðurinn tekur
 
     public Location(String name, String description, String openHours, int maxPeople) {
         this.name = name;

@@ -2,32 +2,39 @@ package main.model;
 
 import java.util.Date;
 
-//Pakkinn Event geymir
-
-/*
-    Höfundar
-
-    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-
+/**
+ * @author Melkorka Mjöll
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Klasinn Event sem heldur utan um gögn um viðburði
+ *
  */
 
-public class Event {
-    private String title;
-    private String location;
-    private Date timeBegin;
-    private Date timeEnd;
-    private String description;
-    private int id;
-    private boolean deleted;
 
-    public Event(String title, String location, Date timeBegin, Date timeEnd, String description, int id, boolean deleted) {
+public class Event {
+    private int id;                 // Auðkenni hvers viðburðar
+    private String title;           // Titill á viðburði
+    private String location;        // Staðsetning viðburðar
+    private String artist;          // Listamaður viðburðar
+    private Date timeBegin;         // Dagsetning og tími sem viðburður byrjar
+    private Date timeEnd;           // Dagsetning og tími sem viðburður endar
+    private String description;     // Lýsing á viðburðinum
+    private boolean deleted;        // Segir til um hvort að búið sé að eyða viðburði eða ekki
+
+    public Event(int id, String title, String location, String artist, Date timeBegin, Date timeEnd, String description, boolean deleted) {
+        this.id = id;
         this.title = title;
         this.location = location;
+        this.artist = artist;
         this.timeBegin = timeBegin;
         this.timeEnd = timeEnd;
         this.description = description;
-        this.id = id;
         this.deleted = deleted;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -36,6 +43,10 @@ public class Event {
 
     public String getLocation() {
         return location;
+    }
+
+    public String getArtist() {
+        return artist;
     }
 
     public Date getTimeBegin() {
@@ -48,10 +59,6 @@ public class Event {
 
     public String getDescription() {
         return description;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public boolean getDeleted() {
