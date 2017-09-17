@@ -23,13 +23,13 @@
 
 <h1>Add a new event</h1>
 
-<form action="/addEvent" method="get">
-    Title: <input type="text" name="eventTitle"\>
-    Location: <input type="text" name="eventLocation"\>
-    Name of artist: <input type="text" name="eventArtist"\>
-    Description: <textarea type="text" name="eventDescription"\></textarea><br>
-    Time begin: <input type="text" name="eventTimeBegin"\>
-    Time end: <input type="text" name="eventTimeEnds"\>
+<form action="/event/add" method="get">
+    Title: <input type="text" name="title"\>
+    Location: <input type="text" name="location"\>
+    Name of artist: <input type="text" name="artist"\>
+    Time begin: <input type="text" name="timeBegin"\>
+    Time end: <input type="text" name="timeEnds"\>
+    Description: <textarea type="text" name="description"\></textarea>
 
     <input type="submit" value="Submit"/>
 </form>
