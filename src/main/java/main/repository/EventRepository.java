@@ -6,6 +6,13 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Valgerdur Sigfinnsdottir
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ */
+
 @Repository
 public class EventRepository implements IEventRepository{
 

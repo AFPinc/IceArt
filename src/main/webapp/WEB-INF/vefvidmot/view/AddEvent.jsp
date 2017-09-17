@@ -24,12 +24,12 @@
 <h1>Add a new event</h1>
 
 <form action="/event/add" method="POST">
-    Title: <input type="text" name="title"\>
-    Location: <input type="text" name="location"\>
-    Name of artist: <input type="text" name="artist"\>
-    Time begin: <input type="text" name="timeBegin"\>
-    Time end: <input type="text" name="timeEnds"\>
-    Description: <textarea type="text" name="description"\></textarea>
+    Title: <input type="text" name="title"\><br>
+    Location: <input type="text" name="location"\><br>
+    Name of artist: <input type="text" name="artist"\><br>
+    Time begin: <input type="text" name="timeBegin"\><br>
+    Time end: <input type="text" name="timeEnds"\><br>
+    Description: <textarea type="text" name="description"\></textarea><br>
 
     <input type="submit" value="Submit"/>
 </form>

@@ -4,6 +4,13 @@ import main.model.Event;
 import main.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ * @author Valgerdur Sigfinnsdottir
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Þjónustuklasi.
+ */
 
 @org.springframework.stereotype.Service
 public class Service implements IService{
