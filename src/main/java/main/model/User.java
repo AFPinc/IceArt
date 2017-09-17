@@ -1,18 +1,19 @@
 package main.model;
 
-//Pakkinn User geymir
-
-/*
-    Höfundar
-
-    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-
+/**
+ * @author Melkorka Mjöll
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Klasinn User sem heldur utan um gögn notanda
+ *
  */
 
+
 public class User {
-    private String name;
-    private String username;
-    private String password;
+    private String name;            // Nafn notanda
+    private String username;        // Notandanafn notanda
+    private String password;        // Lykilorð notanda
 
     public User(String name, String username, String password) {
         this.name = name;

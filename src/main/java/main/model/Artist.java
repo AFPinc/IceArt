@@ -1,20 +1,21 @@
 package main.model;
 
-//Pakkinn Artist geymir
-
-/*
-    Höfundar
-
-    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-
+/**
+ * @author Melkorka Mjöll
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Klasinn Artist sem heldur utan um gögn um listamenn
+ *
  */
 
+
 public class Artist {
-    private int id;
-    private String name;
-    private String description;
-    private int age;
-    private String country;
+    private int id;                 // Auðkenni listamanns sem er notað til að tengja við viðburði hans
+    private String name;            // Heiti listamanns
+    private String description;     // Lýsing á listamanni
+    private int age;                // Aldur listamanns
+    private String country;         // Þjóðerni listamanns
 
     public Artist(int id, String name, String description, int age, String country) {
         this.id = id;
