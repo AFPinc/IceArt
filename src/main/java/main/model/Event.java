@@ -20,16 +20,21 @@ public class Event {
     private Date timeBegin;         // Dagsetning og tími sem viðburður byrjar
     private Date timeEnd;           // Dagsetning og tími sem viðburður endar
     private String description;     // Lýsing á viðburðinum
-    private boolean deleted;        // Viðburði er eytt eða er til
+    private boolean deleted;        // Segir til um hvort að búið sé að eyða viðburði eða ekki
 
-    public Event(String title, String location, Date timeBegin, Date timeEnd, String description, int id, boolean deleted) {
+    public Event(int id, String title, String location, String artist, Date timeBegin, Date timeEnd, String description, boolean deleted) {
+        this.id = id;
         this.title = title;
         this.location = location;
+        this.artist = artist;
         this.timeBegin = timeBegin;
         this.timeEnd = timeEnd;
         this.description = description;
-        this.id = id;
         this.deleted = deleted;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -40,6 +45,10 @@ public class Event {
         return location;
     }
 
+    public String getArtist() {
+        return artist;
+    }
+    
     public Date getTimeBegin() {
         return timeBegin;
     }
@@ -50,10 +59,6 @@ public class Event {
 
     public String getDescription() {
         return description;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public boolean getDeleted() {
