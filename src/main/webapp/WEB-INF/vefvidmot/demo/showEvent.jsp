@@ -24,12 +24,12 @@
 <body>
 
 <h1>Info</h1>
-<p><strong>Title:</strong>${eventTitle}</p>
-<p><strong>Location:</strong>${eventLocation}</p>
-<p><strong>From:</strong>${eventTimeBegin}</p>
-<p><strong>To:</strong>${eventTimeEnds}</p>
-<p><strong>Artist:</strong>${eventArtist}</p>
-<p><strong>Description:</strong>${eventDescription}</p>
+<p><strong>Title:</strong>${event.getTitle()}</p>
+<p><strong>Location:</strong>${event.getLocation()}</p>
+<p><strong>From:</strong>${event.getTimeBegin()}</p>
+<p><strong>To:</strong>${event.getTimeEnd()}</p>
+<p><strong>Artist:</strong>${event.getArtist()}</p>
+<p><strong>Description:</strong>${event.getDescription()}</p>
 <p><strong>Delete:</strong></p>
 
 

@@ -24,9 +24,9 @@
 <body>
 
 <h1>Info</h1>
-<p><strong>Name:</strong> ${artistName}</p>
-<p><strong>Age:</strong> ${artistAge}</p>
-<p><strong>County:</strong> ${artistCountry}</p>
+<p><strong>Name:</strong> </p>
+<p><strong>Age:</strong> </p>
+<p><strong>County:</strong> </p>
 <p><strong>Description:</strong></p>
 
 </body>
