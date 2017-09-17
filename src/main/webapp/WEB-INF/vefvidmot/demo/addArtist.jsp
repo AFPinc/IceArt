@@ -25,11 +25,12 @@
 
 <h1>Add a new artist</h1>
 
-<form action="/addArtist.jsp" method="get">
-    Name: <input type="text" name="aName"><br>
-    Age: <input type="text" name="aAge"><br>
-    Country: <input type="text" name="aCountry"><br>
-    Description: <textarea type="text" name="aDescription"></textarea><br>
+<form action="/addArtist" method="get">
+    Name: <input type="text" name="artistName"><br>
+    Age: <input type="text" name="artistAge"><br>
+    Country: <input type="text" name="artistCountry"><br>
+    Description: <textarea type="text" name="artistDescription"></textarea><br>
+
     <input type="submit" value="Submit">
 </form>
 

@@ -6,9 +6,7 @@
     Höfundar
 
     Ása Júlía Aðalsteinsdóttir - aja11@hi.is
-    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-    Sigurlaug Þórðardóttir - sth301@hi.is
-    Valgerður Sigfinnsdóttir - vas30@hi.is
+
 -->
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
@@ -23,11 +21,15 @@
 </head>
 <body>
 
-<h1>Add location</h1>
+<h1>Add a new location</h1>
 
-<form method="POST" action="/demo/showLocation">
-    Name of location: <input name="locationName" type="text" placeholder="Location name"\>
-    <input type="submit" value="Add"/>
+<form action="/addLocation" method="get">
+    Name of location: <input type="text" name="locationName"\><br>
+    Description: <textarea type="text" name="locationDescription"\></textarea><br>
+    Opening hours: <input type="text" name="locationOpenHours"\><br>
+    Max people: <input type="text" name="locationMaxPeople"\><br>
+
+    <input type="submit" value="Submit"/>
 </form>
 
 </body>

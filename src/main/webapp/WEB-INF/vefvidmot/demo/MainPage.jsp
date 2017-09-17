@@ -25,13 +25,26 @@
 
 <h1>Welcome to IceArt</h1>
 
-<form method="POST" action="/demo/addEvent">
+<form method="POST" action="/Search">
+    <input type="submit" value="Search"/>
+</form>
+
+<form method="POST" action="/AddEvent">
     <input type="submit" value="Add Event"/>
 </form>
 
-<form method="POST" action="/demo/addLocation">
+<form method="POST" action="/AddLocation">
     <input type="submit" value="Add Location"/>
 </form>
+
+<form method="POST" action="/AddArtist">
+    <input type="submit" value="Add Location"/>
+</form>
+
+<form method="POST" action="/AccountController">
+    <input type="submit" value="AccountController"/>
+</form>
+
 
 </body>
 

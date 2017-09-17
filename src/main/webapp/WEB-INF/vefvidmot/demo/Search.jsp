@@ -19,11 +19,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Góðan daginn</title>
+    <title>Search</title>
 </head>
 <body>
 
-<h1>Góðan daginn ${nafn}</h1>
+<h1>Search</h1>
+
+<form action="/addArtist.jsp" method="get">
+    Search for: <input type="text" name="keyWords"><br>
+
+</form>
 
 </body>
 

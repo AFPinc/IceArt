@@ -27,7 +27,7 @@
 <p><strong>Name:</strong> ${locationName}</p>
 <p><strong>Age:</strong> ${locationOpenHours}</p>
 <p><strong>County:</strong> ${locationMaxPeople}</p>
-<p><strong>Description:</strong></p>
+<p><strong>Description:</strong> ${locationDescription}</p>
 
 </body>
 

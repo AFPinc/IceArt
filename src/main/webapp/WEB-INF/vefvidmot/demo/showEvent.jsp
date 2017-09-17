@@ -29,7 +29,7 @@
 <p><strong>From:</strong>${eventTimeBegin}</p>
 <p><strong>To:</strong>${eventTimeEnds}</p>
 <p><strong>Artist:</strong>${eventArtist}</p>
-<p><strong>Description:</strong></p>
+<p><strong>Description:</strong>${eventDescription}</p>
 <p><strong>Delete:</strong></p>
 
 
