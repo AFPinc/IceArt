@@ -29,10 +29,12 @@ public class EventController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location", required=false) String location,
+                           @RequestParam(value = "artist", required=false) String artist,
                            @RequestParam(value = "timeBegin", required=false) Date timeBegin,
                            @RequestParam(value = "timeEnd", required=false) Date timeEnd,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
+        //Vantar að bæta artist í smiðinn á Event
         Event event = new Event(title, location, timeBegin, timeEnd, description, 1, false);
         int id = service.addEvent(event);
         return getEventById(id, model);
