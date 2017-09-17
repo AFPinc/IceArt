@@ -19,18 +19,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Main Page</title>
+    <title>Search</title>
 </head>
 <body>
 
-<h1>Welcome to IceArt</h1>
+<h1>Search</h1>
 
-<form method="POST" action="/demo/addEvent">
-    <input type="submit" value="Add Event"/>
-</form>
+<form action="/addArtist.jsp" method="get">
+    Search for: <input type="text" name="keyWords"><br>
 
-<form method="POST" action="/demo/addLocation">
-    <input type="submit" value="Add Location"/>
 </form>
 
 </body>

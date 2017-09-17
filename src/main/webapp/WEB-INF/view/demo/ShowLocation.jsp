@@ -19,15 +19,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Artist</title>
+    <title>Location</title>
 </head>
 <body>
 
 <h1>Info</h1>
-<p><strong>Name:</strong> ${ArtistName}</p>
-<p><strong>Age:</strong> ${ArtistAge}</p>
-<p><strong>County:</strong> ${ArtistCountry}</p>
-<p><strong>Description:</strong></p>
+<p><strong>Name:</strong> ${locationName}</p>
+<p><strong>Age:</strong> ${locationOpenHours}</p>
+<p><strong>County:</strong> ${locationMaxPeople}</p>
+<p><strong>Description:</strong> ${locationDescription}</p>
 
 </body>
 

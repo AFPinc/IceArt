@@ -19,15 +19,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Location</title>
+    <title>Search</title>
 </head>
 <body>
 
-<h1>Info</h1>
-<p><strong>Name:</strong> ${locationName}</p>
-<p><strong>Age:</strong> ${locationOpenHours}</p>
-<p><strong>County:</strong> ${locationMaxPeople}</p>
-<p><strong>Description:</strong></p>
+<h1>Search</h1>
+
+<form action="/addArtist.jsp" method="get">
+    Search for: <input type="text" name="keyWords"><br>
+
+</form>
 
 </body>
 

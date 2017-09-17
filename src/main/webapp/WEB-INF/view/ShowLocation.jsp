@@ -19,19 +19,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Artist</title>
+    <title>Location</title>
 </head>
 <body>
 
-<h1>Add a new artist</h1>
-
-<form action="/addArtist.jsp" method="get">
-    Name: <input type="text" name="aName"><br>
-    Age: <input type="text" name="aAge"><br>
-    Country: <input type="text" name="aCountry"><br>
-    Description: <textarea type="text" name="aDescription"></textarea><br>
-    <input type="submit" value="Submit">
-</form>
+<h1>Info</h1>
+<p><strong>Name:</strong> ${locationName}</p>
+<p><strong>Age:</strong> ${locationOpenHours}</p>
+<p><strong>County:</strong> ${locationMaxPeople}</p>
+<p><strong>Description:</strong> ${locationDescription}</p>
 
 </body>
 

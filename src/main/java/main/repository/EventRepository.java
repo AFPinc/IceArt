@@ -1,9 +1,12 @@
 package main.repository;
 
 import main.model.Event;
+import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class EventRepository implements IEventRepository{
 
     // Listi af Event-um
@@ -19,8 +22,9 @@ public class EventRepository implements IEventRepository{
     }
 
     @Override
-    public void add (Event event) {
+    public int add (Event event) {
         events.add(event);
+        return events.indexOf(event);
     }
 
     @Override

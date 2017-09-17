@@ -19,11 +19,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Góðan daginn</title>
+    <title>Event</title>
 </head>
 <body>
 
-<h1>Góðan daginn ${nafn}</h1>
+<h1>Info</h1>
+<p><strong>Title:</strong>${eventTitle}</p>
+<p><strong>Location:</strong>${eventLocation}</p>
+<p><strong>From:</strong>${eventTimeBegin}</p>
+<p><strong>To:</strong>${eventTimeEnds}</p>
+<p><strong>Artist:</strong>${eventArtist}</p>
+<p><strong>Description:</strong>${eventDescription}</p>
+<p><strong>Delete:</strong></p>
+
 
 </body>
 

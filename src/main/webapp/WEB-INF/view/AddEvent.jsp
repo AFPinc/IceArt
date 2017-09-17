@@ -6,9 +6,7 @@
     Höfundar
 
     Ása Júlía Aðalsteinsdóttir - aja11@hi.is
-    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-    Sigurlaug Þórðardóttir - sth301@hi.is
-    Valgerður Sigfinnsdóttir - vas30@hi.is
+
 -->
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
@@ -19,15 +17,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add location</title>
+    <title>Add event</title>
 </head>
 <body>
 
-<h1>Add location</h1>
+<h1>Add a new event</h1>
 
-<form method="POST" action="/demo/showLocation">
-    Name of location: <input name="locationName" type="text" placeholder="Location name"\>
-    <input type="submit" value="Add"/>
+<form action="/event/add" method="get">
+    Title: <input type="text" name="title"\>
+    Location: <input type="text" name="location"\>
+    Name of artist: <input type="text" name="artist"\>
+    Time begin: <input type="text" name="timeBegin"\>
+    Time end: <input type="text" name="timeEnds"\>
+    Description: <textarea type="text" name="description"\></textarea>
+
+    <input type="submit" value="Submit"/>
 </form>
 
 </body>
