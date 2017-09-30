@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.Date;
 
 /**
  * @author Sigurlaug Þórðardóttir
@@ -34,9 +33,9 @@ public class EventController {
                            @RequestParam(value = "timeEnd", required=false) String timeEnd,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
-        Event event = new Event(1, title, location, artist, timeBegin, timeEnd, description, false);
-        int id = service.addEvent(event);
-        return getEventById(id, model);
+        Event event = new Event(title, location, artist, timeBegin, timeEnd, description, false);
+        Event e = service.addEvent(event);
+        return getEventById(e.getId(), model);
     }
 
     //Þetta fall eyðir viðburði
@@ -46,7 +45,7 @@ public class EventController {
 
     //Þetta fall nær í viðbuðr eftir auðkenni hans
     @RequestMapping(value = "/show", method = RequestMethod.GET)
-    public String getEventById(@RequestParam(value = "id", required=false) int id, ModelMap model){
+    public String getEventById(@RequestParam(value = "id", required=false) Long id, ModelMap model){
         Event event = service.getEventById(id);
         model.addAttribute("event", event);
         return "view/ShowEvent";

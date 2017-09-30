@@ -1,7 +1,7 @@
 package main.services;
 
 import main.model.Event;
-import main.repository.EventRepository;
+import main.repository.IEventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -16,15 +16,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class Service implements IService{
 
     @Autowired
-    EventRepository eventRepo;
+    IEventRepository eventRepo;
 
     @Override
-    public int addEvent(Event event) {
-        return eventRepo.add(event);
+    public Event addEvent(Event event) {
+        return eventRepo.save(event);
     }
 
     @Override
-    public Event getEventById(int id) {
-        return eventRepo.getById(id);
+    public Event getEventById(Long id) {
+        return eventRepo.findOne(id);
     }
 }

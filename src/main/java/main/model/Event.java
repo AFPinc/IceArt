@@ -1,5 +1,6 @@
 package main.model;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -11,9 +12,13 @@ import java.util.Date;
  *
  */
 
-
+@Entity
+@Table(name="event")
 public class Event {
-    private int id;                 // Auðkenni hvers viðburðar
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;                 // Auðkenni hvers viðburðar
     private String title;           // Titill á viðburði
     private String location;        // Staðsetning viðburðar
     private String artist;          // Listamaður viðburðar
@@ -22,8 +27,7 @@ public class Event {
     private String description;     // Lýsing á viðburðinum
     private boolean deleted;        // Segir til um hvort að búið sé að eyða viðburði eða ekki
 
-    public Event(int id, String title, String location, String artist, String timeBegin, String timeEnd, String description, boolean deleted) {
-        this.id = id;
+    public Event(String title, String location, String artist, String timeBegin, String timeEnd, String description, boolean deleted) {
         this.title = title;
         this.location = location;
         this.artist = artist;
@@ -33,7 +37,7 @@ public class Event {
         this.deleted = deleted;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
