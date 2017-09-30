@@ -1,6 +1,9 @@
 package main.repository;
 
 import main.model.Event;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 /**
@@ -11,19 +14,19 @@ import java.util.List;
  * Geymsla fyrir alla Event-a.
  */
 
-public interface IEventRepository {
+public interface IEventRepository extends JpaRepository<Event, Long>{
     /**
      * Nær í alla event-a
      * @return listi af event-um
      */
-    List<Event> getAll();
+    List<Event> findAll();
 
     /**
      * Bætir við event
      * @param event
-     * @return auðkenni eventsins sem varð til.
      */
-    int add(Event event);
+    @Override
+    Event save(Event event);
 
     /**
      *
@@ -31,7 +34,8 @@ public interface IEventRepository {
      * @param id = auðkenni fyrir eventinn sem á að sækja
      * @return event
      */
-     Event getById(int id);
+    @Override
+    Event findOne(Long id);
 
 
 }
