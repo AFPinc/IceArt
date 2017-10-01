@@ -30,7 +30,6 @@
 <p><strong>To:</strong>${event.getTimeEnd()}</p>
 <p><strong>Artist:</strong>${event.getArtist()}</p>
 <p><strong>Description:</strong>${event.getDescription()}</p>
-<p><strong>Delete:</strong></p>
 
 
 </body>

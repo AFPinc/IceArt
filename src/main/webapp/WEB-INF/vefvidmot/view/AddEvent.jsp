@@ -28,7 +28,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     Location: <input type="text" name="location"\><br>
     Name of artist: <input type="text" name="artist"\><br>
     Time begin: <input type="text" name="timeBegin"\><br>
-    Time end: <input type="text" name="timeEnds"\><br>
+    Time end: <input type="text" name="timeEnd"\><br>
     Description: <textarea type="text" name="description"\></textarea><br>
 
     <input type="submit" value="Submit"/>

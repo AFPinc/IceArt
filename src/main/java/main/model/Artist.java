@@ -11,13 +11,13 @@ package main.model;
 
 
 public class Artist {
-    private int id;                 // Auðkenni listamanns sem er notað til að tengja við viðburði hans
+    private Long id;                 // Auðkenni listamanns sem er notað til að tengja við viðburði hans
     private String name;            // Heiti listamanns
     private String description;     // Lýsing á listamanni
     private int age;                // Aldur listamanns
     private String country;         // Þjóðerni listamanns
 
-    public Artist(int id, String name, String description, int age, String country) {
+    public Artist(Long id, String name, String description, int age, String country) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -25,7 +25,7 @@ public class Artist {
         this.country = country;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
