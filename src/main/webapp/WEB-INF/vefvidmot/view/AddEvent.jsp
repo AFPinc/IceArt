@@ -25,13 +25,45 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <form action="/event/add" method="POST">
     Title: <input type="text" name="title"\><br>
-    Location: <input type="text" name="location"\><br>
-    Name of artist: <input type="text" name="artist"\><br>
+
+    Location: <c:choose>
+    <c:when test="${not empty locations}">
+        <select name="location">
+            <c:forEach var="location" items="${locations}">
+                <option value="${location.getId()}">${location.getName()}</option>
+            </c:forEach>
+        </select><br>
+    </c:when>
+    <c:otherwise>
+        Engar staðsetningar hafa verið skráðar.<br>
+    </c:otherwise>
+</c:choose>
+
+    Name of artist: <c:choose>
+    <c:when test="${not empty artists}">
+        <select name="artist">
+            <c:forEach var="artist" items="${artists}">
+                <option value="${artist.getId()}">${artist.getName()}</option>
+            </c:forEach>
+        </select><br>
+    </c:when>
+    <c:otherwise>
+        Enginn listamaður hefur verið skráður.<br>
+    </c:otherwise>
+</c:choose>
     Time begin: <input type="text" name="timeBegin"\><br>
     Time end: <input type="text" name="timeEnd"\><br>
     Description: <textarea type="text" name="description"\></textarea><br>
 
     <input type="submit" value="Submit"/>
+</form>
+
+<form method="POST" action="/Artist/Artist">
+    <input type="submit" value="Add Artist"/>
+</form>
+
+<form method="POST" action="/Location/Location">
+    <input type="submit" value="Add Location"/>
 </form>
 
 </body>

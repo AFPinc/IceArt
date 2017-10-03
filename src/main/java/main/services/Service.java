@@ -1,8 +1,14 @@
 package main.services;
 
+import main.model.Artist;
 import main.model.Event;
+import main.model.Location;
+import main.repository.IArtistRepository;
 import main.repository.IEventRepository;
+import main.repository.ILocationRepositroy;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 /**
  * @author Valgerdur Sigfinnsdottir
@@ -17,6 +23,10 @@ public class Service implements IService{
 
     @Autowired
     IEventRepository eventRepo;
+    @Autowired
+    ILocationRepositroy locationRepo;
+    @Autowired
+    IArtistRepository artistRepo;
 
     @Override
     public Event addEvent(Event event) {
@@ -27,4 +37,25 @@ public class Service implements IService{
     public Event getEventById(Long id) {
         return eventRepo.findOne(id);
     }
+
+    @Override
+    public List<Location> getAllLocations() {
+        return locationRepo.findAll();
+    }
+
+    @Override
+    public Location getLocationById(Long id) {
+        return locationRepo.findOne(id);
+    }
+
+    @Override
+    public List<Artist> getAllArtist() {
+        return artistRepo.findAll();
+    }
+
+    @Override
+    public Artist getArtistById(Long id) {
+        return artistRepo.findOne(id);
+    }
+
 }

@@ -1,6 +1,8 @@
 package main.controller;
 
+import main.model.Artist;
 import main.model.Event;
+import main.model.Location;
 import main.services.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,6 +10,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 
 /**
@@ -27,12 +31,14 @@ public class EventController {
     //Þetta fall bætir við nýjum viðburði
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String addEvent(@RequestParam(value = "title", required=false) String title,
-                           @RequestParam(value = "location", required=false) String location,
-                           @RequestParam(value = "artist", required=false) String artist,
+                           @RequestParam(value = "location") Long locationId,
+                           @RequestParam(value = "artist") Long artistId,
                            @RequestParam(value = "timeBegin", required=false) String timeBegin,
                            @RequestParam(value = "timeEnd", required=false) String timeEnd,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
+        Location location = service.getLocationById(locationId);
+        Artist artist = service.getArtistById(artistId);
         Event event = new Event(title, location, artist, timeBegin, timeEnd, description, false);
         Event e = service.addEvent(event);
         return getEventById(e.getId(), model);
@@ -53,7 +59,11 @@ public class EventController {
 
     //Þetta fall birtir upphafssíðuna
     @RequestMapping(value = "/event")
-    public String showPage(){
+    public String showPage(ModelMap model){
+        List<Location> locations = service.getAllLocations();
+        List<Artist> artists = service.getAllArtist();
+        model.addAttribute("locations", locations);
+        model.addAttribute("artists", artists);
         return "view/AddEvent";
     }
 }

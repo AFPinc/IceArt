@@ -1,7 +1,6 @@
 package main.model;
 
 import javax.persistence.*;
-import java.util.Date;
 
 /**
  * @author Melkorka Mjöll
@@ -17,17 +16,24 @@ import java.util.Date;
 public class Event {
 
     @Id
+    @Column(name = "eventId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;                 // Auðkenni hvers viðburðar
     private String title;           // Titill á viðburði
-    private String location;        // Staðsetning viðburðar
-    private String artist;          // Listamaður viðburðar
+
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "locationId")
+    private Location location;        // Staðsetning viðburðar
+
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "artistId")
+    private Artist artist;          // Listamaður viðburðar
     private String timeBegin;         // Dagsetning og tími sem viðburður byrjar
     private String timeEnd;           // Dagsetning og tími sem viðburður endar
     private String description;     // Lýsing á viðburðinum
     private boolean deleted;        // Segir til um hvort að búið sé að eyða viðburði eða ekki
 
-    public Event(String title, String location, String artist, String timeBegin, String timeEnd, String description, boolean deleted) {
+    public Event(String title, Location location, Artist artist, String timeBegin, String timeEnd, String description, boolean deleted) {
         this.title = title;
         this.location = location;
         this.artist = artist;
@@ -46,11 +52,11 @@ public class Event {
     }
 
     public String getLocation() {
-        return location;
+        return location.getName();
     }
 
     public String getArtist() {
-        return artist;
+        return artist.getName();
     }
 
     public String getTimeBegin() {

@@ -12,6 +12,7 @@ import java.util.List;
  *
  * User Repository
  */
+
 public interface IUserRepository extends JpaRepository<User, Long> {
     /**
      * gets all user
