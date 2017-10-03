@@ -34,6 +34,14 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     <input type="submit" value="Submit"/>
 </form>
 
+<form method="POST" action="/Artist/Artist">
+    <input type="submit" value="Add Artist"/>
+</form>
+
+<form method="POST" action="/Location/Location">
+    <input type="submit" value="Add Location"/>
+</form>
+
 </body>
 
 </html>
