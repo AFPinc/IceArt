@@ -1,6 +1,8 @@
 package main.controller;
 
+import main.model.Artist;
 import main.model.Event;
+import main.model.Location;
 import main.services.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,7 +35,7 @@ public class EventController {
                            @RequestParam(value = "timeEnd", required=false) String timeEnd,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
-        Event event = new Event(title, location, artist, timeBegin, timeEnd, description, false);
+        Event event = new Event(title, new Location(location, location, location, 1), new Artist(artist, artist, 1, artist), timeBegin, timeEnd, description, false);
         Event e = service.addEvent(event);
         return getEventById(e.getId(), model);
     }
