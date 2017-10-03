@@ -36,6 +36,33 @@ public class Artist {
         this.country = country;
     }
 
+    public Artist() {
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setEvents(Set<Event> events) {
+        this.events = events;
+    }
+
     public Long getId() {
         return id;
     }

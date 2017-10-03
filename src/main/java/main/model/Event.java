@@ -51,12 +51,12 @@ public class Event {
         return title;
     }
 
-    public Location getLocation() {
-        return location;
+    public String getLocation() {
+        return location.getName();
     }
 
-    public Artist getArtist() {
-        return artist;
+    public String getArtist() {
+        return artist.getName();
     }
 
     public String getTimeBegin() {

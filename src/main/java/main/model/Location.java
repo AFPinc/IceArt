@@ -36,6 +36,33 @@ public class Location {
         this.maxPeople = maxPeople;
     }
 
+    public Location() {
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setOpenHours(String openHours) {
+        this.openHours = openHours;
+    }
+
+    public void setMaxPeople(int maxPeople) {
+        this.maxPeople = maxPeople;
+    }
+
+    public void setEvents(Set<Event> events) {
+        this.events = events;
+    }
+
     public Long getId() {
         return id;
     }
