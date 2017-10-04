@@ -10,7 +10,7 @@ package main.controller;
  */
 public class SearchController {
 
-    //Þetta fall sér um að leita af Viðburðum og skila niðurstöðunum.
+    //Þetta fall sér um að leita af titli viðburða og skila niðurstöðunum.
     public void searchEvents(){
 
     }
