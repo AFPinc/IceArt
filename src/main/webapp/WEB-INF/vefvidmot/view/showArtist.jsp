@@ -23,31 +23,11 @@
 </head>
 <body>
 
-    <c:choose>
-        <c:when test="${not empty artists}">
-            <table class="artists">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Country</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <c:forEach var ="artist" items="${artists}">
-                    <tr>
-                        <td>${artist.artistName} </td>
-                        <td>${artist.artistAge}</td>
-                        <td>${artist.artistCountry}</td>
-                        <td>${artist.artistDescription}</td>
-                    </tr>
-                </c:forEach>
-            </table>
-        </c:when>
-        <c:otherwise>
-            <h3>No artists></h3>
-        </c:otherwise>
-    </c:choose>
+<h1>Info</h1>
+<p><strong>Name:</strong> ${artist.getName()}</p>
+<p><strong>Age:</strong> ${artist.getAge()}</p>
+<p><strong>County:</strong> ${artist.getCountry()}</p>
+<p><strong>Description:</strong>${artist.getDescription()}</p>
 </body>
 
 </html>
