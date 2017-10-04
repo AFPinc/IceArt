@@ -82,4 +82,8 @@ public class Artist {
     public String getCountry() {
         return country;
     }
+
+    public Set<Event> getEvents() {
+        return null;
+    }
 }

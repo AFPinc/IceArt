@@ -23,13 +23,14 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <h1>Add a new location</h1>
 
-<form action="/addLocation" method="get">
-    Name of location: <input type="text" name="locationName"\><br>
-    Description: <textarea type="text" name="locationDescription"\></textarea><br>
-    Opening hours: <input type="text" name="locationOpenHours"\><br>
-    Max people: <input type="text" name="locationMaxPeople"\><br>
+<form action="/location/add" method="POST">
+    Name of location: <input type="text" name="name"\><br>
+    Opening hours: <input type="text" name="openHours"\><br>
+    Max people: <input type="text" name="maxPeople"\><br>
+    Description: <textarea type="text" name="description"\></textarea><br>
 
-    <input type="submit" value="Submit"/>
+    <input type="submit" class="newwhitebtn" value="Add"/>
+
 </form>
 
 </body>

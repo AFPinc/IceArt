@@ -19,20 +19,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Artist</title>
+    <title>Error</title>
 </head>
 <body>
 
-<h1>Add a new artist</h1>
+<h1>Error massage</h1>
 
-<form action="/artist/add" method="POST">
-    Name: <input type="text" name="name"><br>
-    Age: <input type="text" name="age"><br>
-    Country: <input type="text" name="country"><br>
-    Description: <textarea type="text" name="description"></textarea><br>
-
-    <input type="submit" class="newwhitebtn" value="Add"/>
-</form>
 
 </body>
 

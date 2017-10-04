@@ -11,9 +11,15 @@ public interface IService {
 
     Event getEventById(Long id);
 
+    Event getEventByTitle(String title);
+
+    Location addLocation(Location location);
+
     List<Location> getAllLocations();
 
     Location getLocationById(Long id);
+
+    Artist addArtist(Artist artist);
 
     List<Artist> getAllArtist();
 

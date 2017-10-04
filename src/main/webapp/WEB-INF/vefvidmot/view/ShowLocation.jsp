@@ -24,10 +24,10 @@
 <body>
 
 <h1>Info</h1>
-<p><strong>Name:</strong> ${locationName}</p>
-<p><strong>Age:</strong> ${locationOpenHours}</p>
-<p><strong>County:</strong> ${locationMaxPeople}</p>
-<p><strong>Description:</strong> ${locationDescription}</p>
+<p><strong>Name:</strong> ${location.getName()}</p>
+<p><strong>Open Hours:</strong> ${location.getOpenHours()}</p>
+<p><strong>Max People:</strong> ${location.getMaxPeople()}</p>
+<p><strong>Description:</strong> ${location.getDescription()}</p>
 
 </body>
 

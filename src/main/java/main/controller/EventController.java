@@ -28,7 +28,17 @@ public class EventController {
     @Autowired
     IService service;
 
-    //Þetta fall bætir við nýjum viðburði
+    /**
+     * Þetta fall bætir við nýjum viðburði
+     * @param title
+     * @param locationId
+     * @param artistId
+     * @param timeBegin
+     * @param timeEnd
+     * @param description
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location") Long locationId,

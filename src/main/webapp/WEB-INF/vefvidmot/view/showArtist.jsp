@@ -24,11 +24,10 @@
 <body>
 
 <h1>Info</h1>
-<p><strong>Name:</strong> ${artistName}</p>
-<p><strong>Age:</strong> ${artistAge}</p>
-<p><strong>County:</strong> ${artistCountry}</p>
-<p><strong>Description:</strong></p>
-
+<p><strong>Name:</strong> ${artist.getName()}</p>
+<p><strong>Age:</strong> ${artist.getAge()}</p>
+<p><strong>County:</strong> ${artist.getCountry()}</p>
+<p><strong>Description:</strong>${artist.getDescription()}</p>
 </body>
 
 </html>

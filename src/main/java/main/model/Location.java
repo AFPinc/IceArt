@@ -59,10 +59,6 @@ public class Location {
         this.maxPeople = maxPeople;
     }
 
-    public void setEvents(Set<Event> events) {
-        this.events = events;
-    }
-
     public Long getId() {
         return id;
     }
