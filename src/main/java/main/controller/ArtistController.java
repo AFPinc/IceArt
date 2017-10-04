@@ -67,7 +67,7 @@ public class ArtistController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    @RequestMapping(value = "/show", method = RequestMethod.GET)
     public String getArtistById(@RequestParam(value = "id", required=false) Long id, ModelMap model){
         Artist artist = service.getArtistById(id);
         model.addAttribute("artist", artist);
