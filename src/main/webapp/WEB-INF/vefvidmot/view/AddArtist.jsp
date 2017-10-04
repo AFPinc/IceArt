@@ -25,13 +25,13 @@
 
 <h1>Add a new artist</h1>
 
-<form action="/addArtist" method="get">
-    Name: <input type="text" name="artistName"><br>
-    Age: <input type="text" name="artistAge"><br>
-    Country: <input type="text" name="artistCountry"><br>
-    Description: <textarea type="text" name="artistDescription"></textarea><br>
+<form action="/artist/add" method="POST">
+    Name: <input type="text" name="name"><br>
+    Age: <input type="text" name="age"><br>
+    Country: <input type="text" name="country"><br>
+    Description: <textarea type="text" name="description"></textarea><br>
 
-    <input type="submit" value="Submit">
+    <input type="submit" class="newwhitebtn" value="Add"/>
 </form>
 
 </body>

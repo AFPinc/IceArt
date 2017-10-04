@@ -39,6 +39,11 @@ public class Service implements IService{
     }
 
     @Override
+    public Location addLocation(Location location) {
+        return locationRepo.save(location);
+    }
+
+    @Override
     public List<Location> getAllLocations() {
         return locationRepo.findAll();
     }
@@ -46,6 +51,11 @@ public class Service implements IService{
     @Override
     public Location getLocationById(Long id) {
         return locationRepo.findOne(id);
+    }
+
+    @Override
+    public Artist addArtist(Artist artist) {
+        return artistRepo.save(artist);
     }
 
     @Override

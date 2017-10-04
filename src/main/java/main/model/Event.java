@@ -11,10 +11,12 @@ import javax.persistence.*;
  *
  */
 
+// Búum til töflu í gagnagrunninum sem heitir Event
 @Entity
 @Table(name="event")
 public class Event {
 
+    // Skilgreinum vensl í töflunni Event
     @Id
     @Column(name = "eventId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
