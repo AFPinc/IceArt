@@ -31,3 +31,11 @@
 </body>
 
 </html>
+
+<form method="POST" action="/event/event">
+    <input type="submit" value="Add Event"/>
+</form>
+
+<form method="POST" action="/">
+    <input type="submit" value="Back to home"/>
+</form>
