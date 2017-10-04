@@ -3,6 +3,7 @@ package main.controller;
 import main.services.IService;
 import main.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +16,9 @@ import org.springframework.ui.ModelMap;
  *
  * Stýriklasi fyrir allar leitir í kerfinu
  */
+
+@Controller
+@RequestMapping("/search")
 public class SearchController {
 
     @Autowired
@@ -31,8 +35,8 @@ public class SearchController {
      * @return
      */
 
-    @RequestMapping(value = "/Search", method = RequestMethod.GET)
-    public String getEventByTitle(@RequestParam(value = "title") String title, ModelMap model) {
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    public String getEventByTitle(@RequestParam(value = "title", required = false) String title, ModelMap model) {
         Event event = service.getEventByTitle(title);
         model.addAttribute("event", event);
         return "view/ShowEvent";

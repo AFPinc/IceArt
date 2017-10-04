@@ -44,6 +44,9 @@ public class Service implements IService{
     }
 
     @Override
+    public List<Event> getAllEvents() { return eventRepo.findAll(); }
+
+    @Override
     public Location addLocation(Location location) {
         return locationRepo.save(location);
     }

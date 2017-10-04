@@ -11,6 +11,8 @@ public interface IService {
 
     Event getEventById(Long id);
 
+    List<Event> getAllEvents();
+
     Event getEventByTitle(String title);
 
     Location addLocation(Location location);

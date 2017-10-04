@@ -76,4 +76,10 @@ public class Event {
     public boolean getDeleted() {
         return deleted;
     }
+
+    @Override
+    public String toString() {
+        return String.format("<BR>" + "title: "+title + "<BR>"
+                +"artist: "+artist.getName());
+        }
 }

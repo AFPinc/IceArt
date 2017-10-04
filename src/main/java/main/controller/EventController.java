@@ -4,13 +4,16 @@ import main.model.Artist;
 import main.model.Event;
 import main.model.Location;
 import main.services.IService;
+import main.services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -75,5 +78,13 @@ public class EventController {
         model.addAttribute("locations", locations);
         model.addAttribute("artists", artists);
         return "view/AddEvent";
+    }
+
+    @RequestMapping(value = "/allEvents", method = RequestMethod.GET)
+    public String allEvents(Model model) {
+        ArrayList<Event> list;
+        list = (ArrayList<Event>) service.getAllEvents();
+        model.addAttribute("events", list);
+        return "view/ShowAllEvents";
     }
 }
