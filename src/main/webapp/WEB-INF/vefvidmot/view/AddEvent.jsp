@@ -66,6 +66,10 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     <input type="submit" value="Add Location"/>
 </form>
 
+<form method="POST" action="/">
+    <input type="submit" value="Back to home"/>
+</form>
+
 </body>
 
 </html>

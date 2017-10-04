@@ -31,6 +31,14 @@
 <p><strong>Artist:</strong>${event.getArtist()}</p>
 <p><strong>Description:</strong>${event.getDescription()}</p>
 
+<form method="POST" action="/event/event">
+    <input type="submit" value="Add Event"/>
+</form>
+
+<form method="POST" action="/">
+    <input type="submit" value="Back to home"/>
+</form>
+
 
 </body>
 
