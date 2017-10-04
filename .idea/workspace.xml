@@ -5,7 +5,9 @@
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowArtist.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/controller/LocationController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controller/LocationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
     </list>
 =======
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="" />
@@ -47,6 +49,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ShowEvent.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,6 +65,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
       <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/services/Service.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,6 +87,7 @@
       <file leaf-file-name="AddEvent.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="340">
               <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
 =======
@@ -91,11 +97,16 @@
             <state relative-caret-position="675">
               <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+            <state relative-caret-position="471">
+              <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="ShowArtist.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowArtist.jsp">
@@ -117,6 +128,28 @@
                 <marker date="1506780759716" expanded="true" signature="594:996" ph="..." />
               </folding>
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+      <file leaf-file-name="ArtistController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/LocationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
             </state>
           </provider>
         </entry>
@@ -167,16 +200,17 @@
       <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="42" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="714">
+              <caret line="42" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="34">
               <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
 =======
@@ -187,6 +221,13 @@
               <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
               <folding />
+=======
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
             </state>
           </provider>
         </entry>
@@ -235,7 +276,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AddEvent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/MainPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Search.jsp" />
@@ -248,6 +288,9 @@
         <option value="$PROJECT_DIR$/src/main/java/main/controller/EventController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/controller/LocationController.java" />
       </list>
     </option>
   </component>
@@ -266,8 +309,13 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="-15" />
     <option name="width" value="2121" />
+=======
+    <option name="x" value="1908" />
+    <option name="width" value="1947" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
     <option name="height" value="2055" />
 =======
     <option name="x" value="-10" />
@@ -293,11 +341,14 @@
 <<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+<<<<<<< HEAD
 =======
       <pane id="Scope" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
       <pane id="AndroidView" />
       <pane id="Scratches" />
+=======
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -422,9 +473,13 @@
       </pane>
 <<<<<<< HEAD
       <pane id="Scope" />
+<<<<<<< HEAD
 =======
       <pane id="PackagesPane" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+      <pane id="AndroidView" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -658,9 +713,14 @@
       <workItem from="1505686829716" duration="1002000" />
 <<<<<<< HEAD
       <workItem from="1506866063262" duration="842000" />
+<<<<<<< HEAD
       <workItem from="1506879115710" duration="185000" />
 =======
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+      <workItem from="1506879115710" duration="829000" />
+      <workItem from="1507032799310" duration="505000" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -739,12 +799,23 @@
       <option name="project" value="LOCAL" />
       <updated>1506879146760</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="MainController">
+      <created>1506879305699</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1506879305699</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="34369000" />
+=======
+    <option name="totallyTimeSpent" value="35518000" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -766,20 +837,28 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2520908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3232682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25809062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25351351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26213592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -841,7 +920,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/demo/synaNotandi.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/demo/demo.jsp" />
     <entry file="file://$PROJECT_DIR$/ByrjunSpring/src/main/java/is/hi/byrjun/controller/DemoController.java" />
@@ -896,6 +974,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/AddArtist.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/AddEvent.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/ShowLocation.jsp" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/LocationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -904,6 +983,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
     <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -984,6 +1065,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1006,6 +1088,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1124,14 +1208,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="714">
+          <caret line="42" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
 =======
@@ -1139,18 +1224,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="29" column="135" lean-forward="false" selection-start-line="29" selection-start-column="135" selection-end-line="29" selection-end-column="135" />
+=======
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
 >>>>>>> parent of 3f9112b... Merge branch 'master' of https://github.com/ArtyFartyParty/IceArt
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+>>>>>>> 792ac9967b29a5fd37af67c1fecef4c0b72b333a
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
