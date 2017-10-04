@@ -23,13 +23,13 @@ public class Artist {
     private Long id;                 // Auðkenni listamanns sem er notað til að tengja við viðburði hans
     private String name;            // Heiti listamanns
     private String description;     // Lýsing á listamanni
-    private String age;                // Aldur listamanns
+    private int age;                // Aldur listamanns
     private String country;         // Þjóðerni listamanns
 
     @OneToMany(mappedBy = "artist", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Event> events = new HashSet<Event>();
 
-    public Artist(String name, String description, String age, String country) {
+    public Artist(String name, String description, int age, String country) {
         this.name = name;
         this.description = description;
         this.age = age;
@@ -51,7 +51,7 @@ public class Artist {
         this.description = description;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -75,7 +75,7 @@ public class Artist {
         return description;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
