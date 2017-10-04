@@ -7,23 +7,70 @@ import main.model.Location;
 import java.util.List;
 
 public interface IService {
+    /**
+     * fall sem vistar event
+     * @param event
+     * @return
+     */
     Event addEvent(Event event);
 
+    /**
+     * Fall sem nær í event eftir auðkenni
+     * @param id
+     * @return
+     */
     Event getEventById(Long id);
 
+    /**
+     * Fall sem nær í alla eventa í kerfinu
+     * @return
+     */
     List<Event> getAllEvents();
 
-    Event getEventByTitle(String title);
+    /**
+     * fall sem nær í eventa eftir titli
+     * @param title
+     * @return
+     */
+    List<Event> getEventByTitle(String title);
 
+    /**
+     * fall sem vistar staðsetningu
+     * @param location
+     * @return
+     */
     Location addLocation(Location location);
 
+    /**
+     * fall sem nær í allar staðsetningar
+     * @return
+     */
     List<Location> getAllLocations();
 
+    /**
+     * Fall sem nær í staðsetningur eftir auðkenni
+     * @param id
+     * @return
+     */
     Location getLocationById(Long id);
 
+    /**
+     * fall sem vistar artist
+     * @param artist
+     * @return
+     */
     Artist addArtist(Artist artist);
 
+    /**
+     * fall sem nær í alla artista
+     * @return
+     */
     List<Artist> getAllArtist();
 
+    /**
+     * fall sem nær í artista eftir auðkenni
+     * @param id
+     * @return
+     */
     Artist getArtistById(Long id);
 }

@@ -11,7 +11,10 @@ import java.util.ArrayList;
 @Controller
 public class MainController {
 
-    //Þetta fall birtir upphafssíðuna
+    /**
+     * Þetta fall birtir upphafssíðuna
+     * @return
+     */
     @RequestMapping(value = "")
     public String showPage(){
         return "view/MainPage";

@@ -37,7 +37,7 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
     @Override
     Event findOne(Long id);
 
-    Event findByTitle(String title);
+    List<Event> findByTitle(String title);
 
 
 }

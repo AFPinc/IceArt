@@ -23,7 +23,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <h1>Welcome to IceArt</h1>
 
-<form method="POST" action="/search/search">
+<form method="GET" action="/search/search">
     Search for a title: <input type="text" name="title"\><br>
     <input type="submit" value="Search"/>
 </form>

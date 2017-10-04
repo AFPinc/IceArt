@@ -62,7 +62,12 @@ public class EventController {
 
     }
 
-    //Þetta fall nær í viðbuðr eftir auðkenni hans
+    /**
+     * Þetta fall nær í viðbuðr eftir auðkenni hans
+     * @param id
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/show", method = RequestMethod.GET)
     public String getEventById(@RequestParam(value = "id", required=false) Long id, ModelMap model){
         Event event = service.getEventById(id);
@@ -70,7 +75,11 @@ public class EventController {
         return "view/ShowEvent";
     }
 
-    //Þetta fall birtir upphafssíðuna
+    /**
+     * Þetta fall birtir upphafssíðuna
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/event")
     public String showPage(ModelMap model){
         List<Location> locations = service.getAllLocations();
@@ -80,6 +89,11 @@ public class EventController {
         return "view/AddEvent";
     }
 
+    /**
+     * Þetta fall birtir alla eventa sem skráðir eru í kerfið
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/allEvents", method = RequestMethod.GET)
     public String allEvents(Model model) {
         ArrayList<Event> list;

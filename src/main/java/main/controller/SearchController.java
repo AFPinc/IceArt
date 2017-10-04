@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.ModelMap;
 
+import java.util.List;
+
 /**
  * @author Sigurlaug Þórðardóttir
  * @date September 2017
@@ -34,12 +36,11 @@ public class SearchController {
      * @param model
      * @return
      */
-
     @RequestMapping(value = "/search", method = RequestMethod.GET)
     public String getEventByTitle(@RequestParam(value = "title", required = false) String title, ModelMap model) {
-        Event event = service.getEventByTitle(title);
-        model.addAttribute("event", event);
-        return "view/ShowEvent";
+        List<Event> events = service.getEventByTitle(title);
+        model.addAttribute("events", events);
+        return "view/ShowAllEvent";
     }
 
     //Þetta fall sér um að leita af Staðsetningu og skila niðurstöðunum.

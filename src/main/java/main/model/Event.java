@@ -45,6 +45,41 @@ public class Event {
         this.deleted = deleted;
     }
 
+    public Event() {
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    public void setTimeBegin(String timeBegin) {
+        this.timeBegin = timeBegin;
+    }
+
+    public void setTimeEnd(String timeEnd) {
+        this.timeEnd = timeEnd;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+
     public Long getId() {
         return id;
     }

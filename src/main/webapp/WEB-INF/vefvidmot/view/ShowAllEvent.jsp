@@ -38,12 +38,12 @@
             </thead>
             <c:forEach var ="event" items="${events}">
                 <tr>
-                    <td>${event.title} </td>
-                    <td>${event.location}</td>
-                    <td>${event.from} </td>
-                    <td>${event.to}</td>
-                    <td>${event.artist} </td>
-                    <td>${event.description}</td>
+                    <td>${event.getTitle()} </td>
+                    <td>${event.getLocation()}</td>
+                    <td>${event.getTimeBegin()} </td>
+                    <td>${event.getTimeEnd()}</td>
+                    <td>${event.getArtist()} </td>
+                    <td>${event.getDescription()}</td>
                 </tr>
             </c:forEach>
         </table>
