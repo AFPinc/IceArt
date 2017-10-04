@@ -21,7 +21,7 @@ public interface IService {
 
     Artist addArtist(Artist artist);
 
-    public List<Artist> getAllArtist();
+    List<Artist> getAllArtist();
 
     Artist getArtistById(Long id);
 }
