@@ -57,11 +57,6 @@ public class EventController {
         return getEventById(e.getId(), model);
     }
 
-    //Þetta fall eyðir viðburði
-    public void deleteEvent(){
-
-    }
-
     /**
      * Þetta fall nær í viðbuðr eftir auðkenni hans
      * @param id
@@ -75,30 +70,4 @@ public class EventController {
         return "view/ShowEvent";
     }
 
-    /**
-     * Þetta fall birtir upphafssíðuna
-     * @param model
-     * @return
-     */
-    @RequestMapping(value = "/event")
-    public String showPage(ModelMap model){
-        List<Location> locations = service.getAllLocations();
-        List<Artist> artists = service.getAllArtist();
-        model.addAttribute("locations", locations);
-        model.addAttribute("artists", artists);
-        return "view/AddEvent";
-    }
-
-    /**
-     * Þetta fall birtir alla eventa sem skráðir eru í kerfið
-     * @param model
-     * @return
-     */
-    @RequestMapping(value = "/allEvents", method = RequestMethod.GET)
-    public String allEvents(Model model) {
-        ArrayList<Event> list;
-        list = (ArrayList<Event>) service.getAllEvents();
-        model.addAttribute("events", list);
-        return "view/ShowAllEvents";
-    }
 }
