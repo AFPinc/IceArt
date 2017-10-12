@@ -70,4 +70,10 @@ public class EventController {
         return "view/ShowEvent";
     }
 
+    //Þetta fall birtir addEvent.
+    @RequestMapping(value = "/event")
+    public String showPage(){
+        return "view/AddEvent";
+    }
+
 }
