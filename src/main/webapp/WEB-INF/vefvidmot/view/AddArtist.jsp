@@ -28,7 +28,7 @@
 <body>
 
 <div class="navbar">
-    <a href="">Home</a>
+    <a href="/">Search</a>
     <a href="/event/event">Add Event</a>
     <a href="/location/location">Add Location</a>
     <a href="/artist/artist">Add Artist</a>
