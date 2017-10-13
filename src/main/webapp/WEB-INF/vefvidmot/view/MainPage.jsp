@@ -20,6 +20,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Main Page</title>
 </head>
 <body>
@@ -34,19 +35,22 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <form method="POST" action="/event/event">
     <input type="submit" value="Add Event"/>
 </form>
-<!--
-<form method="POST" action="/AddLocation">
-    <input type="submit" value="Add Location"/>
-</form>
 
-<form method="POST" action="/AddArtist">
-    <input type="submit" value="Add Location"/>
-</form>
-
-<form method="POST" action="/AccountController">
-    <input type="submit" value="AccountController"/>
-</form>
--->
+<c:choose>
+    <c:when test="${not empty events}">
+        <c:forEach var ="event" items="${events}">
+            <div>
+                <h3>${event.getTitle()}</h3><br>
+                <p>${event.getArtist()} - ${event.getLocation()}</p><br>
+                <p>${event.getTimeBegin()}</p>
+            </div>
+            <br>
+        </c:forEach>
+    </c:when>
+    <c:otherwise>
+        <h3> No events</h3>
+    </c:otherwise>
+</c:choose>
 
 </body>
 

@@ -1,8 +1,9 @@
 package main.repository;
 
 import main.model.Event;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
@@ -30,7 +31,7 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
 
     /**
      *
-     *  Nær í event efitr Id-i.
+     *  Nær í event eftir Id-i.
      * @param id = auðkenni fyrir eventinn sem á að sækja
      * @return event
      */
@@ -39,5 +40,10 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
 
     List<Event> findByTitle(String title);
 
-
+    /**
+     *  Nær í 10 event.
+     * @return List<event>
+     */
+    @Query(value="SELECT * FROM event LIMIT 10", nativeQuery = true)
+    List<Event> findTop10();
 }
