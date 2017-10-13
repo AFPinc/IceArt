@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/repository/IEventRepository.java" afterPath="$PROJECT_DIR$/src/main/java/main/repository/IEventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -554,7 +549,7 @@
       <workItem from="1507194378400" duration="589000" />
       <workItem from="1507736030326" duration="834000" />
       <workItem from="1507888798422" duration="1949000" />
-      <workItem from="1507891506627" duration="12150000" />
+      <workItem from="1507891506627" duration="12197000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -689,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507903639429</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="headers komnir alls staðar!">
+      <created>1507904187209</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1507904187209</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76067000" />
+    <option name="totallyTimeSpent" value="76114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -752,7 +754,8 @@
     <MESSAGE value="resources mappan" />
     <MESSAGE value="header er kominn á addevent og mainpage" />
     <MESSAGE value="css skrár komnar fyrir addartist og addlocation" />
-    <option name="LAST_COMMIT_MESSAGE" value="css skrár komnar fyrir addartist og addlocation" />
+    <MESSAGE value="headers komnir alls staðar!" />
+    <option name="LAST_COMMIT_MESSAGE" value="headers komnir alls staðar!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
