@@ -42,15 +42,7 @@
     Country: <input type="text" name="country"><br>
     Description: <textarea type="text" name="description"></textarea><br>
 
-    <input type="submit" class="newwhitebtn" value="Add"/>
-</form>
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
+    <input type="submit" class="newwhitebtn" value="Submit"/>
 </form>
 
 </body>

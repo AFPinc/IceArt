@@ -40,16 +40,8 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     Max people: <input type="text" name="maxPeople"\><br>
     Description: <textarea type="text" name="description"\></textarea><br>
 
-    <input type="submit" class="newwhitebtn" value="Add"/>
+    <input type="submit" class="newwhitebtn" value="Submit"/>
 
-</form>
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
 </form>
 
 </body>
