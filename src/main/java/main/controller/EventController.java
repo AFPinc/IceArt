@@ -89,16 +89,4 @@ public class EventController {
         return "view/AddEvent";
     }
 
-    /**
-     * Þetta fall birtir alla eventa sem skráðir eru í kerfið
-     * @param model
-     * @return
-     */
-    @RequestMapping(value = "/allEvents", method = RequestMethod.GET)
-    public String allEvents(Model model) {
-        ArrayList<Event> list;
-        list = (ArrayList<Event>) service.getAllEvents();
-        model.addAttribute("events", list);
-        return "view/ShowAllEvents";
-    }
 }
