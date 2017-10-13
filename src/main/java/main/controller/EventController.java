@@ -3,6 +3,7 @@ package main.controller;
 import main.model.Artist;
 import main.model.Event;
 import main.model.Location;
+import main.model.Category;
 import main.services.IService;
 import main.services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +37,12 @@ public class EventController {
      * @param title
      * @param locationId
      * @param artistId
+     * @param categoryId
+     * @param dateBegin
      * @param timeBegin
+     * @param dateEnd
      * @param timeEnd
+     * @param categoryId
      * @param description
      * @param model
      * @return
@@ -46,13 +51,17 @@ public class EventController {
     public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location") Long locationId,
                            @RequestParam(value = "artist") Long artistId,
+                           @RequestParam(value = "dateBegin", required=false) String dateBegin,
                            @RequestParam(value = "timeBegin", required=false) String timeBegin,
+                           @RequestParam(value = "dateEnd", required=false) String dateEnd,
                            @RequestParam(value = "timeEnd", required=false) String timeEnd,
+                           @RequestParam(value = "category") Long categoryId,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
         Location location = service.getLocationById(locationId);
         Artist artist = service.getArtistById(artistId);
-        Event event = new Event(title, location, artist, timeBegin, timeEnd, description, false);
+        Category category = service.getCategoryById(categoryId);
+        Event event = new Event(title, location, artist, dateBegin, timeBegin, dateEnd, timeEnd, category, description, false);
         Event e = service.addEvent(event);
         return getEventById(e.getId(), model);
     }
@@ -84,8 +93,10 @@ public class EventController {
     public String showPage(ModelMap model){
         List<Location> locations = service.getAllLocations();
         List<Artist> artists = service.getAllArtist();
+        List<Category> categories = service.getAllCategories();
         model.addAttribute("locations", locations);
         model.addAttribute("artists", artists);
+        model.addAttribute("categories", categories);
         return "view/AddEvent";
     }
 

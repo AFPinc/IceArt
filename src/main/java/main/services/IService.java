@@ -3,6 +3,7 @@ package main.services;
 import main.model.Artist;
 import main.model.Event;
 import main.model.Location;
+import main.model.Category;
 
 import java.util.List;
 
@@ -33,6 +34,12 @@ public interface IService {
      * @return
      */
     List<Event> getEventByTitle(String title);
+
+    /**
+     * Fall sem nær í 10 event
+     * @return Listi af event
+     */
+    List<Event> getTop10Events();
 
     /**
      * fall sem vistar staðsetningu
@@ -73,4 +80,18 @@ public interface IService {
      * @return
      */
     Artist getArtistById(Long id);
+
+    /**
+     * fall sem nær í allar categories
+     * @return
+     */
+    List<Category> getAllCategories();
+
+    /**
+     * fall sem nær í flokk eftir auðkenni
+     * @param id
+     * @return
+     */
+
+    Category getCategoryById(Long id);
 }

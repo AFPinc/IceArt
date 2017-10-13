@@ -1,11 +1,7 @@
 package main.repository;
 
 import main.model.Event;
-import org.hibernate.annotations.Parameter;
-import org.junit.runners.Parameterized;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -41,8 +37,7 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
     @Override
     Event findOne(Long id);
 
-    List<Event> findByTitleContaining(String title);
-
+    List<Event> findByTitle(String title);
 
 
 }

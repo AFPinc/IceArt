@@ -55,8 +55,24 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         Enginn listamaður hefur verið skráður.<br>
     </c:otherwise>
 </c:choose>
+    Date begin: <input type="text" name="dateBegin"\><br>
     Time begin: <input type="text" name="timeBegin"\><br>
+    Date end: <input type="text" name="dateEnd"\><br>
     Time end: <input type="text" name="timeEnd"\><br>
+
+    Category: <c:choose>
+    <c:when test="${not empty categories}">
+        <select name="category">
+            <c:forEach var="category" items="${categories}">
+                <option value="${category.getId()}">${category.getTitle()}</option>
+            </c:forEach>
+        </select><br>
+    </c:when>
+    <c:otherwise>
+        Enginn flokkur hefur verið skráður.<br>
+    </c:otherwise>
+</c:choose>
+
     Description: <textarea type="text" name="description"\></textarea><br>
 
     <input type="submit" value="Submit"/>
