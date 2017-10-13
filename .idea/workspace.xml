@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/controller/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controller/SearchController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,18 +20,18 @@
       <file leaf-file-name="AddEvent.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="83" selection-end-column="11" />
+            <state relative-caret-position="263">
+              <caret line="83" column="11" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="83" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddArtist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
+      <file leaf-file-name="EventController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/EventController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="62">
+              <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -42,48 +40,18 @@
       <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+            <state relative-caret-position="229">
+              <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddLocation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Error.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Error.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowAllEvent.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowAllEvent.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showArtist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/showArtist.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="320">
+              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -92,8 +60,8 @@
       <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="212">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,21 +69,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowEvent.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
+      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="212">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowLocation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowLocation.jsp">
+      <file leaf-file-name="ArtistController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="229">
+              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategorizedStatistics.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar!/org/hibernate/stat/internal/CategorizedStatistics.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/LocationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Search.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Search.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/main/repository/EventRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/model/Event.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/stylesheet/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/main/controller/LocationController.java" />
@@ -185,12 +184,13 @@
         <option value="$PROJECT_DIR$/src/main/java/main/repository/ILocationRepositroy.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/services/IService.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/services/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/controller/SearchController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/repository/IEventRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/main/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" />
       </list>
     </option>
@@ -229,6 +229,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,10 +363,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,6 +375,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="SearchEverywhereHistoryKey" value="categoris&#9;PSI&#9;JAVA://org.hibernate.stat.internal.CategorizedStatistics" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -382,127 +383,6 @@
       <recent name="C:\Users\Lenovo\Desktop\IceArt\src\main\webapp\WEB-INF\view" />
       <recent name="C:\Users\Lenovo\Desktop\IceArt\src\main\webapp\WEB-INF\vefvidmot\demo" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/IceArt.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/main/repository/IEventRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/application.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddLocation.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/static.css/mainpage.css</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/static.css/addartist.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/static.css/addevent.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/static.css/addlocation.css</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -702,6 +582,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="" />
@@ -729,6 +612,7 @@
       <workItem from="1507891270104" duration="53000" />
       <workItem from="1507891385171" duration="10357000" />
       <workItem from="1507902773143" duration="6500000" />
+      <workItem from="1507913382298" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -839,7 +723,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83677000" />
+    <option name="totallyTimeSpent" value="85289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -859,7 +743,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23139158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23543689" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -898,14 +782,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/demo/synaNotandi.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/DemoController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/MainPage.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/showArtist.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/AddLocation.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/demo/Search.jsp" />
@@ -926,14 +807,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/repository/EventRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.2.5.RELEASE/spring-boot-1.2.5.RELEASE.jar!/org/springframework/boot/context/web/SpringBootServletInitializer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -942,46 +815,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/stylesheet/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Search.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/main/repository/IArtistRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/EventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="89" column="5" lean-forward="false" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,44 +892,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1768">
           <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <marker date="1507913193908" expanded="true" signature="70754:70771" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70754:70789" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70754:70802" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70754:70817" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70852:73055" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70865:73040" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70919:71214" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="70938:71199" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71001:71179" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71041:71145" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71062:71123" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71264:71573" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71283:71558" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71360:71538" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71400:71504" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71421:71482" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71624:71889" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71643:71874" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71676:71854" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71716:71820" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71737:71798" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71932:72238" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="71951:72223" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72025:72203" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72065:72169" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72086:72147" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72289:72637" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72308:72622" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72385:72602" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72425:72568" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72446:72546" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72689:73026" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72708:73011" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72813:72991" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72853:72957" ph="..." />
-            <marker date="1507913193908" expanded="true" signature="72874:72935" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,14 +904,6 @@
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="e#1214#1215#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/services/IService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1161,7 +946,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/showArtist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="510">
           <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding />
         </state>
@@ -1169,42 +954,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="493">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowLocation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="442">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="510">
           <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowAllEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="510">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1217,18 +992,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/repository/ICategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/services/IService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="95" column="28" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/ArtistController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar!/org/hibernate/stat/internal/CategorizedStatistics.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="83" selection-end-column="11" />
+        <state relative-caret-position="263">
+          <caret line="83" column="11" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="83" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+        <state relative-caret-position="229">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
           <folding />
         </state>
       </provider>

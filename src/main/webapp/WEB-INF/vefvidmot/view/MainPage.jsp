@@ -47,8 +47,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <form method="GET" action="/search/search">
     Search for a title: <input type="text" name="title"\><br>
-
-    Choose category: <c:choose>
+    Choose Category: <c:choose>
     <c:when test="${not empty categories}">
         <select name="category">
             <c:forEach var="category" items="${categories}">
@@ -63,6 +62,8 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
     <input type="submit" value="Search"/>
 </form>
+
+
 
 <form method="POST" action="/event/event">
     <input type="submit" value="Add Event"/>

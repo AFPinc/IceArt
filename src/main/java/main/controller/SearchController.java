@@ -1,5 +1,6 @@
 package main.controller;
 
+import main.model.Category;
 import main.services.IService;
 import main.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
