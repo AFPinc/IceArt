@@ -40,7 +40,7 @@ public class Service implements IService{
 
     @Override
     public List<Event> getEventByTitle(String title) {
-        return eventRepo.findByTitle(title);
+        return eventRepo.findByTitleContaining(title);
     }
 
     @Override
