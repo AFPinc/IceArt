@@ -38,22 +38,27 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <h1>Welcome to IceArt</h1>
 
-<form method="GET" action="/search/search">
-    Search for a title: <input type="text" name="title"\><br>
-    <input type="submit" value="Search"/>
-</form>
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
+<form method="GET" action="/search/search" class="form-inline">
+    <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="Leita" \>
+        <button type="submit" value="Search" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span>
+        </button>
+    </div>
 </form>
 
 <c:choose>
     <c:when test="${not empty events}">
         <c:forEach var ="event" items="${events}">
-            <div>
+            <div class="container well">
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getTimeBegin()}</p>
+                <form method="GET" action="event/show">
+                    <button type="submit" value="${event.getId()}" name="id" class="btn btn-default">
+                        Nánar
+                    </button>
+                </form>
             </div>
             <br>
         </c:forEach>
