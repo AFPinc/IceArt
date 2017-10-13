@@ -20,33 +20,43 @@ public class Event {
     @Id
     @Column(name = "eventId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;                 // Auðkenni hvers viðburðar
-    private String title;           // Titill á viðburði
+    private Long id;                    // Auðkenni hvers viðburðar
+    private String title;               // Titill á viðburði
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "locationId")
-    private Location location;        // Staðsetning viðburðar
+    private Location location;          // Staðsetning viðburðar
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "artistId")
-    private Artist artist;          // Listamaður viðburðar
-    private String timeBegin;         // Dagsetning og tími sem viðburður byrjar
-    private String timeEnd;           // Dagsetning og tími sem viðburður endar
-    private String description;     // Lýsing á viðburðinum
-    private boolean deleted;        // Segir til um hvort að búið sé að eyða viðburði eða ekki
+    private Artist artist;              // Listamaður viðburðar
 
-    public Event(String title, Location location, Artist artist, String timeBegin, String timeEnd, String description, boolean deleted) {
+    private String dateBegin;           // Dagsetning sem viðburður byrjar
+    private String timeBegin;           // Tími sem viðburður byrjar
+    private String dateEnd;             // Dagsetning sem viðburður endar
+    private String timeEnd;             // Tími sem viðburður endar
+
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "categoryId")
+    private Category category;
+
+    private String description;         // Lýsing á viðburðinum
+    private boolean deleted;            // Segir til um hvort að búið sé að eyða viðburði eða ekki
+
+    public Event(String title, Location location, Artist artist, String dateBegin, String timeBegin, String dateEnd, String timeEnd, Category category, String description, boolean deleted) {
         this.title = title;
         this.location = location;
         this.artist = artist;
+        this.dateBegin = dateBegin;
         this.timeBegin = timeBegin;
+        this.dateEnd = dateEnd;
         this.timeEnd = timeEnd;
+        this.category = category;
         this.description = description;
         this.deleted = deleted;
     }
 
-    public Event() {
-    }
+    public Event() {}
 
     public void setId(Long id) {
         this.id = id;
@@ -64,12 +74,24 @@ public class Event {
         this.artist = artist;
     }
 
+    public void setDateBegin(String dateBegin) {
+        this.dateBegin = dateBegin;
+    }
+
     public void setTimeBegin(String timeBegin) {
         this.timeBegin = timeBegin;
     }
 
+    public void setDateEnd(String dateEnd) {
+        this.dateEnd = dateEnd;
+    }
+
     public void setTimeEnd(String timeEnd) {
         this.timeEnd = timeEnd;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public void setDescription(String description) {
@@ -96,12 +118,24 @@ public class Event {
         return artist.getName();
     }
 
+    public String getDateBegin() {
+        return dateBegin;
+    }
+
     public String getTimeBegin() {
         return timeBegin;
     }
 
+    public String getDateEnd() {
+        return dateEnd;
+    }
+
     public String getTimeEnd() {
         return timeEnd;
+    }
+
+    public String getCategory() {
+        return category.getTitle();
     }
 
     public String getDescription() {
