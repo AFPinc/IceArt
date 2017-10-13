@@ -3,9 +3,11 @@ package main.services;
 import main.model.Artist;
 import main.model.Event;
 import main.model.Location;
+import main.model.Category;
 import main.repository.IArtistRepository;
 import main.repository.IEventRepository;
 import main.repository.ILocationRepositroy;
+import main.repository.ICategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -29,6 +31,8 @@ public class Service implements IService{
     ILocationRepositroy locationRepo;
     @Autowired
     IArtistRepository artistRepo;
+    @Autowired
+    ICategoryRepository categoryRepo;
 
     @Override
     public Event addEvent(Event event) {
@@ -42,7 +46,7 @@ public class Service implements IService{
 
     @Override
     public List<Event> getEventByTitle(String title) {
-        return eventRepo.findByTitle(title);
+        return eventRepo.findByTitleContaining(title);
     }
 
     @Override
@@ -81,6 +85,16 @@ public class Service implements IService{
     @Override
     public Artist getArtistById(Long id) {
         return artistRepo.findOne(id);
+    }
+
+    @Override
+    public List<Category> getAllCategories() {
+        return categoryRepo.findAll();
+    }
+
+    @Override
+    public Category getCategoryById(Long id) {
+        return categoryRepo.findOne(id);
     }
 
 }
