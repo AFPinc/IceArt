@@ -21,25 +21,18 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Main Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<c:url value="resources/static.css/mainpage.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/mainpage.css"/>"/>
 </head>
 
 <body>
 
 <div class="navbar">
     <a href="">Home</a>
-    <div class="dropdown">
-        <button class="dropbtn">Add
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="/event/event">Add Event</a>
-            <a href="/location/location">Add Location</a>
-            <a href="/artist/artist">Add Artist</a>
-        </div>
+    <a href="/event/event">Add Event</a>
+    <a href="/location/location">Add Location</a>
+    <a href="/artist/artist">Add Artist</a>
     </div>
 </div>
 
