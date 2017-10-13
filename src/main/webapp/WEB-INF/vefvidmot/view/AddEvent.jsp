@@ -29,7 +29,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="">Home</a>
+    <a href="/">Home</a>
     <a href="/event/event">Add Event</a>
     <a href="/location/location">Add Location</a>
     <a href="/artist/artist">Add Artist</a>
