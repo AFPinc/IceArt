@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/repository/IEventRepository.java" afterPath="$PROJECT_DIR$/src/main/java/main/repository/IEventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/services/Service.java" afterPath="$PROJECT_DIR$/src/main/java/main/services/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -609,7 +606,7 @@
       <workItem from="1507142828799" duration="2407000" />
       <workItem from="1507734563564" duration="5373000" />
       <workItem from="1507891270104" duration="53000" />
-      <workItem from="1507891385171" duration="10338000" />
+      <workItem from="1507891385171" duration="10357000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -709,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507130926271</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Contain search">
+      <created>1507902432526</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1507902432526</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77158000" />
+    <option name="totallyTimeSpent" value="77177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -767,7 +771,8 @@
     <MESSAGE value="comment hjá klösunum sem ég gerði" />
     <MESSAGE value="MainController" />
     <MESSAGE value="Error.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Error.jsp" />
+    <MESSAGE value="Contain search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contain search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
