@@ -21,10 +21,9 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Main Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<c:url value="resources/static.css/mainpage.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/mainpage.css"/>"/>
 </head>
 
 <body>
@@ -43,39 +42,43 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     </div>
 </div>
 
+<div class="container">
 <h1>Welcome to IceArt</h1>
 
-<form method="GET" action="/search/search">
-    Search for a title: <input type="text" name="title"\><br>
+<form method="GET" action="/search/search" class="form-inline">
+    <input type="text" name="title" class="form-control" placeholder="Leita" \>
     Choose Category: <c:choose>
     <c:when test="${not empty categories}">
         <select name="category">
             <c:forEach var="category" items="${categories}">
                 <option value="${category.getId()}">${category.getTitle()}</option>
             </c:forEach>
-        </select><br>
+        </select>
     </c:when>
     <c:otherwise>
         Enginn flokkur hefur verið skráður.<br>
     </c:otherwise>
 </c:choose>
 
-    <input type="submit" value="Search"/>
+    <button type="submit" value="Search" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span>
+    </button>
 </form>
-
-
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
+    <br>
+</div>
 
 <c:choose>
     <c:when test="${not empty events}">
         <c:forEach var ="event" items="${events}">
-            <div>
+            <div class="container well">
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
-                <p>${event.getTimeBegin()}</p>
+                <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
+                <form method="GET" action="event/show">
+                    <button type="submit" value="${event.getId()}" name="id" class="btn btn-default">
+                        Nánar
+                    </button>
+                </form>
             </div>
             <br>
         </c:forEach>
