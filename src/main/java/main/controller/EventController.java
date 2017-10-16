@@ -5,20 +5,14 @@ import main.model.Event;
 import main.model.Location;
 import main.model.Category;
 import main.services.IService;
-import main.services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -52,7 +46,7 @@ public class EventController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/event", method = RequestMethod.POST)
     public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location") Long locationId,
                            @RequestParam(value = "artist") Long artistId,
@@ -94,7 +88,7 @@ public class EventController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/event")
+    @RequestMapping(value = "/add")
     public String showPage(ModelMap model){
         List<Location> locations = service.getAllLocations();
         List<Artist> artists = service.getAllArtist();

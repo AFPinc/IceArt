@@ -35,9 +35,9 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="/event/event">Add Event</a>
-            <a href="/location/location">Add Location</a>
-            <a href="/artist/artist">Add Artist</a>
+            <a href="/event/add">Add Event</a>
+            <a href="/location/add">Add Location</a>
+            <a href="/artist/add">Add Artist</a>
         </div>
     </div>
 </div>
@@ -45,7 +45,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="container">
 <h1>Welcome to IceArt</h1>
 
-<form method="GET" action="/search/search" class="form-inline">
+<form method="GET" action="/search" class="form-inline">
     <input type="text" name="title" class="form-control" placeholder="Leita" \>
     Choose Category: <c:choose>
     <c:when test="${not empty categories}">

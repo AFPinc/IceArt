@@ -30,14 +30,14 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <div class="navbar">
     <a href="/">Home</a>
-    <a href="/event/event">Add Event</a>
-    <a href="/location/location">Add Location</a>
-    <a href="/artist/artist">Add Artist</a>
+    <a href="/event/add">Add Event</a>
+    <a href="/location/add">Add Location</a>
+    <a href="/artist/add">Add Artist</a>
 </div>
 
 <h1>Add a new event</h1>
 
-<form action="/event/add" method="POST">
+<form action="/event/event" method="POST">
     Title: <input type="text" name="title"\><br>
 
     Location: <c:choose>
@@ -86,18 +86,6 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     Description: <textarea type="text" name="description"\></textarea><br>
 
     <input type="submit" value="Submit"/>
-</form>
-
-<form method="POST" action="/artist/artist">
-    <input type="submit" value="Add Artist"/>
-</form>
-
-<form method="POST" action="/location/location">
-    <input type="submit" value="Add Location"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
 </form>
 
 </body>
