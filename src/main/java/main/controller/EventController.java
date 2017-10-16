@@ -7,6 +7,7 @@ import main.model.Category;
 import main.services.IService;
 import main.services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -14,7 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 
@@ -51,10 +56,10 @@ public class EventController {
     public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location") Long locationId,
                            @RequestParam(value = "artist") Long artistId,
-                           @RequestParam(value = "dateBegin", required=false) String dateBegin,
-                           @RequestParam(value = "timeBegin", required=false) String timeBegin,
-                           @RequestParam(value = "dateEnd", required=false) String dateEnd,
-                           @RequestParam(value = "timeEnd", required=false) String timeEnd,
+                           @RequestParam(value = "dateBegin", required=false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
+                           @RequestParam(value = "timeBegin", required=false) @DateTimeFormat(pattern="HH:mm") Date timeBegin,
+                           @RequestParam(value = "dateEnd", required=false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
+                           @RequestParam(value = "timeEnd", required=false) @DateTimeFormat(pattern="HH:mm") Date timeEnd,
                            @RequestParam(value = "category") Long categoryId,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){

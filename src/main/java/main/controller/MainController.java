@@ -1,5 +1,6 @@
 package main.controller;
 
+import main.model.Category;
 import main.model.Event;
 import main.services.IService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,9 @@ public class MainController {
     @RequestMapping(value = "")
     public String showPage(ModelMap model){
         List<Event> events = service.getTop10Events();
+        List<Category> categories = service.getAllCategories();
         model.addAttribute("events", events);
+        model.addAttribute("categories", categories);
         return "view/MainPage";
     }
 

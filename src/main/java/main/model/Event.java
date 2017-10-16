@@ -1,6 +1,8 @@
 package main.model;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @author Melkorka Mjöll
@@ -31,10 +33,10 @@ public class Event {
     @JoinColumn(name = "artistId")
     private Artist artist;              // Listamaður viðburðar
 
-    private String dateBegin;           // Dagsetning sem viðburður byrjar
-    private String timeBegin;           // Tími sem viðburður byrjar
-    private String dateEnd;             // Dagsetning sem viðburður endar
-    private String timeEnd;             // Tími sem viðburður endar
+    private Date dateBegin;           // Dagsetning sem viðburður byrjar
+    private Date timeBegin;           // Tími sem viðburður byrjar
+    private Date dateEnd;             // Dagsetning sem viðburður endar
+    private Date timeEnd;             // Tími sem viðburður endar
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "categoryId")
@@ -43,7 +45,7 @@ public class Event {
     private String description;         // Lýsing á viðburðinum
     private boolean deleted;            // Segir til um hvort að búið sé að eyða viðburði eða ekki
 
-    public Event(String title, Location location, Artist artist, String dateBegin, String timeBegin, String dateEnd, String timeEnd, Category category, String description, boolean deleted) {
+    public Event(String title, Location location, Artist artist, Date dateBegin, Date timeBegin, Date dateEnd, Date timeEnd, Category category, String description, boolean deleted) {
         this.title = title;
         this.location = location;
         this.artist = artist;
@@ -74,19 +76,19 @@ public class Event {
         this.artist = artist;
     }
 
-    public void setDateBegin(String dateBegin) {
+    public void setDateBegin(Date dateBegin) {
         this.dateBegin = dateBegin;
     }
 
-    public void setTimeBegin(String timeBegin) {
+    public void setTimeBegin(Date timeBegin) {
         this.timeBegin = timeBegin;
     }
 
-    public void setDateEnd(String dateEnd) {
+    public void setDateEnd(Date dateEnd) {
         this.dateEnd = dateEnd;
     }
 
-    public void setTimeEnd(String timeEnd) {
+    public void setTimeEnd(Date timeEnd) {
         this.timeEnd = timeEnd;
     }
 
@@ -119,19 +121,23 @@ public class Event {
     }
 
     public String getDateBegin() {
-        return dateBegin;
+        SimpleDateFormat sdf = new SimpleDateFormat("d.MMM yyyy");
+        return sdf.format(dateBegin);
     }
 
     public String getTimeBegin() {
-        return timeBegin;
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        return sdf.format(timeBegin);
     }
 
     public String getDateEnd() {
-        return dateEnd;
+        SimpleDateFormat sdf = new SimpleDateFormat("d.MMM yyyy");
+        return sdf.format(dateEnd);
     }
 
     public String getTimeEnd() {
-        return timeEnd;
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        return sdf.format(timeEnd);
     }
 
     public String getCategory() {

@@ -29,7 +29,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="">Home</a>
+    <a href="/">Home</a>
     <a href="/event/event">Add Event</a>
     <a href="/location/location">Add Location</a>
     <a href="/artist/artist">Add Artist</a>
@@ -65,10 +65,10 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         Enginn listamaður hefur verið skráður.<br>
     </c:otherwise>
 </c:choose>
-    Date begin: <input type="text" name="dateBegin"\><br>
-    Time begin: <input type="text" name="timeBegin"\><br>
-    Date end: <input type="text" name="dateEnd"\><br>
-    Time end: <input type="text" name="timeEnd"\><br>
+    Date begin: <input type="date" name="dateBegin"\><br>
+    Time begin: <input type="time" name="timeBegin"\><br>
+    Date end: <input type="date" name="dateEnd"\><br>
+    Time end: <input type="time" name="timeEnd"\><br>
 
     Category: <c:choose>
     <c:when test="${not empty categories}">

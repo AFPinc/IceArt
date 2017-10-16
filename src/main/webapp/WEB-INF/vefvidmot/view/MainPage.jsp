@@ -29,23 +29,43 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="">Home</a>
-    <a href="/event/event">Add Event</a>
-    <a href="/location/location">Add Location</a>
-    <a href="/artist/artist">Add Artist</a>
+    <a href="/">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Add
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/event/event">Add Event</a>
+            <a href="/location/location">Add Location</a>
+            <a href="/artist/artist">Add Artist</a>
+        </div>
     </div>
 </div>
 
+<div class="container">
 <h1>Welcome to IceArt</h1>
 
 <form method="GET" action="/search/search" class="form-inline">
-    <div class="form-group">
-        <input type="text" name="title" class="form-control" placeholder="Leita" \>
-        <button type="submit" value="Search" class="btn btn-default">
-            <span class="glyphicon glyphicon-search"></span>
-        </button>
-    </div>
+    <input type="text" name="title" class="form-control" placeholder="Leita" \>
+    Choose Category: <c:choose>
+    <c:when test="${not empty categories}">
+        <select name="category">
+            <c:forEach var="category" items="${categories}">
+                <option value="${category.getId()}">${category.getTitle()}</option>
+            </c:forEach>
+        </select>
+    </c:when>
+    <c:otherwise>
+        Enginn flokkur hefur verið skráður.<br>
+    </c:otherwise>
+</c:choose>
+
+    <button type="submit" value="Search" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span>
+    </button>
 </form>
+    <br>
+</div>
 
 <c:choose>
     <c:when test="${not empty events}">
@@ -53,7 +73,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             <div class="container well">
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
-                <p>${event.getTimeBegin()}</p>
+                <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
                 <form method="GET" action="event/show">
                     <button type="submit" value="${event.getId()}" name="id" class="btn btn-default">
                         Nánar
