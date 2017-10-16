@@ -45,7 +45,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="container">
 <h1>Welcome to IceArt</h1>
 
-<form method="GET" action="/search" class="form-inline">
+<form method="GET" action="/search/" class="form-inline">
     <input type="text" name="title" class="form-control" placeholder="Leita" \>
     Choose Category: <c:choose>
     <c:when test="${not empty categories}">
@@ -74,8 +74,8 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
-                <form method="GET" action="event/show">
-                    <button type="submit" value="${event.getId()}" name="id" class="btn btn-default">
+                <form method="GET" action="event/${event.getId()}">
+                    <button type="submit" class="btn btn-default">
                         Nánar
                     </button>
                 </form>
