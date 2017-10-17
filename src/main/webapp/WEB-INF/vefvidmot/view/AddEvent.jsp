@@ -35,66 +35,64 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     <a href="/artist/artist">Add Artist</a>
 </div>
 
-<h1>Add a new event</h1>
+<div class="addEventDiv">
+    <h1>Add a new event</h1>
 
-<form action="/event/add" method="POST">
-    Title: <input type="text" name="title"\><br>
+    <form action="/event/add" method="POST">
+        Title: <input type="text" name="title"\><br>
 
-    Location: <c:choose>
-    <c:when test="${not empty locations}">
-        <select name="location">
-            <c:forEach var="location" items="${locations}">
-                <option value="${location.getId()}">${location.getName()}</option>
-            </c:forEach>
-        </select><br>
-    </c:when>
-    <c:otherwise>
-        Engar staðsetningar hafa verið skráðar.<br>
-    </c:otherwise>
-</c:choose>
+        Location:
+        <c:choose>
+            <c:when test="${not empty locations}">
+                <select name="location">
+                    <c:forEach var="location" items="${locations}">
+                        <option value="${location.getId()}">${location.getName()}</option>
+                    </c:forEach>
+                </select><br>
+            </c:when>
+        <c:otherwise>
+            Engar staðsetningar hafa verið skráðar.<br>
+        </c:otherwise>
+        </c:choose>
 
-    Name of artist: <c:choose>
-    <c:when test="${not empty artists}">
-        <select name="artist">
-            <c:forEach var="artist" items="${artists}">
-                <option value="${artist.getId()}">${artist.getName()}</option>
-            </c:forEach>
-        </select><br>
-    </c:when>
-    <c:otherwise>
-        Enginn listamaður hefur verið skráður.<br>
-    </c:otherwise>
-</c:choose>
-    Date begin: <input type="date" name="dateBegin"\><br>
-    Time begin: <input type="time" name="timeBegin"\><br>
-    Date end: <input type="date" name="dateEnd"\><br>
-    Time end: <input type="time" name="timeEnd"\><br>
+        Name of artist:
+        <c:choose>
+            <c:when test="${not empty artists}">
+                <select name="artist">
+                    <c:forEach var="artist" items="${artists}">
+                        <option value="${artist.getId()}">${artist.getName()}</option>
+                    </c:forEach>
+                </select><br>
+            </c:when>
+            <c:otherwise>
+                Enginn listamaður hefur verið skráður.<br>
+            </c:otherwise>
+        </c:choose>
 
-    Category: <c:choose>
-    <c:when test="${not empty categories}">
-        <select name="category">
-            <c:forEach var="category" items="${categories}">
-                <option value="${category.getId()}">${category.getTitle()}</option>
-            </c:forEach>
-        </select><br>
-    </c:when>
-    <c:otherwise>
-        Enginn flokkur hefur verið skráður.<br>
-    </c:otherwise>
-</c:choose>
+        Date begin: <input type="date" name="dateBegin"\><br>
+        Time begin: <input type="time" name="timeBegin"\><br>
+        Date end: <input type="date" name="dateEnd"\><br>
+        Time end: <input type="time" name="timeEnd"\><br>
 
-    Description: <textarea type="text" name="description"\></textarea><br>
+        Category:
+        <c:choose>
+            <c:when test="${not empty categories}">
+                <select name="category">
+                    <c:forEach var="category" items="${categories}">
+                        <option value="${category.getId()}">${category.getTitle()}</option>
+                    </c:forEach>
+                </select><br>
+            </c:when>
+            <c:otherwise>
+                Enginn flokkur hefur verið skráður.<br>
+            </c:otherwise>
+        </c:choose>
 
-    <input type="submit" value="Submit"/>
-</form>
+        Description: <textarea type="text" name="description"\></textarea><br>
 
-<form method="POST" action="/artist/artist">
-    <input type="submit" value="Add Artist"/>
-</form>
-
-<form method="POST" action="/location/location">
-    <input type="submit" value="Add Location"/>
-</form>
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
 
 <form method="POST" action="/">
     <input type="submit" value="Back to home"/>

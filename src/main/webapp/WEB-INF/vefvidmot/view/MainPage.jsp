@@ -31,9 +31,6 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="navbar">
     <a href="/">Home</a>
     <div class="dropdown">
-        <button class="dropbtn">Add
-            <i class="fa fa-caret-down"></i>
-        </button>
         <div class="dropdown-content">
             <a href="/event/event">Add Event</a>
             <a href="/location/location">Add Location</a>
@@ -44,33 +41,44 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <div class="container">
 <h1>Welcome to IceArt</h1>
+</div>
 
-<form method="GET" action="/search/search" class="form-inline">
+<div class="container well">
+    <h2>Leit</h2>
+    <form method="GET" action="/search/search" class="form-inline">
     <input type="text" name="title" class="form-control" placeholder="Leita" \>
-    Choose Category: <c:choose>
-    <c:when test="${not empty categories}">
+
+    Date begin: <input type="date" name="dateBegin"\><br>
+    Time begin: <input type="time" name="timeBegin"\><br>
+    Date end: <input type="date" name="dateEnd"\><br>
+    Time end: <input type="time" name="timeEnd"\><br>
+
+    Choose Category:
+        <c:choose>
+        <c:when test="${not empty categories}">
         <select name="category">
             <c:forEach var="category" items="${categories}">
                 <option value="${category.getId()}">${category.getTitle()}</option>
             </c:forEach>
         </select>
-    </c:when>
-    <c:otherwise>
+        </c:when>
+        <c:otherwise>
         Enginn flokkur hefur verið skráður.<br>
-    </c:otherwise>
-</c:choose>
+        </c:otherwise>
+        </c:choose>
 
     <button type="submit" value="Search" class="btn btn-default">
         <span class="glyphicon glyphicon-search"></span>
     </button>
-</form>
-    <br>
+    </form><br>
 </div>
+
 
 <c:choose>
     <c:when test="${not empty events}">
         <c:forEach var ="event" items="${events}">
             <div class="container well">
+                <h2>Viðburðir</h2>
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>

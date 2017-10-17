@@ -12,3 +12,9 @@
     padding: 14px 16px;
     text-decoration: none;
 }
+
+.addEventDiv {
+    background-color: rosybrown;
+    margin: 5%;
+    padding: 5%;
+}
