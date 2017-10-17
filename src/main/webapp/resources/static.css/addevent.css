@@ -14,7 +14,8 @@
 }
 
 .addEventDiv {
-    background-color: rosybrown;
+    background-color: beige;
     margin: 5%;
     padding: 5%;
+    display: flex;
 }

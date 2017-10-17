@@ -97,58 +97,6 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <form method="POST" action="/">
     <input type="submit" value="Back to home"/>
 
-<h1>Add a new event</h1>
-
-<form action="/event/event" method="POST">
-    Title: <input type="text" name="title"\><br>
-
-    Location: <c:choose>
-    <c:when test="${not empty locations}">
-        <select name="location">
-            <c:forEach var="location" items="${locations}">
-                <option value="${location.getId()}">${location.getName()}</option>
-            </c:forEach>
-        </select><br>
-    </c:when>
-    <c:otherwise>
-        Engar staðsetningar hafa verið skráðar.<br>
-    </c:otherwise>
-</c:choose>
-
-    Name of artist: <c:choose>
-    <c:when test="${not empty artists}">
-        <select name="artist">
-            <c:forEach var="artist" items="${artists}">
-                <option value="${artist.getId()}">${artist.getName()}</option>
-            </c:forEach>
-        </select><br>
-    </c:when>
-    <c:otherwise>
-        Enginn listamaður hefur verið skráður.<br>
-    </c:otherwise>
-</c:choose>
-    Date begin: <input type="date" name="dateBegin"\><br>
-    Time begin: <input type="time" name="timeBegin"\><br>
-    Date end: <input type="date" name="dateEnd"\><br>
-    Time end: <input type="time" name="timeEnd"\><br>
-
-    Category: <c:choose>
-    <c:when test="${not empty categories}">
-        <select name="category">
-            <c:forEach var="category" items="${categories}">
-                <option value="${category.getId()}">${category.getTitle()}</option>
-            </c:forEach>
-        </select><br>
-    </c:when>
-    <c:otherwise>
-        Enginn flokkur hefur verið skráður.<br>
-    </c:otherwise>
-</c:choose>
-
-    Description: <textarea type="text" name="description"\></textarea><br>
-
-    <input type="submit" value="Submit"/>
-
 </form>
 
 </body>
