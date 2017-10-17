@@ -32,9 +32,9 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     <a href="/">Home</a>
     <div class="dropdown">
         <div class="dropdown-content">
-            <a href="/event/event">Add Event</a>
-            <a href="/location/location">Add Location</a>
-            <a href="/artist/artist">Add Artist</a>
+            <a href="/event/add">Add Event</a>
+            <a href="/location/add">Add Location</a>
+            <a href="/artist/add">Add Artist</a>
         </div>
     </div>
 </div>
@@ -43,9 +43,13 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <h1>Welcome to IceArt</h1>
 </div>
 
+
 <div class="container well">
     <h2>Leit</h2>
     <form method="GET" action="/search/search" class="form-inline">
+
+<form method="GET" action="/search/" class="form-inline">
+
     <input type="text" name="title" class="form-control" placeholder="Leita" \>
 
     Date begin: <input type="date" name="dateBegin"\><br>
@@ -82,8 +86,8 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
-                <form method="GET" action="event/show">
-                    <button type="submit" value="${event.getId()}" name="id" class="btn btn-default">
+                <form method="GET" action="event/${event.getId()}">
+                    <button type="submit" class="btn btn-default">
                         Nánar
                     </button>
                 </form>

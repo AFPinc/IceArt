@@ -37,7 +37,7 @@ public class SearchController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getEventByTitle(@RequestParam(value = "title", required = false) String title, ModelMap model) {
         List<Event> events = service.getEventByTitle(title);
         model.addAttribute("events", events);

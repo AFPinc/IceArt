@@ -29,28 +29,20 @@
 
 <div class="navbar">
     <a href="/">Home</a>
-    <a href="/event/event">Add Event</a>
-    <a href="/location/location">Add Location</a>
-    <a href="/artist/artist">Add Artist</a>
+    <a href="/event/add">Add Event</a>
+    <a href="/location/add">Add Location</a>
+    <a href="/artist/add">Add Artist</a>
 </div>
 
 <h1>Add a new artist</h1>
 
-<form action="/artist/add" method="POST">
+<form action="/artist/artist" method="POST">
     Name: <input type="text" name="name"><br>
     Age: <input type="text" name="age"><br>
     Country: <input type="text" name="country"><br>
     Description: <textarea type="text" name="description"></textarea><br>
 
     <input type="submit" class="newwhitebtn" value="Add"/>
-</form>
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
 </form>
 
 </body>

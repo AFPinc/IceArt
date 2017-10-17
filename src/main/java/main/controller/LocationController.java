@@ -29,7 +29,7 @@ public class LocationController {
      * Þetta fall birtir AddLocation síðuna
      * @return
      */
-    @RequestMapping(value = "/location")
+    @RequestMapping(value = "/add")
     public String showPage(){
         return "view/AddLocation";
     }
@@ -43,7 +43,7 @@ public class LocationController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/location", method = RequestMethod.POST)
     public String addLocation(@RequestParam(value = "name", required=false) String name,
                               @RequestParam(value = "description") String description,
                               @RequestParam(value = "openHours") String openHours,

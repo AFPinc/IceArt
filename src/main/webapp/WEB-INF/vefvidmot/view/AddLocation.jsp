@@ -27,14 +27,14 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <div class="navbar">
     <a href="/">Home</a>
-    <a href="/event/event">Add Event</a>
-    <a href="/location/location">Add Location</a>
-    <a href="/artist/artist">Add Artist</a>
+    <a href="/event/add">Add Event</a>
+    <a href="/location/add">Add Location</a>
+    <a href="/artist/add">Add Artist</a>
 </div>
 
 <h1>Add a new location</h1>
 
-<form action="/location/add" method="POST">
+<form action="/location/location" method="POST">
     Name of location: <input type="text" name="name"\><br>
     Opening hours: <input type="text" name="openHours"\><br>
     Max people: <input type="text" name="maxPeople"\><br>
@@ -42,14 +42,6 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
     <input type="submit" class="newwhitebtn" value="Add"/>
 
-</form>
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
 </form>
 
 </body>

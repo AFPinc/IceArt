@@ -16,55 +16,43 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
 <html lang="is">
 
 <head>
     <meta charset="UTF-8">
     <title>Event</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/mainpage.css"/>"/>
 </head>
 <body>
 
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/event/add">Add Event</a>
+    <a href="/location/add">Add Location</a>
+    <a href="/artist/add">Add Artist</a>
+</div>
+
 <c:choose>
     <c:when test="${not empty events}">
-        <table class="events">
-            <thead>
-            <tr>
-                <th>Title</th>
-                <th>Location</th>
-                <th>From</th>
-                <th>To</th>
-                <th>Artist</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <c:forEach var ="event" items="${events}">
-                <tr>
-                    <td>${event.getTitle()} </td>
-                    <td>${event.getLocation()}</td>
-                    <td>${event.getTimeBegin()} </td>
-                    <td>${event.getTimeEnd()}</td>
-                    <td>${event.getArtist()} </td>
-                    <td>${event.getDescription()}</td>
-                </tr>
-            </c:forEach>
-        </table>
+        <c:forEach var ="event" items="${events}">
+            <div class="container well">
+                <h3>${event.getTitle()}</h3><br>
+                <p>${event.getArtist()} - ${event.getLocation()}</p><br>
+                <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
+                <form method="GET" action="../event/${event.getId()}">
+                    <button type="submit" class="btn btn-default">
+                        Nánar
+                    </button>
+                </form>
+            </div>
+            <br>
+        </c:forEach>
     </c:when>
     <c:otherwise>
         <h3> No events</h3>
     </c:otherwise>
 </c:choose>
-
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
-</form>
-
 
 </body>
 

@@ -28,7 +28,7 @@ public class ArtistController {
      * Birtir addArtist síðuna
      * @return
      */
-    @RequestMapping(value = "/artist")
+    @RequestMapping(value = "/add")
     public String showPage(){
         return "view/AddArtist";
     }
@@ -42,7 +42,7 @@ public class ArtistController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/artist", method = RequestMethod.POST)
     public String addArtist(@RequestParam(value = "name", required=false) String name,
                             @RequestParam(value = "description") String description,
                             @RequestParam(value = "age") int age,
