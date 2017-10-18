@@ -43,7 +43,7 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
 
     List<Event> findByTitleContaining(String title);
 
-    List<Event> findByTitleContainingAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqual(String title, Long category_id, Date dateEnd, Date dateBegin);
+    List<Event> findByTitleContainingAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndTimeBeginLessThanEqualAndTimeEndGreaterThanEqual(String title, Long category_id, Date dateEnd, Date dateBegin, Date timeEnd, Date timeBegin);
 
 
     /**

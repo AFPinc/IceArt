@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.ModelMap;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -40,22 +41,23 @@ public class SearchController {
      * @return
      */
 
-/*
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String getEventByTitle(@RequestParam(value = "title", required = false) String title, ModelMap model) {
-        List<Event> events = service.getEventByTitle(title);
-        model.addAttribute("events", events);
-        return "view/ShowAllEvent";
-    }
-*/
-
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String search(@RequestParam(value = "title", required = false) String title,
                          @RequestParam(value = "category", required = false) Long category_id,
                          @RequestParam(value = "dateBegin", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
                          @RequestParam(value = "dateEnd", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
+                         @RequestParam(value = "timeBegin", required = true) @DateTimeFormat(pattern="HH:mm") Date timeBegin,
+                         @RequestParam(value = "timeEnd", required = true) @DateTimeFormat(pattern="HH:mm") Date timeEnd,
                          ModelMap model) {
-        List<Event> events = service.search(title, category_id, dateBegin, dateEnd);
+        Calendar c = Calendar.getInstance();
+        c.setTime(timeEnd);
+        c.add(Calendar.DATE, 1);
+        timeEnd = c.getTime();
+        c.setTime(timeBegin);
+        c.add(Calendar.DATE, -1);
+        timeBegin = c.getTime();
+
+        List<Event> events = service.search(title, category_id, dateBegin, dateEnd, timeBegin, timeEnd);
         model.addAttribute("events", events);
         return "view/ShowAllEvent";
     }

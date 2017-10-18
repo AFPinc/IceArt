@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -58,6 +59,14 @@ public class EventController {
                            @RequestParam(value = "category") Long categoryId,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
+        Calendar c = Calendar.getInstance();
+        c.setTime(timeEnd);
+        c.add(Calendar.DATE, 1);
+        timeEnd = c.getTime();
+        c.setTime(timeBegin);
+        c.add(Calendar.DATE, 1);
+        timeBegin = c.getTime();
+
         Location location = service.getLocationById(locationId);
         Artist artist = service.getArtistById(artistId);
         Category category = service.getCategoryById(categoryId);

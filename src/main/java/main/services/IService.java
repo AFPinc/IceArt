@@ -49,7 +49,7 @@ public interface IService {
      * @return
      */
 
-    List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd);
+    List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd, Date timeBegin, Date timeEnd);
 
     /**
      * fall sem vistar staðsetningu
