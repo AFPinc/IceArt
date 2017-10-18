@@ -27,7 +27,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainPage.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="425">
@@ -39,16 +39,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static.css/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -56,8 +46,8 @@
           <file leaf-file-name="AddArtist.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="18" />
+                <state relative-caret-position="167">
+                  <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -66,8 +56,8 @@
           <file leaf-file-name="ShowEvent.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+                <state relative-caret-position="563">
+                  <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -685,7 +675,7 @@
       <workItem from="1507891506627" duration="12723000" />
       <workItem from="1508070476799" duration="238000" />
       <workItem from="1508248769745" duration="5000" />
-      <workItem from="1508327981829" duration="5033000" />
+      <workItem from="1508327981829" duration="5285000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -855,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508334746920</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="komið nýja lúkkið á showEvent">
+      <created>1508335053025</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1508335053025</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81916000" />
+    <option name="totallyTimeSpent" value="82168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -873,7 +870,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33820224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33820224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280899" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -922,7 +919,8 @@
     <MESSAGE value="Laga navigation á mainpage" />
     <MESSAGE value="Óþarfa takkar á AddArtist, AddLoc og AddEvent farnir. Allir Add takkar í navbar núnar" />
     <MESSAGE value="kominn nav bara í showevent" />
-    <option name="LAST_COMMIT_MESSAGE" value="kominn nav bara í showevent" />
+    <MESSAGE value="komið nýja lúkkið á showEvent" />
+    <option name="LAST_COMMIT_MESSAGE" value="komið nýja lúkkið á showEvent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1079,14 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/showArtist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="204" lean-forward="false" selection-start-line="19" selection-start-column="204" selection-end-line="19" selection-end-column="204" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Search.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Error.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1173,16 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-          <folding>
-            <marker date="1508331846705" expanded="true" signature="2934:2953" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
@@ -1199,18 +1179,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/showArtist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="19" column="204" lean-forward="false" selection-start-line="19" selection-start-column="204" selection-end-line="19" selection-end-column="204" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <folding>
+            <marker date="1508331846705" expanded="true" signature="2934:2953" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="18" />
+        <state relative-caret-position="167">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        <state relative-caret-position="563">
+          <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
           <folding />
         </state>
       </provider>

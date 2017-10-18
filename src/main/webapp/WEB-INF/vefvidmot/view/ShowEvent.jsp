@@ -39,18 +39,15 @@
 </div>
 
 <div class="addDiv">
-
-<h1>Info</h1>
-<p><strong>Title:</strong>${event.getTitle()}</p>
-<p><strong>Location:</strong>${event.getLocation()}</p>
-<p><strong>From:</strong>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
-<p><strong>To:</strong>${event.getDateEnd()} - ${event.getTimeEnd()}</p>
-<p><strong>Artist:</strong>${event.getArtist()}</p>
-<p><strong>Category:</strong>${event.getCategory()}</p>
-<p><strong>Description:</strong>${event.getDescription()}</p>
-
+    <h1>Info</h1>
+    <p><strong>Title:</strong>${event.getTitle()}</p>
+    <p><strong>Location:</strong>${event.getLocation()}</p>
+    <p><strong>From:</strong>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
+    <p><strong>To:</strong>${event.getDateEnd()} - ${event.getTimeEnd()}</p>
+    <p><strong>Artist:</strong>${event.getArtist()}</p>
+    <p><strong>Category:</strong>${event.getCategory()}</p>
+    <p><strong>Description:</strong>${event.getDescription()}</p>
 </div>
-
 
 </body>
 
