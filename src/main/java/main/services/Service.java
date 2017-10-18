@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -55,8 +56,8 @@ public class Service implements IService{
     }
 
     @Override
-    public List<Event> getEventByTitleAndCategory(String title, Long id) {
-        return eventRepo.findByTitleContainingAndCategory(title, id);
+    public List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd) {
+        return eventRepo.findByTitleContainingAndCategoryIdAndDateBeginBetween(title, category_id, dateBegin, dateEnd);
     }
 
     @Override

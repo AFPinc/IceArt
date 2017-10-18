@@ -5,6 +5,7 @@ import main.model.Event;
 import main.model.Location;
 import main.model.Category;
 
+import java.util.Date;
 import java.util.List;
 
 public interface IService {
@@ -44,11 +45,11 @@ public interface IService {
     /**
      * fall sem nær í eventa eftir titli og flokk
      * @param title
-     * @param id
+     * @param category_id
      * @return
      */
 
-    List<Event> getEventByTitleAndCategory(String title, Long id);
+    List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd);
 
     /**
      * fall sem vistar staðsetningu

@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -42,7 +43,7 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
 
     List<Event> findByTitleContaining(String title);
 
-    List<Event> findByTitleContainingAndCategory(String title, Long id);
+    List<Event> findByTitleContainingAndCategoryIdAndDateBeginBetween(String title, Long category_id, Date dateBegin, Date dateEnd);
 
 
     /**
