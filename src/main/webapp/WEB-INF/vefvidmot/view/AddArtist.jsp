@@ -37,13 +37,36 @@
 <div class="addDiv">
     <h1>Add a new artist</h1>
 
-    <form action="/artist/artist" method="POST">
-        Name: <input type="text" name="name"><br>
-        Age: <input type="text" name="age"><br>
-        Country: <input type="text" name="country"><br>
-        Description: <textarea type="text" name="description"></textarea><br>
-
-        <input type="submit" class="newwhitebtn" value="Add"/>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age" class="col-sm-2 control-label">Age:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="age" name="age">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="country" class="col-sm-2 control-label">Country:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="country" name="country">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-sm-2 control-label">Description:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="description" name="description">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Add</button>
+            </div>
+        </div>
     </form>
 </div>
 

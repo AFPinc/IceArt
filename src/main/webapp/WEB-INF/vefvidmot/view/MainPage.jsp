@@ -40,47 +40,70 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 </div>
 
 <div class="container">
-<h1>Welcome to IceArt</h1>
+    <h1>Welcome to IceArt</h1>
 </div>
 
 
-<div class="container well">
-    <h2>Search event</h2>
-    <form method="GET" action="/search/" class="form-inline">
-
-    <input type="text" name="title" class="form-control" placeholder="Search" \><br>
-
-    Date begin: <input type="date" name="dateBegin"\><br>
-    Time begin: <input type="time" name="timeBegin"\><br>
-    Date end: <input type="date" name="dateEnd"\><br>
-    Time end: <input type="time" name="timeEnd"\><br>
-
-    Choose Category:
-        <c:choose>
-        <c:when test="${not empty categories}">
-        <select name="category">
-            <c:forEach var="category" items="${categories}">
-                <option value="${category.getId()}">${category.getTitle()}</option>
-            </c:forEach>
-        </select>
-        </c:when>
-        <c:otherwise>
-        Enginn flokkur hefur verið skráður.<br>
-        </c:otherwise>
-        </c:choose><br>
-
-    <button type="submit" value="Search" class="btn btn-default">
-        <span class="glyphicon glyphicon-search"></span> Search
-    </button>
-    </form><br>
+<div class="container ">
+    <form method="GET" action="/search/">
+        <div class="form-group col-xs-4 col-md-4">
+            <div class="form-group row">
+                <label for="search" class="control-label">Leita</label>
+                <input type="text" name="title" id="search" class="form-control" placeholder="Search" \>
+            </div>
+            <div class="form-group row">
+                <label for="category" class="control-label">Category:</label>
+                <c:choose>
+                    <c:when test="${not empty categories}">
+                        <select name="category" id="category" class="form-control">
+                            <c:forEach var="category" items="${categories}">
+                                <option value="${category.getId()}">${category.getTitle()}</option>
+                            </c:forEach>
+                        </select><br>
+                    </c:when>
+                    <c:otherwise>
+                        Enginn flokkur hefur verið skráður.<br>
+                    </c:otherwise>
+                </c:choose>
+            </div>
+            <button type="submit" value="Search" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+        </div>
+        <div class="form-group col-xs-8 col-md-8">
+            <label for="dateBegin" class="control-label">Dagsetning</label>
+            <div class="form-group row">
+                <div class="col-md-5">
+                    <input type="date" class="form-control" id="dateBegin" name="dateBegin">
+                </div>
+                <label for="dateEnd" class="col-md-1 control-label"> - </label>
+                <div class="col-md-5">
+                    <input type="date" class="form-control" id="dateEnd" name="dateEnd">
+                </div>
+            </div>
+            <label for="timeBegin" class="control-label">Tími</label>
+            <div class="form-group row">
+                <div class="col-md-5">
+                    <input type="time" class="form-control" id="timeBegin" name="timeBegin">
+                </div>
+                <label for="timeEnd" class="col-md-1 control-label"> - </label>
+                <div class="col-md-5">
+                    <input type="time" class="form-control" id="timeEnd" name="timeEnd">
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
 </div>
 
+<div class="container">
+    <h2>Viðburðir</h2>
+</div>
 
 <c:choose>
     <c:when test="${not empty events}">
         <c:forEach var ="event" items="${events}">
             <div class="container well">
-                <h2>Viðburðir</h2>
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>

@@ -35,14 +35,36 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="addDiv">
     <h1>Add a new location</h1>
 
-    <form action="/location/location" method="POST">
-        Name of location: <input type="text" name="name"\><br>
-        Opening hours: <input type="text" name="openHours"\><br>
-        Max people: <input type="text" name="maxPeople"\><br>
-        Description: <textarea type="text" name="description"\></textarea><br>
-
-        <input type="submit" class="newwhitebtn" value="Add"/>
-
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="openHours" class="col-sm-2 control-label">Opening hours:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="openHours" name="openHours">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="maxPeople" class="col-sm-2 control-label">Max people:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="maxPeople" name="maxPeople">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-sm-2 control-label">Description:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="description" name="description">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Add</button>
+            </div>
+        </div>
     </form>
 </div>
 

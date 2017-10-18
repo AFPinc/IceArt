@@ -14,10 +14,9 @@
 }
 
 .addDiv {
-    background-color: beige;
     margin: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    padding-top: 2%;
-    font-family: monospace;
+}
+
+body {
+    background-color: beige;
 }
