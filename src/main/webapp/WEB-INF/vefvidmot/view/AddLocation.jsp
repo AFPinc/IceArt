@@ -32,17 +32,19 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     <a href="/artist/add">Add Artist</a>
 </div>
 
-<h1>Add a new location</h1>
+<div class="addLocationDiv">
+    <h1>Add a new location</h1>
 
-<form action="/location/location" method="POST">
-    Name of location: <input type="text" name="name"\><br>
-    Opening hours: <input type="text" name="openHours"\><br>
-    Max people: <input type="text" name="maxPeople"\><br>
-    Description: <textarea type="text" name="description"\></textarea><br>
+    <form action="/location/location" method="POST">
+        Name of location: <input type="text" name="name"\><br>
+        Opening hours: <input type="text" name="openHours"\><br>
+        Max people: <input type="text" name="maxPeople"\><br>
+        Description: <textarea type="text" name="description"\></textarea><br>
 
-    <input type="submit" class="newwhitebtn" value="Add"/>
+        <input type="submit" class="newwhitebtn" value="Add"/>
 
-</form>
+    </form>
+</div>
 
 </body>
 

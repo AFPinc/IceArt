@@ -16,6 +16,8 @@
 .addEventDiv {
     background-color: beige;
     margin: 5%;
-    padding: 5%;
-    display: flex;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    font-family: monospace;
 }

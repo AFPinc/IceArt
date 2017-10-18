@@ -12,3 +12,10 @@
     padding: 14px 16px;
     text-decoration: none;
 }
+
+.addLocationDiv {
+    background-color: beige;
+    margin: 5%;
+    padding: 5%;
+    font-family: monospace;
+}

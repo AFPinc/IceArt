@@ -38,7 +38,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="addEventDiv">
     <h1>Add a new event</h1>
 
-    <form action="/event/add" method="POST">
+    <form action="/event/event" method="POST">
         Title: <input type="text" name="title"\><br>
 
         Location:
@@ -88,9 +88,10 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             </c:otherwise>
         </c:choose>
 
+
         Description: <textarea type="text" name="description"\></textarea><br>
 
-        <input type="submit" value="Submit"/>
+        <button type="submit" value="Submit" class="btn btn-default">Add</button>
     </form>
 </div>
 

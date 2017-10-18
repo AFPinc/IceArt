@@ -45,12 +45,10 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 
 <div class="container well">
-    <h2>Leit</h2>
-    <form method="GET" action="/search/search" class="form-inline">
+    <h2>Search event</h2>
+    <form method="GET" action="/search" class="form-inline">
 
-<form method="GET" action="/search/" class="form-inline">
-
-    <input type="text" name="title" class="form-control" placeholder="Leita" \>
+    <input type="text" name="title" class="form-control" placeholder="Search" \><br>
 
     Date begin: <input type="date" name="dateBegin"\><br>
     Time begin: <input type="time" name="timeBegin"\><br>
@@ -69,10 +67,10 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         <c:otherwise>
         Enginn flokkur hefur verið skráður.<br>
         </c:otherwise>
-        </c:choose>
+        </c:choose><br>
 
     <button type="submit" value="Search" class="btn btn-default">
-        <span class="glyphicon glyphicon-search"></span>
+        <span class="glyphicon glyphicon-search"></span> Search
     </button>
     </form><br>
 </div>

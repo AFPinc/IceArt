@@ -34,16 +34,18 @@
     <a href="/artist/add">Add Artist</a>
 </div>
 
-<h1>Add a new artist</h1>
+<div class="addArtistDiv">
+    <h1>Add a new artist</h1>
 
-<form action="/artist/artist" method="POST">
-    Name: <input type="text" name="name"><br>
-    Age: <input type="text" name="age"><br>
-    Country: <input type="text" name="country"><br>
-    Description: <textarea type="text" name="description"></textarea><br>
+    <form action="/artist/artist" method="POST">
+        Name: <input type="text" name="name"><br>
+        Age: <input type="text" name="age"><br>
+        Country: <input type="text" name="country"><br>
+        Description: <textarea type="text" name="description"></textarea><br>
 
-    <input type="submit" class="newwhitebtn" value="Add"/>
-</form>
+        <input type="submit" class="newwhitebtn" value="Add"/>
+    </form>
+</div>
 
 </body>
 
