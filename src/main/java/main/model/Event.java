@@ -122,6 +122,8 @@ public class Event {
 
     public Long getArtistId() { return artist.getId(); }
 
+    public Long getLocationId() { return location.getId(); }
+
     public String getDateBegin() {
         SimpleDateFormat sdf = new SimpleDateFormat("d.MMM yyyy");
         return sdf.format(dateBegin);

@@ -53,7 +53,7 @@
             Nánar um listamann
         </button>
     </form>
-    <form method="GET" action="../location/${event.getId()}">
+    <form method="GET" action="../location/${event.getLocationId()}">
         <button type="submit" class="btn btn-default">
             Nánar um staðsetningu
         </button>
