@@ -16,30 +16,34 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
 <html lang="is">
 
 <head>
     <meta charset="UTF-8">
     <title>Location</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/main.css"/>"/>
 </head>
+
 <body>
 
-<h1>Info</h1>
-<p><strong>Name:</strong> ${location.getName()}</p>
-<p><strong>Open Hours:</strong> ${location.getOpenHours()}</p>
-<p><strong>Max People:</strong> ${location.getMaxPeople()}</p>
-<p><strong>Description:</strong> ${location.getDescription()}</p>
+<div class="navbar">
+    <a href="/">Home</a>
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <a href="/event/add">Add Event</a>
+            <a href="/location/add">Add Location</a>
+            <a href="/artist/add">Add Artist</a>
+        </div>
+    </div>
+</div>
 
-<form method="POST" action="/event/event">
-    <input type="submit" value="Add Event"/>
-</form>
-
-<form method="POST" action="/">
-    <input type="submit" value="Back to home"/>
-</form>
+<div class="addDiv">
+    <h1>Info</h1>
+    <p><strong>Name:</strong> ${location.getName()}</p>
+    <p><strong>Open Hours:</strong> ${location.getOpenHours()}</p>
+    <p><strong>Max People:</strong> ${location.getMaxPeople()}</p>
+    <p><strong>Description:</strong> ${location.getDescription()}</p>
 
 </body>
 

@@ -47,6 +47,15 @@
     <p><strong>Artist:</strong>${event.getArtist()}</p>
     <p><strong>Category:</strong>${event.getCategory()}</p>
     <p><strong>Description:</strong>${event.getDescription()}</p>
+
+    <form method="POST" action="/artist/show">
+        <input type="submit" value="More about the artist"/>
+    </form>
+
+    <form method="POST" action="/location/show">
+        <input type="submit" value="More about the location"/>
+    </form>
+
 </div>
 
 </body>
