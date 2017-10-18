@@ -84,11 +84,11 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             <div class="col-sm-10">
                 <div class="form-group row">
                     <div class="col-md-4">
-                        <input type="date" class="form-control" id="dateBegin" name="dateBegin">
+                        <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="2017-01-01">
                     </div>
                     <label for="dateEnd" class="col-md-1 control-label"> - </label>
                     <div class="col-md-4">
-                        <input type="date" class="form-control" id="dateEnd" name="dateEnd">
+                        <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="2018-01-01">
                     </div>
                 </div>
             </div>
