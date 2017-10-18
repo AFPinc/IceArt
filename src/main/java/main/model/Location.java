@@ -63,6 +63,8 @@ public class Location {
         return id;
     }
 
+    public Long getLocationId() { return id; }
+
     public String getName() {
         return name;
     }

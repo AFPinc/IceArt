@@ -5,6 +5,7 @@ import main.services.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -67,8 +68,8 @@ public class ArtistController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/show", method = RequestMethod.GET)
-    public String getArtistById(@RequestParam(value = "id", required=false) Long id, ModelMap model){
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public String getArtistById(@PathVariable(value = "id") Long id, ModelMap model){
         Artist artist = service.getArtistById(id);
         model.addAttribute("artist", artist);
         return "view/showArtist";

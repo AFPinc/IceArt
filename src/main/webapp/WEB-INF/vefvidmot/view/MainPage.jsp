@@ -107,6 +107,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
+
                 <form method="GET" action="event/${event.getId()}">
                     <button type="submit" class="btn btn-default">
                         Nánar

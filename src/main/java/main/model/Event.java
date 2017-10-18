@@ -120,6 +120,8 @@ public class Event {
         return artist.getName();
     }
 
+    public Long getArtistId() { return artist.getId(); }
+
     public String getDateBegin() {
         SimpleDateFormat sdf = new SimpleDateFormat("d.MMM yyyy");
         return sdf.format(dateBegin);

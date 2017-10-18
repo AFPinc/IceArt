@@ -48,12 +48,15 @@
     <p><strong>Category:</strong>${event.getCategory()}</p>
     <p><strong>Description:</strong>${event.getDescription()}</p>
 
-    <form method="POST" action="/artist/show">
-        <input type="submit" value="More about the artist"/>
+    <form method="GET" action="../artist/${event.getArtistId()}">
+        <button type="submit" class="btn btn-default">
+            Nánar um listamann
+        </button>
     </form>
-
-    <form method="POST" action="/location/show">
-        <input type="submit" value="More about the location"/>
+    <form method="GET" action="../location/${event.getId()}">
+        <button type="submit" class="btn btn-default">
+            Nánar um staðsetningu
+        </button>
     </form>
 
 </div>
