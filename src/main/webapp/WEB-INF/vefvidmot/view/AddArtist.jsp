@@ -37,7 +37,7 @@
 <div class="addDiv">
     <h1>Add a new artist</h1>
 
-    <form class="form-horizontal" action="/artist/artist" method="POST">
+    <form class="form-horizontal" action="/artist/artist" method="POST" id="addArtist" >
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name:</label>
             <div class="col-sm-10">
@@ -59,7 +59,7 @@
         <div class="form-group">
             <label for="description" class="col-sm-2 control-label">Description:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="..." id="description" name="description" pattern=".{1,100}" required>
+                <textarea form="addArtist" class="form-control" placeholder="..." name="description" id="description" cols="35" wrap="soft"  pattern=".{1,100}" required></textarea>
             </div>
         </div>
         <div class="form-group">

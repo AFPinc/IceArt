@@ -35,7 +35,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="addDiv">
     <h1>Add a new location</h1>
 
-    <form class="form-horizontal" action="/location/location" method="POST">
+    <form class="form-horizontal" id="addLocation" action="/location/location" method="POST">
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name:</label>
             <div class="col-sm-10">
@@ -57,7 +57,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         <div class="form-group">
             <label for="description" class="col-sm-2 control-label">Description:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="..." id="description" name="description" pattern=".{1,50}" required>
+                <textarea form="addLocation" class="form-control" placeholder="..." name="description" id="description" cols="35" wrap="soft"></textarea>
             </div>
         </div>
         <div class="form-group">
