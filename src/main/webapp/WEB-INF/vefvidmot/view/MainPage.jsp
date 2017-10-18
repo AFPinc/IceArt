@@ -46,7 +46,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <div class="container well">
     <h2>Search event</h2>
-    <form method="GET" action="/search" class="form-inline">
+    <form method="GET" action="/search/" class="form-inline">
 
     <input type="text" name="title" class="form-control" placeholder="Search" \><br>
 

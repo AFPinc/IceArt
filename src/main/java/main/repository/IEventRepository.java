@@ -42,6 +42,8 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
 
     List<Event> findByTitleContaining(String title);
 
+    List<Event> findByTitleContainingAndCategory(String title, Long id);
+
 
     /**
      *  Nær í 10 event.

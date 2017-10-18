@@ -37,12 +37,23 @@ public class SearchController {
      * @param model
      * @return
      */
+
+/*
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getEventByTitle(@RequestParam(value = "title", required = false) String title, ModelMap model) {
         List<Event> events = service.getEventByTitle(title);
         model.addAttribute("events", events);
         return "view/ShowAllEvent";
     }
+*/
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String getEventByTitleAndCategory(@RequestParam(value = "title", required = false) String title, @RequestParam(value = "id", required = false) Long id, ModelMap model) {
+        List<Event> events = service.getEventByTitleAndCategory(title, id);
+        model.addAttribute("events", events);
+        return "view/ShowAllEvent";
+    }
+
 
     //Þetta fall sér um að leita af Staðsetningu og skila niðurstöðunum.
     public void searchLocation(){

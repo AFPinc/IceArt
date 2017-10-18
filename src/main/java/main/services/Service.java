@@ -55,6 +55,11 @@ public class Service implements IService{
     }
 
     @Override
+    public List<Event> getEventByTitleAndCategory(String title, Long id) {
+        return eventRepo.findByTitleContainingAndCategory(title, id);
+    }
+
+    @Override
     public List<Event> getAllEvents() { return eventRepo.findAll(); }
 
     @Override

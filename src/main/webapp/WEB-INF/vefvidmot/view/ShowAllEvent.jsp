@@ -40,6 +40,7 @@
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
+                <p> ${event.getCategory()}${category.getTitle()}</p>
                 <form method="GET" action="../event/${event.getId()}">
                     <button type="submit" class="btn btn-default">
                         Nánar

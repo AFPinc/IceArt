@@ -42,6 +42,15 @@ public interface IService {
     List<Event> getTop10Events();
 
     /**
+     * fall sem nær í eventa eftir titli og flokk
+     * @param title
+     * @param id
+     * @return
+     */
+
+    List<Event> getEventByTitleAndCategory(String title, Long id);
+
+    /**
      * fall sem vistar staðsetningu
      * @param location
      * @return
