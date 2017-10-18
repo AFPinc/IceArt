@@ -20,17 +20,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Event</title>
+    <title>Main Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/mainpage.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/main.css"/>" as=""/>
 </head>
+
 <body>
 
 <div class="navbar">
     <a href="/">Home</a>
-    <a href="/event/add">Add Event</a>
-    <a href="/location/add">Add Location</a>
-    <a href="/artist/add">Add Artist</a>
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <a href="/event/add">Add Event</a>
+            <a href="/location/add">Add Location</a>
+            <a href="/artist/add">Add Artist</a>
+        </div>
+    </div>
 </div>
 
 <c:choose>
