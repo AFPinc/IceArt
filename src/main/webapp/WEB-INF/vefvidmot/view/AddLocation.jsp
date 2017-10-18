@@ -35,29 +35,29 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <div class="addDiv">
     <h1>Add a new location</h1>
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="/location/location" method="POST">
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="name" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Name" id="name" name="name" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="openHours" class="col-sm-2 control-label">Opening hours:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="openHours" name="openHours" pattern="(([01]?[0-9]|2[0-3]):[0-5][0-9])-(([01]?[0-9]|2[0-3]):[0-5][0-9])" required>
+                <input type="text" class="form-control" placeholder="08:00-12:00" id="openHours" name="openHours" pattern="(([01]?[0-9]|2[0-3]):[0-5][0-9])-(([01]?[0-9]|2[0-3]):[0-5][0-9])" required>
             </div>
         </div>
         <div class="form-group">
             <label for="maxPeople" class="col-sm-2 control-label">Max people:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="maxPeople" name="maxPeople" pattern=".{1,10000000}" required>
+                <input type="text" class="form-control" placeholder="100" id="maxPeople" name="maxPeople" pattern=".{1,10000000}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="description" class="col-sm-2 control-label">Description:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="description" name="description" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="..." id="description" name="description" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">

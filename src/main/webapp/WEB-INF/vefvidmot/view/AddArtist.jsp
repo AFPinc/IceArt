@@ -37,29 +37,29 @@
 <div class="addDiv">
     <h1>Add a new artist</h1>
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="/artist/artist" method="POST">
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="name" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Name" id="name" name="name" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="age" class="col-sm-2 control-label">Age:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="age" name="age" pattern="\d{1,2}" required>
+                <input type="text" class="form-control" placeholder="35" id="age" name="age" pattern="\d{1,2}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="country" class="col-sm-2 control-label">Country:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="country" name="country" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Iceland" id="country" name="country" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="description" class="col-sm-2 control-label">Description:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="description" name="description" pattern=".{1,100}" required>
+                <input type="text" class="form-control" placeholder="..." id="description" name="description" pattern=".{1,100}" required>
             </div>
         </div>
         <div class="form-group">

@@ -42,7 +42,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         <div class="form-group">
             <label for="title" class="col-sm-2 control-label">Name:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="title" name="title" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Name" id="title" name="title" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
@@ -127,7 +127,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         <div class="form-group">
             <label for="description" class="col-sm-2 control-label">Description:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="description" name="description" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="..." id="description" name="description" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
