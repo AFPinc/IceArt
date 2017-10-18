@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,38 +20,8 @@
           <file leaf-file-name="AddEvent.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
+                <state relative-caret-position="1700">
                   <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-                  <folding>
-                    <marker date="1508331846675" expanded="true" signature="1137:3295" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1141:3196" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1218:3189" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1309:1766" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1360:1645" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1401:1619" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1469:1593" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1667:1746" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1810:2266" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1859:2134" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1898:2108" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="1962:2082" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="2160:2246" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="2545:3013" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="2597:2884" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="2638:2858" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="2707:2832" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="2910:2993" ph="..." />
-                    <marker date="1508331846675" expanded="true" signature="3229:3286" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AddArtist.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="950">
-                  <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -84,11 +53,21 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="AddArtist.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="ShowEvent.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="575">
+                  <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -115,6 +94,7 @@
       <find>addEvent</find>
       <find>model</find>
       <find>body</find>
+      <find>addDi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -705,7 +685,7 @@
       <workItem from="1507891506627" duration="12723000" />
       <workItem from="1508070476799" duration="238000" />
       <workItem from="1508248769745" duration="5000" />
-      <workItem from="1508327981829" duration="4725000" />
+      <workItem from="1508327981829" duration="5033000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -868,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507911983985</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="kominn nav bara í showevent">
+      <created>1508334746920</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1508334746920</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81608000" />
+    <option name="totallyTimeSpent" value="81916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -886,7 +873,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33820224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33820224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280899" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -934,7 +921,8 @@
     <MESSAGE value="headers komnir alls staðar!" />
     <MESSAGE value="Laga navigation á mainpage" />
     <MESSAGE value="Óþarfa takkar á AddArtist, AddLoc og AddEvent farnir. Allir Add takkar í navbar núnar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Óþarfa takkar á AddArtist, AddLoc og AddEvent farnir. Allir Add takkar í navbar núnar" />
+    <MESSAGE value="kominn nav bara í showevent" />
+    <option name="LAST_COMMIT_MESSAGE" value="kominn nav bara í showevent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1177,54 +1165,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-          <folding>
-            <marker date="1508331846675" expanded="true" signature="1137:3295" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1141:3196" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1218:3189" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1309:1766" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1360:1645" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1401:1619" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1469:1593" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1667:1746" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1810:2266" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1859:2134" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1898:2108" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="1962:2082" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="2160:2246" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="2545:3013" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="2597:2884" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="2638:2858" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="2707:2832" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="2910:2993" ph="..." />
-            <marker date="1508331846675" expanded="true" signature="3229:3286" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1239,10 +1183,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddEvent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static.css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/AddArtist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
           <folding />
         </state>
       </provider>

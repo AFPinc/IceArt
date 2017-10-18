@@ -38,6 +38,8 @@
     </div>
 </div>
 
+<div class="addDiv">
+
 <h1>Info</h1>
 <p><strong>Title:</strong>${event.getTitle()}</p>
 <p><strong>Location:</strong>${event.getLocation()}</p>
@@ -47,7 +49,7 @@
 <p><strong>Category:</strong>${event.getCategory()}</p>
 <p><strong>Description:</strong>${event.getDescription()}</p>
 
-
+</div>
 
 
 </body>
