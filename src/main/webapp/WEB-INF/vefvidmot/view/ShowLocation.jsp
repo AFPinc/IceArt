@@ -44,6 +44,7 @@
     <p><strong>Open Hours:</strong> ${location.getOpenHours()}</p>
     <p><strong>Max People:</strong> ${location.getMaxPeople()}</p>
     <p><strong>Description:</strong> ${location.getDescription()}</p>
+</div>
 
 </body>
 
