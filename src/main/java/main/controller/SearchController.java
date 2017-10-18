@@ -57,6 +57,8 @@ public class SearchController {
         c.add(Calendar.DATE, -1);
         timeBegin = c.getTime();
 
+        title = "%" + title + "%";
+
         List<Event> events = service.search(title, category_id, dateBegin, dateEnd, timeBegin, timeEnd);
         model.addAttribute("events", events);
         return "view/ShowAllEvent";
