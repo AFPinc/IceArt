@@ -28,22 +28,18 @@
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
-        </div>
-    </div>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <div class="addDiv">
-    <h1>Info</h1>
-    <p><strong>Name:</strong> ${artist.getName()}</p>
-    <p><strong>Age:</strong> ${artist.getAge()}</p>
-    <p><strong>County:</strong> ${artist.getCountry()}</p>
-    <p><strong>Description:</strong>${artist.getDescription()}</p>
+    <h1>Upplýsingar</h1>
+    <p><strong>Nafn: </strong> ${artist.getName()}</p>
+    <p><strong>Aldur: </strong> ${artist.getAge()}</p>
+    <p><strong>Land: </strong> ${artist.getCountry()}</p>
+    <p><strong>Stutt lýsing: </strong>${artist.getDescription()}</p>
 </div>
 
 </body>
