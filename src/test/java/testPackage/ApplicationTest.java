@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.hamcrest.Matchers.containsString;
 /**
  *
- * @author Ebba Þóra Hvannberg
+ * @author Ása Júlía Aðalsteinsdóttir
  * @date október 2017 
  * HBV501G Hugbúnaðarverkefni 1 Háskóli Íslands
  * 
@@ -35,7 +35,7 @@ public class ApplicationTest {
          
         /**
          * Aðferð til að athuga hvort virkar að senda HttpRequest á /ShowEvent
-         * og fá til baka showEvent.html síðuna sem inniheldur strenginn Karl
+         * og fá til baka showEvent.html síðuna sem inniheldur strenginn Beyonce
          */
 	@Test 
         public void ShowEventReturnsBeyonce() throws Exception {
