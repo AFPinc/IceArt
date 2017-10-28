@@ -26,43 +26,43 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <a href="/event/add">Add Event</a>
-    <a href="/location/add">Add Location</a>
-    <a href="/artist/add">Add Artist</a>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <div class="addDiv">
-    <h1>Add a new location</h1>
+    <h1>Skrá nýja staðsetningu</h1>
 
     <form class="form-horizontal" id="addLocation" action="/location/location" method="POST">
         <div class="form-group">
-            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <label for="name" class="col-sm-2 control-label">Nafn:</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" placeholder="Name" id="name" name="name" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="openHours" class="col-sm-2 control-label">Opening hours:</label>
+            <label for="openHours" class="col-sm-2 control-label">Opnunartímar:</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" placeholder="08:00-12:00" id="openHours" name="openHours" pattern="(([01]?[0-9]|2[0-3]):[0-5][0-9])-(([01]?[0-9]|2[0-3]):[0-5][0-9])" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="maxPeople" class="col-sm-2 control-label">Max people:</label>
+            <label for="maxPeople" class="col-sm-2 control-label">Hámarksfjöldi:</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" placeholder="100" id="maxPeople" name="maxPeople" pattern=".{1,10000000}" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="description" class="col-sm-2 control-label">Description:</label>
+            <label for="description" class="col-sm-2 control-label">Stutt lýsing:</label>
             <div class="col-sm-10">
                 <textarea form="addLocation" class="form-control" placeholder="..." name="description" id="description" cols="35" wrap="soft"></textarea>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Add</button>
+                <button type="submit" class="btn btn-default">Skrá</button>
             </div>
         </div>
     </form>

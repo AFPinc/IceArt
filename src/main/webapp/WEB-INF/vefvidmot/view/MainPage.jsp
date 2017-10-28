@@ -30,13 +30,9 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
 <div class="navbar">
     <a href="/">Forsíða</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Skrá viðburð</a>
-            <a href="/location/add">Skrá staðsetningu</a>
-            <a href="/artist/add">Skrá listamann</a>
-        </div>
-    </div>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <div class="container">
