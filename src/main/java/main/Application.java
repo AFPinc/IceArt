@@ -2,6 +2,7 @@ package main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 /**
  * The main class of the project.
@@ -19,10 +20,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
     Valgerður Sigfinnsdóttir - vas30@hi.is
  */
 @SpringBootApplication
-public class Application {
+public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class,args);
     }
-
 }
