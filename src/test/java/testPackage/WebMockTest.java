@@ -1,4 +1,4 @@
-package is.hi.vidmotDaemi;
+package testPackage;
 
 
 import is.hi.vidmotDaemi.controller.KennariController;

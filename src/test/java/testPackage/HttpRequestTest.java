@@ -1,4 +1,4 @@
-package is.hi.vidmotDaemi;
+package testPackage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;

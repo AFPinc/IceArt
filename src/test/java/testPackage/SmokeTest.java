@@ -1,4 +1,4 @@
-package is.hi.vidmotDaemi;
+package testPackage;
 
 import is.hi.vidmotDaemi.controller.KennariController;
 import static org.assertj.core.api.Assertions.assertThat;

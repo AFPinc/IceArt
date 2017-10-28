@@ -1,4 +1,4 @@
-package is.hi.vidmotDaemi;
+package testPackage;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
