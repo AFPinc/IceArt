@@ -103,6 +103,9 @@ public class EventController {
         List<Location> locations = service.getAllLocations();
         List<Artist> artists = service.getAllArtist();
         List<Category> categories = service.getAllCategories();
+
+
+
         model.addAttribute("locations", locations);
         model.addAttribute("artists", artists);
         model.addAttribute("categories", categories);
