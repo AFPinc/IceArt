@@ -29,18 +29,18 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
+    <a href="/">Forsíða</a>
     <div class="dropdown">
         <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
+            <a href="/event/add">Skrá viðburð</a>
+            <a href="/location/add">Skrá staðsetningu</a>
+            <a href="/artist/add">Skrá listamann</a>
         </div>
     </div>
 </div>
 
 <div class="container">
-    <h1>Welcome to IceArt</h1>
+    <h1>IceArt</h1>
 </div>
 
 
@@ -52,7 +52,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
                 <input type="text" name="title" id="search" class="form-control" placeholder="Search" \>
             </div>
             <div class="form-group row">
-                <label for="category" class="control-label">Category:</label>
+                <label for="category" class="control-label">Flokkar</label>
                 <c:choose>
                     <c:when test="${not empty categories}">
                         <select name="category" id="category" class="form-control">
@@ -67,7 +67,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
                 </c:choose>
             </div>
             <button type="submit" value="Search" class="btn btn-default">
-                <span class="glyphicon glyphicon-search"></span> Search
+                <span class="glyphicon glyphicon-search"></span> Leita
             </button>
         </div>
         <div class="form-group col-xs-8 col-md-8">
@@ -118,7 +118,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         </c:forEach>
     </c:when>
     <c:otherwise>
-        <h3> No events</h3>
+        <h3>Engir viðburðir</h3>
     </c:otherwise>
 </c:choose>
 
