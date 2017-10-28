@@ -41,7 +41,7 @@
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Nafn:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Name" id="name" name="name" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Nafn" id="name" name="name" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
@@ -53,7 +53,7 @@
         <div class="form-group">
             <label for="country" class="col-sm-2 control-label">Land:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Iceland" id="country" name="country" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Ísland" id="country" name="country" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">

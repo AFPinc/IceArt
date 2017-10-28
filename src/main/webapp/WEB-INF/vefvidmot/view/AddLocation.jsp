@@ -37,9 +37,9 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 
     <form class="form-horizontal" id="addLocation" action="/location/location" method="POST">
         <div class="form-group">
-            <label for="name" class="col-sm-2 control-label">Nafn:</label>
+            <label for="name" class="col-sm-2 control-label">Staðsetning:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Name" id="name" name="name" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Staðsetning" id="name" name="name" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">

@@ -36,7 +36,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 </div>
 
 <div class="container">
-    <h1>IceArt</h1>
+    <h1>Viðburðarleit IceArt</h1>
 </div>
 
 
@@ -44,11 +44,11 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
     <form method="GET" action="/search/">
         <div class="form-group col-xs-4 col-md-4">
             <div class="form-group row">
-                <label for="search" class="control-label">Leita</label>
-                <input type="text" name="title" id="search" class="form-control" placeholder="Search" \>
+                <label for="search" class="control-label">Leitarorð</label>
+                <input type="text" name="title" id="search" class="form-control" placeholder="Leitarorð" \>
             </div>
             <div class="form-group row">
-                <label for="category" class="control-label">Flokkar</label>
+                <label for="category" class="control-label">Tegund</label>
                 <c:choose>
                     <c:when test="${not empty categories}">
                         <select name="category" id="category" class="form-control">
