@@ -1,6 +1,7 @@
 package testPackage;
 
 import is.hi.vidmotDaemi.controller.KennariController;
+import main.controller.MainController;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
 import org.junit.runner.RunWith;

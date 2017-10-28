@@ -87,6 +87,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.20" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jdt:ecj:3.12.3" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-parent:1.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-parent:1.2.5.RELEASE" level="project" />
   </component>
 </module>

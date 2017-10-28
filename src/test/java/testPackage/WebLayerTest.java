@@ -1,8 +1,8 @@
 package testPackage;
 
 
-import is.hi.vidmotDaemi.controller.KennariController;
-import is.hi.vidmotDaemi.services.DaginnService;
+import main.controller.MainController;
+import main.services.Service;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +17,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.hamcrest.Matchers.containsString;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Bean;
 /**
  *
- * @author Ebba Þóra Hvannberg
+ * @author Melkorka Mjöll
  * @date október 2017 
  * HBV501G Hugbúnaðarverkefni 1 Háskóli Íslands
  * 
@@ -32,7 +31,7 @@ import org.springframework.context.annotation.Bean;
  *  Aðeins veflagið er keyrt upp en ekki allur "context"-inn
  *  Getum beðið um að keyra bara upp KennariController klasann 
  */
-@WebMvcTest (KennariController.class)       
+@WebMvcTest (MainController.class)
                                             
 public class WebLayerTest {
     
@@ -41,7 +40,7 @@ public class WebLayerTest {
         private MockMvc mockMvc;
         
         @MockBean
-        DaginnService kennariService;
+        Service service;
         /**
          * Aðferð til að athuga hvort virkar að senda HttpRequest á listiKennari
          * og fá til baka listiKennara.html síðuna 
