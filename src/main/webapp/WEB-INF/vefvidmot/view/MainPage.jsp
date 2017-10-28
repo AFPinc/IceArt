@@ -70,21 +70,21 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             <label for="dateBegin" class="control-label">Dagsetning</label>
             <div class="form-group row">
                 <div class="col-md-5">
-                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${today}">
+                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${todayDate}">
                 </div>
                 <label for="dateEnd" class="col-md-1 control-label"> - </label>
                 <div class="col-md-5">
-                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${dateInWeek}">
+                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${inWeekDate}">
                 </div>
             </div>
             <label for="timeBegin" class="control-label">Tími</label>
             <div class="form-group row">
                 <div class="col-md-5">
-                    <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${timeToday}">
+                    <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${todayTime}">
                 </div>
                 <label for="timeEnd" class="col-md-1 control-label"> - </label>
                 <div class="col-md-5">
-                    <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${timeInWeek}">
+                    <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${inWeekTime}">
                 </div>
             </div>
         </div>

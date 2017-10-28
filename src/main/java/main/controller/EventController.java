@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -104,11 +105,25 @@ public class EventController {
         List<Artist> artists = service.getAllArtist();
         List<Category> categories = service.getAllCategories();
 
-
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
+        Calendar cal = Calendar.getInstance();
+        Date now = cal.getTime();
+        String todayDate = dateFormat.format(now);
+        String todayTime = timeFormat.format(now);
+        cal.add(Calendar.DATE, 7);
+        cal.add(Calendar.HOUR, 5);
+        Date week = cal.getTime();
+        String inWeekDate = dateFormat.format(week);
+        String inWeekTime = timeFormat.format(week);
 
         model.addAttribute("locations", locations);
         model.addAttribute("artists", artists);
         model.addAttribute("categories", categories);
+        model.addAttribute("todayDate", todayDate);
+        model.addAttribute("todayTime", todayTime);
+        model.addAttribute("inWeekDate", inWeekDate);
+        model.addAttribute("inWeekTime", inWeekTime);
         return "view/AddEvent";
     }
 

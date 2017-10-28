@@ -26,7 +26,14 @@
 </head>
 <body>
 
-<h1 class="container">Þú hefur slegið inn ranga slóð</h1>
+<div class="navbar">
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
+</div>
+
+<h1 class="container">Eitthvað fór úrskeiðis</h1>
 <div class ="container">
     <h3>HTTP ${attrs.status} ${attrs.error}</h3>
     <p>${attrs.message}</p>
