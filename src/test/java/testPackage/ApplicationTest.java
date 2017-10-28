@@ -34,14 +34,14 @@ public class ApplicationTest {
         private MockMvc mockMvc;
          
         /**
-         * Aðferð til að athuga hvort virkar að senda HttpRequest á /nyrKennari
-         * og fá til baka nyrKennari.html síðuna sem inniheldur strenginn Karl
+         * Aðferð til að athuga hvort virkar að senda HttpRequest á /ShowEvent
+         * og fá til baka showEvent.html síðuna sem inniheldur strenginn Karl
          */
 	@Test 
-        public void nyrKennariSkilarKarl() throws Exception {
-        this.mockMvc.perform(get("/nyrKennari"))                
+        public void ShowEventReturnsBeyonce() throws Exception {
+        this.mockMvc.perform(get("/ShowEvent"))
                 .andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("Karl")));
+                .andExpect(content().string(containsString("Beyonce")));
     }
 
 }
