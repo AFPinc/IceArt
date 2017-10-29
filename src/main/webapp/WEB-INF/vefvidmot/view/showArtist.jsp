@@ -35,13 +35,42 @@
 </div>
 
 <div class="addDiv">
-    <h1>Upplýsingar</h1>
-    <p><strong>Nafn: </strong> ${artist.getName()}</p>
-    <p><strong>Aldur: </strong> ${artist.getAge()}</p>
-    <p><strong>Land: </strong> ${artist.getCountry()}</p>
-    <p><strong>Stutt lýsing: </strong>${artist.getDescription()}</p>
-</div>
+    <h1>Upplýsingar um Listamann</h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nafn:
+        </dt>
 
+        <dd>
+            ${artist.getName()}
+        </dd>
+
+        <dt>
+            Aldur:
+        </dt>
+
+        <dd>
+            ${artist.getAge()}
+        </dd>
+
+        <dt>
+            Land:
+        </dt>
+
+        <dd>
+            ${artist.getCountry()}
+        </dd>
+
+        <dt>
+            Stutt lýsing:
+        </dt>
+
+        <dd>
+            ${artist.getDescription()}
+        </dd>
+    </dl>
+    </div>
 </body>
 
 </html>

@@ -39,7 +39,7 @@
 </div>
 
 <div class="addDiv">
-    <h1>Upplýsingar um Event</h1>
+    <h1>Upplýsingar um Viðburð</h1>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -51,7 +51,7 @@
         </dd>
 
         <dt>
-            Location:
+            <a href="../location/${event.getLocationId()}">Location:</a>
         </dt>
 
         <dd>
@@ -81,7 +81,7 @@
             ${event.getArtist()}
         </dd>
         <dt>
-            <a href="../location/${event.getLocationId()}">Category:</a>
+            Category:
         </dt>
 
         <dd>

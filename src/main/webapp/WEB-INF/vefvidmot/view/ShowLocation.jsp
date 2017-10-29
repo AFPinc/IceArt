@@ -33,13 +33,42 @@
     <a href="/location/add">Skrá staðsetningu</a>
     <a href="/artist/add">Skrá listamann</a>
 </div>
-
 <div class="addDiv">
-    <h1>Upplýsingar</h1>
-    <p><strong>Staðsetning: </strong> ${location.getName()}</p>
-    <p><strong>Opnunartími: </strong> ${location.getOpenHours()}</p>
-    <p><strong>Hámarksfjöldi: </strong> ${location.getMaxPeople()}</p>
-    <p><strong>Stutt lýsing: </strong> ${location.getDescription()}</p>
+    <h1>Upplýsingar um Listamann</h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Staðsetning:
+        </dt>
+
+        <dd>
+            ${location.getName()}
+        </dd>
+
+        <dt>
+            Opnunartími:
+        </dt>
+
+        <dd>
+            ${location.getOpenHours()}
+        </dd>
+
+        <dt>
+            Hámarksfjöldi:
+        </dt>
+
+        <dd>
+            ${location.getMaxPeople()}
+        </dd>
+
+        <dt>
+            Stutt lýsing:
+        </dt>
+
+        <dd>
+            ${location.getDescription()}
+        </dd>
+    </dl>
 </div>
 
 </body>
