@@ -30,7 +30,7 @@ body {
 .btn-default:hover {
     background-color: #FF3B3F;
     color: white;
-    border-color: white;
+    border-color: #FF3B3F;
 }
 
 a:hover {
