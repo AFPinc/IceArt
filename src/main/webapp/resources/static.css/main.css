@@ -1,11 +1,16 @@
 .navbar {
     overflow: hidden;
     background-color: white;
+    color: #A9A9A9;
     font-family: Arial;
 }
 
-.navbar:hover {
-    background-color: #A9A9A9;
+.navbar a:hover {
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: #FF3B3F;
 }
 
 .navbar a {
