@@ -47,7 +47,7 @@
         </dd>
 
         <dt>
-            <a href="../location/${event.getLocationId()}">Location:</a>
+            <a class="a-info" href="../location/${event.getLocationId()}">Location:</a>
         </dt>
 
         <dd>
@@ -70,7 +70,7 @@
             ${event.getDateEnd()}
         </dd>
         <dt>
-        <a href="../artist/${event.getArtistId()}">Artist:</a>
+        <a class="a-info" href="../artist/${event.getArtistId()}">Artist:</a>
         </dt>
 
         <dd>

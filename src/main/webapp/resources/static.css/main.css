@@ -33,6 +33,10 @@ body {
     border-color: #FF3B3F;
 }
 
-a:hover {
+.a-info {
     color: #FF3B3F;
+}
+
+.a-info:hover {
+    color: black;
 }
