@@ -34,7 +34,7 @@
     <a href="/artist/add">Skrá listamann</a>
 </div>
 <div class="addDiv">
-    <h1>Upplýsingar um Staðsettningu</h1>
+    <h1>Upplýsingar um staðsetning</h1>
     <hr />
     <dl class="dl-horizontal">
         <dt>

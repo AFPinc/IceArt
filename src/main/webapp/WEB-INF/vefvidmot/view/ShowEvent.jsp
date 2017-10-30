@@ -35,7 +35,7 @@
 </div>
 
 <div class="addDiv">
-    <h1>Upplýsingar um Viðburð</h1>
+    <h1>Upplýsingar um viðburð</h1>
     <hr />
     <dl class="dl-horizontal">
         <dt>

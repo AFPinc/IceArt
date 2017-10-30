@@ -43,3 +43,7 @@ body {
 .container.well {
     background-color: #CAEBF2;
 }
+
+hr {
+    background-color: black;
+}
