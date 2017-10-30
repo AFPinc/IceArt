@@ -40,3 +40,6 @@ body {
 .a-info:hover {
     color: black;
 }
+.container.well {
+    background-color: #CAEBF2;
+}

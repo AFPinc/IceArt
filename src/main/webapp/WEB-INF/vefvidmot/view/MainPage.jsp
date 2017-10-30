@@ -40,7 +40,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 </div>
 
 
-<div class="container ">
+<div class="container">
     <form method="GET" action="/search/">
         <div class="form-group col-xs-4 col-md-4">
             <div class="form-group row">
@@ -99,7 +99,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <c:choose>
     <c:when test="${not empty events}">
         <c:forEach var ="event" items="${events}">
-            <div class="container well" style="background-color: #CAEBF2">
+            <div class="container well">
                 <h3>${event.getTitle()}</h3><br>
                 <p>${event.getArtist()} - ${event.getLocation()}</p><br>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
