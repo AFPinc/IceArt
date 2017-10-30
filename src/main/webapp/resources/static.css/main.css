@@ -32,3 +32,7 @@ button:hover {
     color: white;
     border-color: white;
 }
+
+a:hover {
+    color: #FF3B3F;
+}
