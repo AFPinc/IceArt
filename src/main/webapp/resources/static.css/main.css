@@ -1,16 +1,13 @@
 .navbar {
     overflow: hidden;
     background-color: white;
-    color: #A9A9A9;
     font-family: Arial;
 }
 
-.navbar a:hover {
-    color: white;
-}
 
 .navbar a:hover {
     background-color: #FF3B3F;
+    color: white;
 }
 
 .navbar a {
@@ -20,10 +17,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.navbar a {
-    color: white;
 }
 
 .addDiv {
