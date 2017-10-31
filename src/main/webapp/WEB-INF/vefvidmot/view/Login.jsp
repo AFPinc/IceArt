@@ -30,19 +30,15 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
-            <a href="/user/loginPage">Innskrá</a>
-        </div>
-    </div>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
+    <a href="/user/loginPage">Innskrá</a>
 </div>
 
 <div class="login">
-    <h1>Innskráning</h1><a href="/user/addUser">Stofna nýjan aðgang</a>
+    <h1>Innskráning</h1>
 
     <form class="form-horizontal" action="/user/login" method="POST" id="login" >
         <div class="form-group">
@@ -60,6 +56,14 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default">Login</button>
+            </div>
+        </div>
+    </form>
+
+    <form class="form-horizontal" action="/user/addUser" method="GET" id="newUserButton">
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Stofna nýjan aðgang</button>
             </div>
         </div>
     </form>

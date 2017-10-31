@@ -45,7 +45,7 @@ public class ArtistController {
      * @return
      */
     @RequestMapping(value = "/artist", method = RequestMethod.POST)
-    public String addArtist(@RequestParam(value = "name") String name,
+    public String addArtist(@RequestParam(value = "name", required=false) String name,
                             @RequestParam(value = "description") String description,
                             @RequestParam(value = "age") int age,
                             @RequestParam(value = "country") String country,

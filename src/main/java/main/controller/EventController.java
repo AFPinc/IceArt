@@ -52,15 +52,15 @@ public class EventController {
      * @return
      */
     @RequestMapping(value = "/event", method = RequestMethod.POST)
-    public String addEvent(@RequestParam(value = "title") String title,
+    public String addEvent(@RequestParam(value = "title", required=false) String title,
                            @RequestParam(value = "location") Long locationId,
                            @RequestParam(value = "artist") Long artistId,
-                           @RequestParam(value = "dateBegin") @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
-                           @RequestParam(value = "timeBegin") @DateTimeFormat(pattern="HH:mm") Date timeBegin,
-                           @RequestParam(value = "dateEnd") @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
-                           @RequestParam(value = "timeEnd") @DateTimeFormat(pattern="HH:mm") Date timeEnd,
+                           @RequestParam(value = "dateBegin", required=false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
+                           @RequestParam(value = "timeBegin", required=false) @DateTimeFormat(pattern="HH:mm") Date timeBegin,
+                           @RequestParam(value = "dateEnd", required=false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
+                           @RequestParam(value = "timeEnd", required=false) @DateTimeFormat(pattern="HH:mm") Date timeEnd,
                            @RequestParam(value = "category") Long categoryId,
-                           @RequestParam(value = "description") String description,
+                           @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
         Calendar c = Calendar.getInstance();
         c.setTime(timeEnd);

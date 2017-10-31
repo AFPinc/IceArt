@@ -41,7 +41,7 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
     </div>
 </div>
 
-<div class="signUp">
+<!-- <div class="signUp">
     <h1>Nýskráning</h1>
 
     <form class="form-horizontal" action="/user/addUser" method="POST" id="signUp" >
@@ -69,7 +69,7 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
             </div>
         </div>
     </form>
-</div>
+</div>-->
 
 </body>
 
