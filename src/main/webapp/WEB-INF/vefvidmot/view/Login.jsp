@@ -37,7 +37,7 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
     <a href="/user/loginPage">Innskrá</a>
 </div>
 
-<div class="login">
+<div class="addDiv">
     <h1>Innskráning</h1>
 
     <form class="form-horizontal" action="/user/login" method="POST" id="login" >
