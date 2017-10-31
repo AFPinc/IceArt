@@ -39,15 +39,15 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
 
     <form class="form-horizontal" action="/user/login" method="POST" id="login" >
         <div class="form-group">
-            <label for="username" class="col-sm-2 control-label">Username:</label>
+            <label for="username" class="col-sm-2 control-label">Notendanafn:</label>
             <div class="col-sm-10">
-                 <input type="text" class="form-control" placeholder="Username" id="username" name="username" pattern=".{1,50}" required>
+                 <input type="text" class="form-control" placeholder="Notendanafn" id="username" name="username" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="password" class="col-sm-2 control-label">Password:</label>
+            <label for="password" class="col-sm-2 control-label">Lykilorð:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Password" id="password" name="password" pattern=".{1,50}" required>
+                <input type="password" class="form-control" placeholder="Lykilorð" id="password" name="password" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
@@ -57,7 +57,7 @@ Valgerður Sigfinnsdóttir - vas30@hi.is
         </div>
     </form>
 
-    <form class="form-horizontal" action="/user/addUser" method="GET" id="newUserButton">
+    <form class="form-horizontal" action="/user/signUpPage" method="GET" id="newUserButton">
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default">Stofna nýjan aðgang</button>
