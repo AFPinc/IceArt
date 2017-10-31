@@ -4,10 +4,12 @@ import main.model.Artist;
 import main.model.Event;
 import main.model.Location;
 import main.model.Category;
+import main.model.User;
 import main.repository.IArtistRepository;
 import main.repository.IEventRepository;
 import main.repository.ILocationRepositroy;
 import main.repository.ICategoryRepository;
+import main.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -34,6 +36,8 @@ public class Service implements IService{
     IArtistRepository artistRepo;
     @Autowired
     ICategoryRepository categoryRepo;
+    @Autowired
+    IUserRepository userRepo;
 
     @Override
     public Event addEvent(Event event) {
@@ -103,4 +107,11 @@ public class Service implements IService{
         return categoryRepo.findOne(id);
     }
 
+    public User addUser(User user) {
+        return userRepo.save(user);
+    }
+
+    public User getUserById(Long id) {
+        return userRepo.findOne(id);
+    }
 }

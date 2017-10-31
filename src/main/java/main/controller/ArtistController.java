@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 /**
  * @author Sigurlaug Þórðardóttir
  * @date September 2017
@@ -44,7 +45,7 @@ public class ArtistController {
      * @return
      */
     @RequestMapping(value = "/artist", method = RequestMethod.POST)
-    public String addArtist(@RequestParam(value = "name", required=false) String name,
+    public String addArtist(@RequestParam(value = "name") String name,
                             @RequestParam(value = "description") String description,
                             @RequestParam(value = "age") int age,
                             @RequestParam(value = "country") String country,
