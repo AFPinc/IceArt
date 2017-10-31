@@ -1,4 +1,4 @@
-package is.hi.byrjun;
+package IceArtTest;
 
 
 import is.hi.byrjun.controller.DemoController;

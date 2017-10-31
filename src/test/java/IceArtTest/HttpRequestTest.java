@@ -1,4 +1,4 @@
-package is.hi.byrjun;
+package IceArtTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;

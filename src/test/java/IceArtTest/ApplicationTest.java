@@ -1,4 +1,4 @@
-package is.hi.byrjun;
+package IceArtTest;
 
 
 import org.junit.Test;

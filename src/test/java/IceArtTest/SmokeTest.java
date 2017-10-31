@@ -1,6 +1,6 @@
-package is.hi.byrjun;
+package IceArtTest;
 
-import is.hi.byrjun.controller.DemoController;
+import main.controller.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
