@@ -30,19 +30,30 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc       // Spring MockMvc - allt "context"-ið keyrt upp
 public class ApplicationTest {
 
-        // Þjónninn (Tomcat) ekki keyrður upp
-        @Autowired
-        private MockMvc mockMvc;
+    // Þjónninn (Tomcat) ekki keyrður upp
+    @Autowired
+    private MockMvc mockMvc;
 
-        /**
-         * Aðferð til að athuga hvort virkar að senda HttpRequest á /nyrKennari
-         * og fá til baka nyrKennari.html síðuna sem inniheldur strenginn Karl
-         */
-        @Test
-        public void demoProf() throws Exception {
-                this.mockMvc.perform(get("/demo/page"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(view().name("demo/demo"));
-        }
+    /**
+    * Aðferð til að athuga hvort virkar að senda HttpRequest á /nyrKennari
+    * og fá til baka nyrKennari.html síðuna sem inniheldur strenginn Karl
+    */
+
+    /* Test til að athuga hvort virkar að senda HttpRequest á /event */
+    @Test
+    public void viewShowEvent() throws Exception {
+        this.mockMvc.perform(get("/event/3"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(view().name("view/ShowEvent"));
+    }
+
+    @Test
+    public void viewAddEvent() throws Exception {
+        this.mockMvc.perform(get("/event/add"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(view().name("view/AddEvent"));
+    }
+
+
 
 }
