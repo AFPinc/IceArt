@@ -1,6 +1,6 @@
-package IceArtTest;
+package main;
 
-import main.controller.*;
+import main.controller.EventController;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,10 +19,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SmokeTest {
-    
-        @Autowired 
-        DemoController demoController;
 
+        @Autowired
+        EventController eventController;
         /**
          * Aðferð til að athuga hvort KennariController hlutur hefur verið búinn til 
          */
@@ -30,7 +29,7 @@ public class SmokeTest {
 	@Test
 	public void contextLoads() {
         
-                   assertThat(demoController).isNotNull();
+                   assertThat(eventController).isNotNull();
 	}
 
 }
