@@ -28,23 +28,47 @@
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
-            <a href="/user/loginPage">Innskrá</a>
-        </div>
-    </div>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
-
 <div class="addDiv">
-    <h1>Info</h1>
-    <p><strong>Name:</strong> ${location.getName()}</p>
-    <p><strong>Open Hours:</strong> ${location.getOpenHours()}</p>
-    <p><strong>Max People:</strong> ${location.getMaxPeople()}</p>
-    <p><strong>Description:</strong> ${location.getDescription()}</p>
+    <h1>Upplýsingar um staðsetning</h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Staðsetning:
+        </dt>
+
+        <dd>
+            ${location.getName()}
+        </dd>
+
+        <dt>
+            Opnunartími:
+        </dt>
+
+        <dd>
+            ${location.getOpenHours()}
+        </dd>
+
+        <dt>
+            Hámarksfjöldi:
+        </dt>
+
+        <dd>
+            ${location.getMaxPeople()}
+        </dd>
+
+        <dt>
+            Stutt lýsing:
+        </dt>
+
+        <dd>
+            ${location.getDescription()}
+        </dd>
+    </dl>
 </div>
 
 </body>

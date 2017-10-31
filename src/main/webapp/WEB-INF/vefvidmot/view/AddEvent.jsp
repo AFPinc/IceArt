@@ -29,25 +29,24 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <a href="/event/add">Add Event</a>
-    <a href="/location/add">Add Location</a>
-    <a href="/artist/add">Add Artist</a>
-    <a href="/user/loginPage">Login</a>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <div class="addDiv">
-    <h1>Add a new event</h1>
+    <h1>Skrá nýjan viðburð</h1>
 
     <form id="addEvent" action="/event/event" method="POST" class="form-horizontal">
         <div class="form-group">
-            <label for="title" class="col-sm-2 control-label">Name:</label>
+            <label for="title" class="col-sm-2 control-label">Nafn:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Name" id="title" name="title" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Nafn" id="title" name="title" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="location" class="col-sm-2 control-label">Location:</label>
+            <label for="location" class="col-sm-2 control-label">Staðsetning:</label>
             <div class="col-sm-10">
                 <c:choose>
                     <c:when test="${not empty locations}">
@@ -64,7 +63,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             </div>
         </div>
         <div class="form-group">
-            <label for="artist" class="col-sm-2 control-label">Artist:</label>
+            <label for="artist" class="col-sm-2 control-label">Listamaður:</label>
             <div class="col-sm-10">
                 <c:choose>
                     <c:when test="${not empty artists}">
@@ -81,35 +80,35 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             </div>
         </div>
         <div class="form-group">
-            <label class="col-md-2 control-label">Date:</label>
+            <label class="col-md-2 control-label">Dagsetning:</label>
             <div class="col-sm-10">
                 <div class="form-group row">
                     <div class="col-md-4">
-                        <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${today}">
+                        <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${todayDate}">
                     </div>
                     <label for="dateEnd" class="col-md-1 control-label"> - </label>
                     <div class="col-md-4">
-                        <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${dateInWeek}">
+                        <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${inWeekDate}">
                     </div>
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label class="col-md-2 control-label">Time:</label>
+            <label class="col-md-2 control-label">Tími:</label>
             <div class="col-sm-10">
                 <div class="form-group row">
                     <div class="col-md-4">
-                        <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${timeToday}">
+                        <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${todayTime}">
                     </div>
                     <label for="timeEnd" class="col-md-1 control-label"> - </label>
                     <div class="col-md-4">
-                        <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${timeInWeek}">
+                        <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${inWeekTime}">
                     </div>
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label for="category" class="col-sm-2 control-label">Category:</label>
+            <label for="category" class="col-sm-2 control-label">Tegund:</label>
             <div class="col-sm-10">
                 <c:choose>
                     <c:when test="${not empty categories}">
@@ -126,14 +125,14 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
             </div>
         </div>
         <div class="form-group">
-            <label for="description" class="col-sm-2 control-label">Description:</label>
+            <label for="description" class="col-sm-2 control-label">Stutt lýsing:</label>
             <div class="col-sm-10">
                 <textarea form="addEvent" class="form-control" placeholder="..." name="description" id="description" cols="35" wrap="soft"></textarea>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Add</button>
+                <button type="submit" class="btn btn-default">Skrá</button>
             </div>
         </div>
     </form>

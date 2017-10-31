@@ -28,28 +28,71 @@
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
-            <a href="/user/loginPage">Innskrá</a>
-        </div>
-    </div>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <div class="addDiv">
-    <h1>Info</h1>
-    <p><strong>Title:</strong>${event.getTitle()}</p>
-    <p><strong>Location:</strong>${event.getLocation()}</p>
-    <p><strong>From:</strong>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
-    <p><strong>To:</strong>${event.getDateEnd()} - ${event.getTimeEnd()}</p>
-    <p><strong>Artist:</strong>${event.getArtist()}</p>
-    <p><strong>Category:</strong>${event.getCategory()}</p>
-    <p><strong>Description:</strong>${event.getDescription()}</p>
+    <h1>Upplýsingar um viðburð</h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Title:
+        </dt>
 
-    <form method="GET" action="../artist/${event.getArtistId()}">
+        <dd>
+            ${event.getTitle()}
+        </dd>
+
+        <dt>
+            <a class="a-info" href="../location/${event.getLocationId()}">Location:</a>
+        </dt>
+
+        <dd>
+            ${event.getLocation()}
+        </dd>
+
+        <dt>
+            From:
+        </dt>
+
+        <dd>
+            ${event.getDateBegin()}
+        </dd>
+
+        <dt>
+            To:
+        </dt>
+
+        <dd>
+            ${event.getDateEnd()}
+        </dd>
+        <dt>
+        <a class="a-info" href="../artist/${event.getArtistId()}">Artist:</a>
+        </dt>
+
+        <dd>
+            ${event.getArtist()}
+        </dd>
+        <dt>
+            Category:
+        </dt>
+
+        <dd>
+            ${event.getCategory()}
+        </dd>
+        <dt>
+            Description:
+        </dt>
+
+        <dd>
+            ${event.getDescription()}
+        </dd>
+    </dl>
+
+    <!--  <form method="GET" action="../artist/${event.getArtistId()}">
         <button type="submit" class="btn btn-default">
             Nánar um listamann
         </button>
@@ -58,7 +101,7 @@
         <button type="submit" class="btn btn-default">
             Nánar um staðsetningu
         </button>
-    </form>
+    </form> -->
 
 </div>
 

@@ -29,31 +29,26 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
-            <a href="/user/loginPage">Innskrá</a>
-        </div>
-    </div>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <div class="container">
-    <h1>Welcome to IceArt</h1>
+    <h1>Viðburðarleit IceArt</h1>
 </div>
 
 
-<div class="container ">
+<div class="container">
     <form method="GET" action="/search/">
         <div class="form-group col-xs-4 col-md-4">
             <div class="form-group row">
-                <label for="search" class="control-label">Leita</label>
-                <input type="text" name="title" id="search" class="form-control" placeholder="Search" \>
+                <label for="search" class="control-label">Leitarorð</label>
+                <input type="text" name="title" id="search" class="form-control" placeholder="Leitarorð" \>
             </div>
             <div class="form-group row">
-                <label for="category" class="control-label">Category:</label>
+                <label for="category" class="control-label">Tegund</label>
                 <c:choose>
                     <c:when test="${not empty categories}">
                         <select name="category" id="category" class="form-control">
@@ -68,28 +63,28 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
                 </c:choose>
             </div>
             <button type="submit" value="Search" class="btn btn-default">
-                <span class="glyphicon glyphicon-search"></span> Search
+                <span class="glyphicon glyphicon-search"></span> Leita
             </button>
         </div>
         <div class="form-group col-xs-8 col-md-8">
             <label for="dateBegin" class="control-label">Dagsetning</label>
             <div class="form-group row">
                 <div class="col-md-5">
-                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${today}">
+                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${todayDate}">
                 </div>
                 <label for="dateEnd" class="col-md-1 control-label"> - </label>
                 <div class="col-md-5">
-                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${dateInWeek}">
+                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${inWeekDate}">
                 </div>
             </div>
             <label for="timeBegin" class="control-label">Tími</label>
             <div class="form-group row">
                 <div class="col-md-5">
-                    <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${timeToday}">
+                    <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${todayTime}">
                 </div>
                 <label for="timeEnd" class="col-md-1 control-label"> - </label>
                 <div class="col-md-5">
-                    <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${timeInWeek}">
+                    <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${inWeekTime}">
                 </div>
             </div>
         </div>
@@ -119,7 +114,7 @@ Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
         </c:forEach>
     </c:when>
     <c:otherwise>
-        <h3> No events</h3>
+        <h3>Engir viðburðir</h3>
     </c:otherwise>
 </c:choose>
 

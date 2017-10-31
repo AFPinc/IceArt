@@ -20,7 +20,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Main Page</title>
+    <title>Show All Events</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/main.css"/>" as=""/>
 </head>
@@ -28,15 +28,10 @@
 <body>
 
 <div class="navbar">
-    <a href="/">Home</a>
-    <div class="dropdown">
-        <div class="dropdown-content">
-            <a href="/event/add">Add Event</a>
-            <a href="/location/add">Add Location</a>
-            <a href="/artist/add">Add Artist</a>
-            <a href="/user/loginPage">Innskrá</a>
-        </div>
-    </div>
+    <a href="/">Forsíða</a>
+    <a href="/event/add">Skrá viðburð</a>
+    <a href="/location/add">Skrá staðsetningu</a>
+    <a href="/artist/add">Skrá listamann</a>
 </div>
 
 <c:choose>
@@ -57,7 +52,7 @@
         </c:forEach>
     </c:when>
     <c:otherwise>
-        <h3> No events</h3>
+        <h3> Engir viðburðir </h3>
     </c:otherwise>
 </c:choose>
 

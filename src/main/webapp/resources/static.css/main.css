@@ -1,13 +1,19 @@
 .navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     font-family: Arial;
+}
+
+
+.navbar a:hover {
+    background-color: #FF3B3F;
+    color: white;
 }
 
 .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #A9A9A9;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -18,5 +24,26 @@
 }
 
 body {
-    background-color: beige;
+    background-color: #EFEFEF;
+}
+
+.btn-default:hover {
+    background-color: #FF3B3F;
+    color: white;
+    border-color: #FF3B3F;
+}
+
+.a-info {
+    color: #FF3B3F;
+}
+
+.a-info:hover {
+    color: black;
+}
+.container.well {
+    background-color: #CAEBF2;
+}
+
+hr {
+    background-color: black;
 }
