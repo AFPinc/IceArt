@@ -36,24 +36,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 // Sleppum hér @SpringBootTest
 /**
  *  Aðeins veflagið er keyrt upp en ekki allur "context"-inn
- *  Getum beðið um að keyra bara upp KennariController klasann 
+ *  Getum beðið um að keyra bara upp EventController klasann
  */
 @WebMvcTest (EventController.class)
 public class WebLayerTest {
-    
-        // Þjónninn ekki keyrður upp 
+
+        // Þjónninn ekki keyrður upp
         @Autowired
         private MockMvc mockMvc;
 
         @MockBean
         IService service;
-        
-        /**
-         * Aðferð til að athuga hvort virkar að senda HttpRequest á listiKennari
-         * og fá til baka listiKennara.html síðuna 
-         */
-	/* Test til að athuga hvort virkar að senda HttpRequest á /event/add
-    * og fá til baka view/AddEvent.jsp síðuna */
+        /** Test til að athuga hvort virkar að senda HttpRequest á /event/add
+        * og fá til baka view/AddEvent.jsp síðuna
+        */
         @Test
         public void viewAddEvent() throws Exception {
                 this.mockMvc.perform(get("/event/add"))
@@ -61,8 +57,9 @@ public class WebLayerTest {
                         .andExpect(view().name("view/AddEvent"));
         }
 
-        /* Test til að athuga hvort virkar að senda HttpRequest á /event/{id}
-     * og fá til baka view/ShowEvent.jsp síðuna sem inniheldur event með id nr.3 */
+         /** Test til að athuga hvort virkar að senda HttpRequest á /event/{id}
+         * og fá til baka view/ShowEvent.jsp síðuna sem inniheldur event með id nr.3
+         */
         @Test
         public void viewShowEvent() throws Exception {
                 this.mockMvc.perform(get("/event/3"))

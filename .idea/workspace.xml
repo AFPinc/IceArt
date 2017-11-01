@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14911d82-a845-450d-ac45-13ac45711532" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/main/WebLayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/main/WebLayerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,19 +51,48 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowEvent.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebLayerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/main/WebLayerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/main/HttpRequestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowEvent.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="54" column="100" lean-forward="false" selection-start-line="54" selection-start-column="100" selection-end-line="54" selection-end-column="100" />
-              <folding />
+            <state relative-caret-position="-11">
+              <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+              <folding>
+                <marker date="1509549107000" expanded="true" signature="1778:1791" ph="..." />
+                <marker date="1509549107000" expanded="true" signature="1805:1914" ph="..." />
+                <marker date="1509549107000" expanded="true" signature="1927:1963" ph="..." />
+                <marker date="1509549107000" expanded="true" signature="1977:2026" ph="..." />
+                <marker date="1509549107000" expanded="true" signature="2039:2078" ph="..." />
+                <marker date="1509549107000" expanded="true" signature="2092:2144" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/demo/AddArtist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/demo/addEvent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AddLocation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AddEvent.jsp" />
@@ -152,8 +181,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/Login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/SignUp.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/MainPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/main/WebLayerTest.java" />
       </list>
     </option>
   </component>
@@ -669,7 +699,7 @@
       <workItem from="1508327981829" duration="6657000" />
       <workItem from="1509452922746" duration="10020000" />
       <workItem from="1509480278139" duration="3634000" />
-      <workItem from="1509547194468" duration="652000" />
+      <workItem from="1509547194468" duration="1833000" />
     </task>
     <task id="LOCAL-00001" summary="Laga meira">
       <created>1505667240482</created>
@@ -857,7 +887,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109255000" />
+    <option name="totallyTimeSpent" value="110436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="23" width="1220" height="773" extended-state="0" />
@@ -938,13 +968,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.2.5.RELEASE/spring-boot-1.2.5.RELEASE.jar!/org/springframework/boot/context/web/SpringBootServletInitializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/stylesheet/style.css" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1013,6 +1036,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509458257000" expanded="false" signature="645:656" ph=" { " />
+            <marker date="1509458257000" expanded="false" signature="702:708" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,14 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/main/WebLayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/main/SmokeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1209,19 +1229,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+          <folding>
+            <marker date="1509549107000" expanded="true" signature="1778:1791" ph="..." />
+            <marker date="1509549107000" expanded="true" signature="1805:1914" ph="..." />
+            <marker date="1509549107000" expanded="true" signature="1927:1963" ph="..." />
+            <marker date="1509549107000" expanded="true" signature="1977:2026" ph="..." />
+            <marker date="1509549107000" expanded="true" signature="2039:2078" ph="..." />
+            <marker date="1509549107000" expanded="true" signature="2092:2144" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vefvidmot/view/ShowEvent.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/java/main/HttpRequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="54" column="100" lean-forward="false" selection-start-line="54" selection-start-column="100" selection-end-line="54" selection-end-column="100" />
+        <state relative-caret-position="-153">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/main/WebLayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
