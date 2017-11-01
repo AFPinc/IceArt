@@ -93,17 +93,6 @@
         </dd>
     </dl>
 
-    <!--  <form method="GET" action="../artist/${event.getArtistId()}">
-        <button type="submit" class="btn btn-default">
-            Nánar um listamann
-        </button>
-    </form>
-    <form method="GET" action="../location/${event.getLocationId()}">
-        <button type="submit" class="btn btn-default">
-            Nánar um staðsetningu
-        </button>
-    </form> -->
-
 </div>
 
 </body>
