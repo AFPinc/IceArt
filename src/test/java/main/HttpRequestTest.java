@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author Melkorka Mjöll Jóhansdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
- * @date október 2017 
+ * @date nóvember 2017
  * HBV501G Hugbúnaðarverkefni 1 Háskóli Íslands
  * 
  * Prófunarklasi sem sendir URL á test web client
@@ -34,8 +34,8 @@ public class HttpRequestTest {
     private TestRestTemplate restTemplate;
          
     /**
-    * Aðferð til að athuga hvort virkar að senda HttpRequest á heimaslóðina og
-    * fá til baka síðu sem inniheldur Klukkan
+    * Aðferð til að athuga hvort virkar að senda HttpRequest á slóðina /artist/add og
+    * fá til baka síðu sem inniheldur Add Artist
         
     * @throws java.lang.Exception
     */
@@ -45,24 +45,36 @@ public class HttpRequestTest {
             String.class)).contains("Add Artist");
     }
 
+    /**
+     * Aðferð til að athuga hvort virkar að senda HttpRequest á slóðina /event/add og
+     * fá til baka síðu sem inniheldur Add Event
+
+     * @throws java.lang.Exception
+     */
     @Test
     public void addEventLoads() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/event/add",
                 String.class)).contains("Add Event");
     }
 
+    /**
+     * Aðferð til að athuga hvort virkar að senda HttpRequest á slóðina /location/add og
+     * fá til baka síðu sem inniheldur Add Location
+
+     * @throws java.lang.Exception
+     */
     @Test
     public void addLocationLoads() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/location/add",
                 String.class)).contains("Add Location");
     }
 
-    @Test
-    public void showLocationLoads() throws Exception {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/location/add",
-                String.class)).contains("Add Location");
-    }
+    /**
+     * Aðferð til að athuga hvort virkar að senda HttpRequest á aðalsíðuna og
+     * fá til baka síðu sem inniheldur Main Page
 
+     * @throws java.lang.Exception
+     */
     @Test
     public void mainPageLoads() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
