@@ -48,11 +48,11 @@
         </dd>
 
         <dt>
-            <a class="a-info" href="../location/${event.getLocationId()}">Location:</a>
+            Location:
         </dt>
 
         <dd>
-            ${event.getLocation()}
+            <a class="a-info" href="../location/${event.getLocationId()}">${event.getLocation()}</a>
         </dd>
 
         <dt>
@@ -71,11 +71,11 @@
             ${event.getDateEnd()}
         </dd>
         <dt>
-        <a class="a-info" href="../artist/${event.getArtistId()}">Artist:</a>
+            Artist:
         </dt>
 
         <dd>
-            ${event.getArtist()}
+            <a class="a-info" href="../artist/${event.getArtistId()}">${event.getArtist()}</a>
         </dd>
         <dt>
             Category:
