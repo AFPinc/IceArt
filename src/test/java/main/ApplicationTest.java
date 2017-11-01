@@ -30,15 +30,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureMockMvc       // Spring MockMvc - allt "context"-ið keyrt upp
+@AutoConfigureMockMvc
 public class ApplicationTest {
 
-    // Þjónninn (Tomcat) ekki keyrður upp
+    // Tomcat ekki keyrður upp
     @Autowired
     private MockMvc mockMvc;
 
-    /* Test til að athuga hvort virkar að senda HttpRequest á /event/add
-    * og fá til baka view/AddEvent.jsp síðuna */
+    /** Test til að athuga hvort virkar að senda HttpRequest á /event/add
+    * og fá til baka view/AddEvent.jsp síðuna
+     * */
     @Test
     public void viewAddEvent() throws Exception {
         this.mockMvc.perform(get("/event/add"))
@@ -47,7 +48,8 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /event/{id}
- * og fá til baka view/ShowEvent.jsp síðuna sem inniheldur event með id nr.3 */
+    * og fá til baka view/ShowEvent.jsp síðuna sem inniheldur event með id nr.3
+    * */
     @Test
     public void viewShowEvent() throws Exception {
         this.mockMvc.perform(get("/event/3"))
@@ -56,7 +58,8 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /artist/add
-    * og fá til baka view/AddArtist.jsp síðuna */
+    * og fá til baka view/AddArtist.jsp síðuna
+    * */
     @Test
     public void viewAddArtist() throws Exception {
         this.mockMvc.perform(get("/artist/add"))
@@ -65,7 +68,8 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /artist/{id}
-    * og fá til baka view/showArtist.jsp síðuna sem inniheldur listamann með id nr.2*/
+    * og fá til baka view/showArtist.jsp síðuna sem inniheldur listamann með id nr.2
+    * */
     @Test
     public void viewShowArtist() throws Exception {
         this.mockMvc.perform(get("/artist/2"))
@@ -74,7 +78,8 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /location/add
-    * og fá til baka view/AddLocation.jsp síðuna */
+    * og fá til baka view/AddLocation.jsp síðuna
+    * */
     @Test
     public void viewAddLocation() throws Exception {
         this.mockMvc.perform(get("/location/add"))
@@ -83,7 +88,8 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /location/{id}
-    * og fá til baka view/ShowLocation.jsp síðuna sem inniheldur listamann með id nr.4*/
+    * og fá til baka view/ShowLocation.jsp síðuna sem inniheldur listamann með id nr.4
+    * */
     @Test
     public void viewShowLocation() throws Exception {
         this.mockMvc.perform(get("/location/4"))
@@ -92,7 +98,8 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á engu og fá til baka
-    * view/MainPage.jsp síðuna */
+    * view/MainPage.jsp síðuna
+    * */
     @Test
     public void viewMainPage() throws Exception {
         this.mockMvc.perform(get(""))
