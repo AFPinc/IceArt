@@ -5,7 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author Melkorka Mjöll
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *

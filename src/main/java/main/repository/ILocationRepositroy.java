@@ -6,7 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 /**
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
  * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
  * @date Október 2017
  * Háskóli Íslands
  *

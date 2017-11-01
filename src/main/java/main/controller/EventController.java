@@ -23,7 +23,10 @@ import java.util.List;
 
 
 /**
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
  * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *

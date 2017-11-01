@@ -41,8 +41,11 @@ import java.util.List;
 
 /**
  *
- * @author Ebba Þóra Hvannberg
- * @date október 2017
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
+ * @date Nóvember 2017
  * HBV501G Hugbúnaðarverkefni 1 Háskóli Íslands
  *
  * Prófunarklasi sem framkvæmir prófanir á weblayer og notar WebMvcTest og
@@ -52,8 +55,7 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 /**
  *  Aðeins veflagið er keyrt upp en ekki allur "context"-inn
- *  Getum beðið um að keyra bara upp KennariController klasann
- *  Biðjum um að bæta KennariService inn í "context-inn" sem Mock (prófanahlut)
+ *  Biðjum um að bæta Service inn í "context-inn" sem Mock (prófanahlut)
  */
 @WebMvcTest(MainController.class)
 
@@ -69,25 +71,9 @@ public class WebMockTest {
     IService service;
 
     /**
-     * Aðferð sem prófar /lifir á KennariController en með
-     * erALifi() false. Ættum að fá til baka nyrKennari.html síðuna
+     * Aðferðin prófar hvort getTop10Event() virki eins og hún á að virka
+     * og skili réttri síðu.
      */
- /*   @Test
-    public void testTop10Events() throws Exception {
-        // Látum erNafnRett() skila true
-        // Notum Mockito í prófanirnar - Mockito er Framework fyrir unit testing í Java
-        // http://site.mockito.org/
-
-        // Prófið ætti að takast - prófum sönnu leiðina í if-setningunni
-        when(service.getTop10Events()).thenReturn(eventRepo.findTop10());
-        this.mockMvc.perform(get(""))
-                .andDo(print())
-                .andExpect(status()
-                .isOk())
-                .andExpect(content()
-                .string(containsString("N")));
-
-    }*/
 
     @Test
     public void testTop10Events() throws Exception {
@@ -104,37 +90,4 @@ public class WebMockTest {
                 .andDo(print()).andExpect(status().isOk())
                 .andExpect(view().name("view/MainPage"));
     }
-
-    /**
-     * Aðferð sem prófar /lifir á KennariController en með
-     * erALifi() false. Ættum að fá til baka listiKennara.html síðuna
-     */
- /*   @Test
-    public void testaLifirFalse() throws Exception {
-
-        // Prófið ætti að takast - prófum ósönnu leiðina í if-setningunni
-        when(daginnService.erALifi()).thenReturn(false);
-        this.mockMvc.perform(get("/lifir")).andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(content()
-                        .string(containsString("Listi yfir kennara")));
-    } */
-
-    /**
-     * Prófið ætti að mistakast - prófum ósönnu leiðina erALifi() en berum
-     * saman við rangan streng
-     * @throws Exception
-     */
-  /*  @Test
-    public void testaLifirFalseMedRongumStreng() throws Exception {
-
-        // Prófið ætti að ekki takast - prófum ósönnu leiðina í if-setningunni
-        when(daginnService.erALifi()).thenReturn(false);
-
-
-        this.mockMvc.perform(get("/lifir")).andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Nýr kennari")));
-        }*/
-
-    }
+}

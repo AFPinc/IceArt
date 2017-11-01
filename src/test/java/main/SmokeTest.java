@@ -37,8 +37,9 @@ public class SmokeTest {
 
         @Autowired
         SearchController searchController;
+
         /**
-         * Aðferð til að athuga hvort KennariController hlutur hefur verið búinn til 
+         * Aðferð til að athuga hvort Controller hlutir hafi verið búnir til
          */
         
 	@Test
