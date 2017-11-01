@@ -4,6 +4,7 @@ import main.model.Artist;
 import main.model.Event;
 import main.model.Location;
 import main.model.Category;
+import main.model.User;
 
 import java.util.Date;
 import java.util.List;
@@ -102,6 +103,19 @@ public interface IService {
      * @param id
      * @return
      */
-
     Category getCategoryById(Long id);
+
+    /**
+     * Fall sem vistar notanda
+     * @param user
+     * @return
+     */
+    User addUser(User user);
+
+    /**
+     * Fall sem nær í notanda eftir auðkenni
+     * @param id
+     * @return
+     */
+    User getUserById(Long id);
 }
