@@ -2,7 +2,10 @@ package main;
 
 
 import main.controller.*;
+import main.model.Artist;
+import main.model.Category;
 import main.model.Event;
+import main.model.Location;
 import main.repository.IEventRepository;
 import main.services.IService;
 import main.services.Service;
@@ -26,8 +29,15 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -58,11 +68,6 @@ public class WebMockTest {
     @MockBean
     IService service;
 
-
-    @Autowired
-    IEventRepository eventRepo;
-
-
     /**
      * Aðferð sem prófar /lifir á KennariController en með
      * erALifi() false. Ættum að fá til baka nyrKennari.html síðuna
@@ -86,19 +91,18 @@ public class WebMockTest {
 
     @Test
     public void testTop10Events() throws Exception {
-        // Látum erNafnRett() skila true
-        // Notum Mockito í prófanirnar - Mockito er Framework fyrir unit testing í Java
-        // http://site.mockito.org/
-
-        // Prófið ætti að takast - prófum sönnu leiðina í if-setningunni
-        when(service.getTop10Events()).thenReturn(eventRepo.findTop10());
+        Calendar cal = Calendar.getInstance();
+        Date now = cal.getTime();
+        Location loc = new Location("", "", "", 1);
+        Artist a = new Artist("", "", 1, "");
+        Category c = new Category("");
+        Event event = new Event("hæ", loc, a, now, now, now, now, c, "", false);
+        List<Event> events = new ArrayList<Event>();
+        events.add(event);
+        when(service.getTop10Events()).thenReturn(events);
         this.mockMvc.perform(get(""))
-                .andDo(print())
-                .andExpect(status()
-                        .isOk())
-                .andExpect(content()
-                        .string(containsString("N")));
-
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(view().name("view/MainPage"));
     }
 
     /**

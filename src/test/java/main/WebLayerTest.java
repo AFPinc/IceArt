@@ -4,9 +4,11 @@ package main;
 import main.controller.*;
 import static javax.management.Query.value;
 
+import main.services.IService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 // Athugið vel að þessi import séu rétt 
@@ -42,20 +44,30 @@ public class WebLayerTest {
         // Þjónninn ekki keyrður upp 
         @Autowired
         private MockMvc mockMvc;
+
+        @MockBean
+        IService service;
         
         /**
          * Aðferð til að athuga hvort virkar að senda HttpRequest á listiKennari
          * og fá til baka listiKennara.html síðuna 
          */
-	@Test 
-        public void demoProf() throws Exception {
-        this.mockMvc.perform(get("/demo/page"))                
-                          .andDo(print()).andExpect(status().isOk())
-    //            .andExpect(content().string(containsString("Sýnidæmi")));
-        // JSP prófa að nafnið á viðmótsskránni sé demo/demo 
-        // Ekki hægt að prófa innihald á JSP "renderer" 
-      .andExpect(view().name("demo/demo"));
+	/* Test til að athuga hvort virkar að senda HttpRequest á /event/add
+    * og fá til baka view/AddEvent.jsp síðuna */
+        @Test
+        public void viewAddEvent() throws Exception {
+                this.mockMvc.perform(get("/event/add"))
+                        .andDo(print()).andExpect(status().isOk())
+                        .andExpect(view().name("view/AddEvent"));
+        }
 
-    }
+        /* Test til að athuga hvort virkar að senda HttpRequest á /event/{id}
+     * og fá til baka view/ShowEvent.jsp síðuna sem inniheldur event með id nr.3 */
+        @Test
+        public void viewShowEvent() throws Exception {
+                this.mockMvc.perform(get("/event/3"))
+                        .andDo(print()).andExpect(status().isOk())
+                        .andExpect(view().name("view/ShowEvent"));
+        }
 
 }
