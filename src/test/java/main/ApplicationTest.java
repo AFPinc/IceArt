@@ -18,7 +18,10 @@ import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 /**
  *
- * @author Ebba Þóra Hvannberg
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
  * @date október 2017
  * HBV501G Hugbúnaðarverkefni 1 Háskóli Íslands
  *
