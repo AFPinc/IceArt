@@ -100,13 +100,4 @@ public class ApplicationTest {
                 .andExpect(view().name("view/MainPage"));
     }
 
-    /* Test til að athuga hvort virkar að senda HttpRequest á /search og
-    * fá til baka view/MainPage.jsp síðuna */
-    @Test
-    public void viewShowAllEvent() throws Exception {
-        this.mockMvc.perform(get("/search/"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(view().name("view/ShowAllEvent"));
-    }
-
 }
