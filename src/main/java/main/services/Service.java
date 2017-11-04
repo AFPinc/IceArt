@@ -17,8 +17,12 @@ import org.springframework.data.domain.Pageable;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author Valgerdur Sigfinnsdottir
+ /**
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
+
  * @date September 2017
  * Háskóli Íslands
  *

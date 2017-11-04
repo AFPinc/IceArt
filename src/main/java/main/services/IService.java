@@ -9,6 +9,18 @@ import main.model.User;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
+
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Þjónustuklasi.
+ */
+
 public interface IService {
     /**
      * fall sem vistar event

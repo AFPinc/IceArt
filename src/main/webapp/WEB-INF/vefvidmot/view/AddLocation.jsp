@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
 <!--
-@author Ása Júlía Aðalsteinsdóttir
-@date September 2017
-Háskóli Íslands
+    Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
+    Þessi klasi geymir uppbyggingu notendaviðmóts á staðsetningum
 
-Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
-Þessi klasi geymir uppbyggingu notendaviðmóts á staðsetningum
+    Höfundar
+
+    Ása Júlía Aðalsteinsdóttir - aja11@hi.is
+    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
+    Sigurlaug Þórðardóttir - sth301@hi.is
+    Valgerður Sigfinnsdóttir - vas30@hi.is
 -->
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>

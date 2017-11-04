@@ -1,9 +1,19 @@
+/*
+    css er skráin er ætluð fyrir útlit síðunnar
+
+    Höfundar
+
+    Ása Júlía Aðalsteinsdóttir - aja11@hi.is
+    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
+    Sigurlaug Þórðardóttir - sth301@hi.is
+    Valgerður Sigfinnsdóttir - vas30@hi.is
+ */
+
 .navbar {
     overflow: hidden;
     background-color: white;
     font-family: Arial;
 }
-
 
 .navbar a:hover {
     background-color: #FF3B3F;

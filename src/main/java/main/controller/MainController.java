@@ -16,6 +16,17 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhansdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
+ * @date Október 2017
+ * Háskóli Íslands
+ *
+ * Stýriklasi fyrir aðgang notenda að kerfinu
+ */
+
 @Controller
 public class MainController {
 

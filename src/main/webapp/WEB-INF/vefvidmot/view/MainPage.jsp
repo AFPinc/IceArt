@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 
 <!--
-Höfundar
+    Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
+    Þessi klasi geymir uppbyggingu notendaviðmóts á forsíðu
 
-Ása Júlía Aðalsteinsdóttir - aja11@hi.is
-Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
-Sigurlaug Þórðardóttir - sth301@hi.is
-Valgerður Sigfinnsdóttir - vas30@hi.is
+    Höfundar
 
-Pakkinn view geymir allar .jsp skrár sem segja til um hvað er á vefnum.
-Þessi klasi geymir uppbyggingu notendaviðmóts á forsíðu
+    Ása Júlía Aðalsteinsdóttir - aja11@hi.is
+    Melkorka Mjöll Jóhannesdóttir - mmj8@hi.is
+    Sigurlaug Þórðardóttir - sth301@hi.is
+    Valgerður Sigfinnsdóttir - vas30@hi.is
 -->
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
