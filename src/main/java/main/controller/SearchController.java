@@ -63,8 +63,19 @@ public class SearchController {
         model.addAttribute("events", events);
         return "view/ShowAllEvent";
     }
+/*
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String searchLess(@RequestParam(value = "title", required = false) String title,
+                         @RequestParam(value = "category", required = false) Long category_id,
+                         @RequestParam(value = "dateBegin", required = false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
+                         @RequestParam(value = "dateEnd", required = false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
+                         ModelMap model) {
 
-
+        List<Event> events = service.searchLess(title, category_id, dateBegin, dateEnd);
+        model.addAttribute("events", events);
+        return "view/ShowAllEvent";
+    }
+    */
     //Þetta fall sér um að leita af Staðsetningu og skila niðurstöðunum.
     public void searchLocation(){
 

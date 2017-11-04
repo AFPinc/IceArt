@@ -52,6 +52,8 @@ public interface IService {
 
     List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd, Date timeBegin, Date timeEnd);
 
+    List<Event> searchLess(String title, Long category_id, Date dateBegin, Date dateEnd);
+
     /**
      * fall sem vistar staðsetningu
      * @param location
