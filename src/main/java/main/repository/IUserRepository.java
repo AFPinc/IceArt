@@ -37,4 +37,6 @@ public interface IUserRepository extends JpaRepository<User, Long> {
      */
     @Override
     User findOne(Long id);
+
+    User findTopByUsername(String username);
 }

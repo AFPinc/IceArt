@@ -78,7 +78,17 @@ public class AccountController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public boolean login(){
-        return true;
+    public String login(@RequestParam(value = "username") String username,
+                         @RequestParam(value = "password") String password,
+                         ModelMap model, HttpServletResponse res) throws IOException {
+        User user = service.getUserByUserName(username);
+        if (user.getPassword().equals(password)){
+            res.sendRedirect("../");
+            return "view/MainPage";
+        }
+        else{
+            res.sendRedirect("/user/loginPage");
+            return "view/Login";
+        }
     }
 }

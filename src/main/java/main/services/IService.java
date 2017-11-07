@@ -130,4 +130,6 @@ public interface IService {
      * @return
      */
     User getUserById(Long id);
+
+    User getUserByUserName(String username);
 }

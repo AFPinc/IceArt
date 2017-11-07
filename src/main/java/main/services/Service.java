@@ -118,4 +118,9 @@ public class Service implements IService{
     public User getUserById(Long id) {
         return userRepo.findOne(id);
     }
-}
+
+     @Override
+     public User getUserByUserName(String username) {
+         return userRepo.findTopByUsername(username);
+     }
+ }
