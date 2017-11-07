@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 /**
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhansdóttir
@@ -54,10 +57,11 @@ public class AccountController {
     public String addUser(@RequestParam(value = "name") String name,
                           @RequestParam(value = "username") String username,
                           @RequestParam(value = "password") String password,
-                          ModelMap model){
+                          ModelMap model, HttpServletResponse res) throws IOException {
         User user = new User(name, username, password);
         User u = service.addUser(user);
-        return getUserById(u.getId(), model);
+        res.sendRedirect("../");
+        return "view/MainPage";
     }
 
     /**
