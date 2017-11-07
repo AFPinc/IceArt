@@ -64,13 +64,8 @@ public class Service implements IService{
     }
 
     @Override
-    public List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd, Date timeBegin, Date timeEnd) {
-        return eventRepo.findByTitleContainingAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndTimeBeginLessThanEqualAndTimeEndGreaterThanEqual(title, category_id, dateEnd, dateBegin, timeEnd, timeBegin);
-    }
-
-    @Override
-    public List<Event> searchLess(String title, Long category_id, Date dateBegin, Date dateEnd) {
-        return eventRepo.findByTitleContainingAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqual(title, category_id, dateEnd, dateBegin);
+    public List<Event> search(String title, String description, Long category_id, Date dateBegin, Date dateEnd) {
+        return eventRepo.findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqual(title, description, category_id, dateEnd, dateBegin);
     }
 
     @Override

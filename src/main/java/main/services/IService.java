@@ -62,9 +62,7 @@ public interface IService {
      * @return
      */
 
-    List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd, Date timeBegin, Date timeEnd);
-
-    List<Event> searchLess(String title, Long category_id, Date dateBegin, Date dateEnd);
+    List<Event> search(String title, String description, Long category_id, Date dateBegin, Date dateEnd);
 
     /**
      * fall sem vistar staðsetningu

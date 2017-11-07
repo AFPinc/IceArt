@@ -47,19 +47,15 @@ public class MainController {
         Calendar cal = Calendar.getInstance();
         Date now = cal.getTime();
         String todayDate = dateFormat.format(now);
-        String todayTime = timeFormat.format(now);
         cal.add(Calendar.DATE, 7);
         cal.add(Calendar.HOUR, 5);
         Date week = cal.getTime();
         String inWeekDate = dateFormat.format(week);
-        String inWeekTime = timeFormat.format(week);
 
         model.addAttribute("events", events);
         model.addAttribute("categories", categories);
         model.addAttribute("todayDate", todayDate);
-        model.addAttribute("todayTime", todayTime);
         model.addAttribute("inWeekDate", inWeekDate);
-        model.addAttribute("inWeekTime", inWeekTime);
         return "view/MainPage";
     }
 

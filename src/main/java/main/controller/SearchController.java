@@ -39,30 +39,18 @@ public class SearchController {
 
     /**
      * Þetta fall sér um að leita af viðburði eftir titli
-     * @param title
+     * @param text
      * @param model
      * @return
      */
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String search(@RequestParam(value = "title", required = false) String title,
+    public String search(@RequestParam(value = "text", required = false) String text,
                          @RequestParam(value = "category", required = false) Long category_id,
                          @RequestParam(value = "dateBegin", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
                          @RequestParam(value = "dateEnd", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
-                         @RequestParam(value = "timeBegin", required = true) @DateTimeFormat(pattern="HH:mm") Date timeBegin,
-                         @RequestParam(value = "timeEnd", required = true) @DateTimeFormat(pattern="HH:mm") Date timeEnd,
                          ModelMap model) {
-        Calendar c = Calendar.getInstance();
-        c.setTime(timeEnd);
-        c.add(Calendar.DATE, 1);
-        timeEnd = c.getTime();
-        c.setTime(timeBegin);
-        c.add(Calendar.DATE, -1);
-        timeBegin = c.getTime();
-
-        title = "%" + title + "%";
-
-        List<Event> events = service.search(title, category_id, dateBegin, dateEnd, timeBegin, timeEnd);
+        List<Event> events = service.search(text, text, category_id, dateBegin, dateEnd);
         model.addAttribute("events", events);
         return "view/ShowAllEvent";
     }

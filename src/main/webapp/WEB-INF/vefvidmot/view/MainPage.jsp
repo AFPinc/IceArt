@@ -43,31 +43,13 @@
 
 <div class="container">
     <form method="GET" action="/search/">
-        <div class="form-group col-xs-4 col-md-4">
+        <div class="form-group col-xs-3 col-md-3">
             <div class="form-group row">
                 <label for="search" class="control-label">Leitarorð</label>
-                <input type="text" name="title" id="search" class="form-control" placeholder="Leitarorð" \>
+                <input type="text" name="text" id="search" class="form-control" placeholder="Leitarorð" \>
             </div>
-            <div class="form-group row">
-                <label for="category" class="control-label">Tegund</label>
-                <c:choose>
-                    <c:when test="${not empty categories}">
-                        <select name="category" id="category" class="form-control">
-                            <c:forEach var="category" items="${categories}">
-                                <option value="${category.getId()}">${category.getTitle()}</option>
-                            </c:forEach>
-                        </select><br>
-                    </c:when>
-                    <c:otherwise>
-                        Enginn flokkur hefur verið skráður.<br>
-                    </c:otherwise>
-                </c:choose>
-            </div>
-            <button type="submit" value="Search" class="btn btn-default">
-                <span class="glyphicon glyphicon-search"></span> Leita
-            </button>
         </div>
-        <div class="form-group col-xs-8 col-md-8">
+        <div class="form-group col-xs-6 col-md-6">
             <label for="dateBegin" class="control-label">Dagsetning</label>
             <div class="form-group row">
                 <div class="col-md-5">
@@ -78,17 +60,27 @@
                     <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${inWeekDate}">
                 </div>
             </div>
-            <label for="timeBegin" class="control-label">Tími</label>
+        </div>
+        <div class="form-group col-xs-3 col-md-3">
             <div class="form-group row">
-                <div class="col-md-5">
-                    <input type="time" class="form-control" id="timeBegin" name="timeBegin" value="${todayTime}">
-                </div>
-                <label for="timeEnd" class="col-md-1 control-label"> - </label>
-                <div class="col-md-5">
-                    <input type="time" class="form-control" id="timeEnd" name="timeEnd" value="${inWeekTime}">
-                </div>
+                <label for="category" class="control-label">Tegund</label>
+                <c:choose>
+                    <c:when test="${not empty categories}">
+                        <select name="category" id="category" class="form-control">
+                            <c:forEach var="category" items="${categories}">
+                                <option value="${category.getId()}">${category.getTitle()}</option>
+                            </c:forEach>
+                        </select>
+                    </c:when>
+                    <c:otherwise>
+                        Enginn flokkur hefur verið skráður.<br>
+                    </c:otherwise>
+                </c:choose>
             </div>
         </div>
+        <button type="submit" value="Search" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span> Leita
+        </button>
     </form>
     <br>
 </div>
