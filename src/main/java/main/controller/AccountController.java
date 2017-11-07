@@ -82,7 +82,7 @@ public class AccountController {
                          @RequestParam(value = "password") String password,
                          ModelMap model, HttpServletResponse res) throws IOException {
         User user = service.getUserByUserName(username);
-        if (user.getPassword().equals(password)){
+        if (user != null && user.getPassword().equals(password)){
             res.sendRedirect("../");
             return "view/MainPage";
         }
