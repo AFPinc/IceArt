@@ -10,7 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.net.ssl.SSLSessionContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -26,7 +31,7 @@ import java.io.IOException;
 
 @Controller
 @RequestMapping("/user")
-public class AccountController {
+public class AccountController extends HttpServlet {
 
     @Autowired
     IService service;
@@ -35,60 +40,71 @@ public class AccountController {
      * Birtir Login síðuna
      * @return
      */
-    @RequestMapping(value = "/loginPage")
+
+    /*@RequestMapping(value = "/loginPage") login
     public String showPage() {
         return "view/Login";
     }
 
-    @RequestMapping(value = "/signUpPage")
+    @RequestMapping(value = "/signUpPage") addUser
     public String showPage2() {
         return "view/SignUp";
     }
+
+    @RequestMapping(value = "/logoutPage") logout
+    public String showPage3() {
+        return "view/Logout";
+    }
+    */
 
     /**
      * Þetta fall bætir við notanda (user)
      * @param name
      * @param username
      * @param password
-     * @param model
      * @return
      */
-    @RequestMapping(value = "/addUser")
+    @RequestMapping(value = "/signup")
     public String addUser(@RequestParam(value = "name") String name,
                           @RequestParam(value = "username") String username,
                           @RequestParam(value = "password") String password,
-                          ModelMap model, HttpServletResponse res) throws IOException {
+                          HttpServletResponse response) throws IOException {
         User user = new User(name, username, password);
         User u = service.addUser(user);
-        res.sendRedirect("../");
+        response.sendRedirect("../");
         return "view/MainPage";
-    }
-
-    /**
-     * Þetta fall nær í notanda eftir auðkenni hans
-     * @param id
-     * @param model
-     * @return
-     */
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String getUserById(@PathVariable(value = "id") Long id, ModelMap model) {
-        User user = service.getUserById(id);
-        model.addAttribute( "user", user);
-        return "view/myPage";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(@RequestParam(value = "username") String username,
-                         @RequestParam(value = "password") String password,
-                         ModelMap model, HttpServletResponse res) throws IOException {
+                        @RequestParam(value = "password") String password,
+                        HttpServletResponse response,
+                        HttpServletRequest request) throws ServletException, IOException {
         User user = service.getUserByUserName(username);
         if (user != null && user.getPassword().equals(password)){
-            res.sendRedirect("../");
+            response.sendRedirect("../");
+
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+
             return "view/MainPage";
+
         }
         else{
-            res.sendRedirect("/user/loginPage");
+            //response.sendRedirect("/user/loginPage");
+            request.getRequestDispatcher("/user/login").include(request, response);
             return "view/Login";
         }
     }
+
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public String logout(HttpServletRequest request,
+                         HttpServletRequest response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        session.invalidate();
+        return "view/Logout";
+
+    }
+
+
 }

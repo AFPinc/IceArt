@@ -29,11 +29,20 @@
 
 <div class="navbar">
     <a href="/">Forsíða</a>
-    <a href="/event/add">Skrá viðburð</a>
-    <a href="/location/add">Skrá staðsetningu</a>
-    <a href="/artist/add">Skrá listamann</a>
-    <a href="/user/loginPage">Innskrá</a>
+
+    <% if (session == null) { %><a></a>
+    <% } else { %><a href="/event/add">Skrá viðburð</a><% } %>
+
+    <% if (session == null) { %><a></a>
+    <% } else { %><a href="/location/add">Skrá staðsetningu</a><% } %>
+
+    <% if (session == null) { %><a></a>
+    <% } else { %><a href="/artist/add">Skrá listamann</a><% } %>
+
+    <% if (session == null) { %><a href="/user/login">Innskrá</a>
+    <% } else { %><a href="/user/logout">Útskrá</a><% } %>
 </div>
+
 <div class="addDiv">
     <h1>Upplýsingar um staðsetning</h1>
     <hr />

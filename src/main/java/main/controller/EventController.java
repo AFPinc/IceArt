@@ -65,6 +65,7 @@ public class EventController {
                            @RequestParam(value = "category") Long categoryId,
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
+
         Calendar c = Calendar.getInstance();
         c.setTime(timeEnd);
         c.add(Calendar.DATE, 1);
