@@ -59,14 +59,6 @@ public class ArtistController {
     }
 
     /**
-     * Þetta fall eyðir listamanni sem er til
-     * @param
-     */
-    public void deleteArtist(){
-
-    }
-
-    /**
      * Þetta fall nær í listamann eftir auðkenni
      * @param id
      * @param model
@@ -76,6 +68,6 @@ public class ArtistController {
     public String getArtistById(@PathVariable(value = "id") Long id, ModelMap model){
         Artist artist = service.getArtistById(id);
         model.addAttribute("artist", artist);
-        return "view/showArtist";
+        return "view/ShowArtist";
     }
 }

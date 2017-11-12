@@ -52,7 +52,7 @@ public class SearchController {
                          ModelMap model) {
         List<Event> events = service.search(text, text, category_id, dateBegin, dateEnd);
         model.addAttribute("events", events);
-        return "view/ShowAllEvent";
+        return "view/ShowSearchResults";
     }
 /*
     @RequestMapping(value = "/", method = RequestMethod.GET)

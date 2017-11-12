@@ -68,13 +68,13 @@ public class ApplicationTest {
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /artist/{id}
-    * og fá til baka view/showArtist.jsp síðuna sem inniheldur listamann með id nr.2
+    * og fá til baka view/ShowArtist.jsp síðuna sem inniheldur listamann með id nr.2
     * */
     @Test
     public void viewShowArtist() throws Exception {
         this.mockMvc.perform(get("/artist/2"))
                 .andDo(print()).andExpect(status().isOk())
-                .andExpect(view().name("view/showArtist"));
+                .andExpect(view().name("view/ShowArtist"));
     }
 
     /* Test til að athuga hvort virkar að senda HttpRequest á /location/add
