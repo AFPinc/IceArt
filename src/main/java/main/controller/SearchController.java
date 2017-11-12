@@ -1,6 +1,7 @@
 package main.controller;
 
 import main.model.Category;
+import main.model.User;
 import main.services.IService;
 import main.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.ModelMap;
 
+import javax.servlet.http.HttpSession;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -33,10 +35,6 @@ public class SearchController {
     @Autowired
     IService service;
 
-    //Þetta fall sér um að leita af Viðburðum og skila niðurstöðunum.
-    public void searchEvents(){
-    }
-
     /**
      * Þetta fall sér um að leita af viðburði eftir titli
      * @param text
@@ -49,31 +47,11 @@ public class SearchController {
                          @RequestParam(value = "category", required = false) Long category_id,
                          @RequestParam(value = "dateBegin", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
                          @RequestParam(value = "dateEnd", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
-                         ModelMap model) {
+                         ModelMap model, HttpSession session) {
         List<Event> events = service.search(text, text, category_id, dateBegin, dateEnd);
+        User currentUser = (User) session.getAttribute("user");
         model.addAttribute("events", events);
-        return "view/ShowAllEvent";
-    }
-/*
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String searchLess(@RequestParam(value = "title", required = false) String title,
-                         @RequestParam(value = "category", required = false) Long category_id,
-                         @RequestParam(value = "dateBegin", required = false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
-                         @RequestParam(value = "dateEnd", required = false) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
-                         ModelMap model) {
-
-        List<Event> events = service.searchLess(title, category_id, dateBegin, dateEnd);
-        model.addAttribute("events", events);
-        return "view/ShowAllEvent";
-    }
-    */
-    //Þetta fall sér um að leita af Staðsetningu og skila niðurstöðunum.
-    public void searchLocation(){
-
-    }
-
-    //Þetta fall sér um að leita af Listamanni og skila niðurstöðunum.
-    public void searchArtist(){
-
+        model.addAttribute("currentUser", currentUser);
+        return "view/ShowSearchResults";
     }
 }

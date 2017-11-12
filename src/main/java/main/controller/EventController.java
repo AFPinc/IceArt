@@ -1,9 +1,6 @@
 package main.controller;
 
-import main.model.Artist;
-import main.model.Event;
-import main.model.Location;
-import main.model.Category;
+import main.model.*;
 import main.services.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -16,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -66,13 +64,14 @@ public class EventController {
                            @RequestParam(value = "timeEnd", required=false) @DateTimeFormat(pattern="HH:mm") Date timeEnd,
                            @RequestParam(value = "category") Long categoryId,
                            @RequestParam(value = "description", required=false) String description,
-                           ModelMap model){
+                           ModelMap model, HttpSession session){
 
         Location location = service.getLocationById(locationId);
         Artist artist = service.getArtistById(artistId);
         Category category = service.getCategoryById(categoryId);
         Event event = new Event(title, location, artist, dateBegin, timeBegin, dateEnd, timeEnd, category, description, false);
         Event e = service.addEvent(event);
+        return getEventById(e.getId(), model, session);
         return getEventById(e.getId(), model);
     }
 
@@ -100,8 +99,10 @@ public class EventController {
      * @return
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String getEventById(@PathVariable(value = "id") Long id, ModelMap model){
+    public String getEventById(@PathVariable(value = "id") Long id, ModelMap model, HttpSession session){
         Event event = service.getEventById(id);
+        User currentUser = (User) session.getAttribute("user");
+        model.addAttribute("currentUser", currentUser);
         model.addAttribute("event", event);
         return "view/ShowEvent";
     }
@@ -112,7 +113,7 @@ public class EventController {
      * @return
      */
     @RequestMapping(value = "/add")
-    public String showPage(ModelMap model){
+    public String showPage(ModelMap model, HttpSession session){
         List<Location> locations = service.getAllLocations();
         List<Artist> artists = service.getAllArtist();
         List<Category> categories = service.getAllCategories();
@@ -128,6 +129,9 @@ public class EventController {
         Date week = cal.getTime();
         String inWeekDate = dateFormat.format(week);
         String inWeekTime = timeFormat.format(week);
+
+        User currentUser = (User) session.getAttribute("user");
+        model.addAttribute("currentUser", currentUser);
 
         model.addAttribute("locations", locations);
         model.addAttribute("artists", artists);
