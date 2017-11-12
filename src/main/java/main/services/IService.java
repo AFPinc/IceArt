@@ -23,56 +23,57 @@ import java.util.List;
 
 public interface IService {
     /**
-     * fall sem vistar event
+     * Fall sem vistar viðburð
      * @param event
      * @return
      */
     Event addEvent(Event event);
 
     /**
-     * Fall sem nær í event eftir auðkenni
+     * Fall sem nær í viðburð eftir auðkenni
      * @param id
      * @return
      */
     Event getEventById(Long id);
 
     /**
-     * Fall sem nær í alla eventa í kerfinu
+     * Fall sem nær í alla viðburði í kerfinu
      * @return
      */
     List<Event> getAllEvents();
 
     /**
-     * fall sem nær í eventa eftir titli
+     * Fall sem nær í viðburði eftir titli
      * @param title
      * @return
      */
     List<Event> getEventByTitle(String title);
 
+    Event getEventByDeleted(boolean deleted);
+
     /**
-     * Fall sem nær í 10 event
-     * @return Listi af event
+     * Fall sem nær í 10 viðburði
+     * @return Listi af viðburðum
      */
     List<Event> getTop10Events();
 
     /**
-     * fall sem nær í eventa eftir titli og flokk
+     * Fall sem nær í viðburði eftir titli og flokk
      * @param title
      * @param category_id
      * @return
      */
-
     List<Event> search(String title, String description, Long category_id, Date dateBegin, Date dateEnd);
 
     /**
-     * fall sem vistar staðsetningu
+     * Fall sem vistar staðsetningu
      * @param location
      * @return
      */
     Location addLocation(Location location);
 
     /**
-     * fall sem nær í allar staðsetningar
+     * Fall sem nær í allar staðsetningar
      * @return
      */
     List<Location> getAllLocations();
@@ -85,33 +86,33 @@ public interface IService {
     Location getLocationById(Long id);
 
     /**
-     * fall sem vistar artist
+     * Fall sem vistar listamann
      * @param artist
      * @return
      */
     Artist addArtist(Artist artist);
 
     /**
-     * fall sem nær í alla artista
+     * Fall sem nær í alla listamenn
      * @return
      */
     List<Artist> getAllArtist();
 
     /**
-     * fall sem nær í artista eftir auðkenni
+     * Fall sem nær í listamann eftir auðkenni
      * @param id
      * @return
      */
     Artist getArtistById(Long id);
 
     /**
-     * fall sem nær í allar categories
+     * Fall sem nær í allar flokka
      * @return
      */
     List<Category> getAllCategories();
 
     /**
-     * fall sem nær í flokk eftir auðkenni
+     * Fall sem nær í flokk eftir auðkenni
      * @param id
      * @return
      */

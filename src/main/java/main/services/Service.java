@@ -54,6 +54,11 @@ public class Service implements IService{
     }
 
     @Override
+    public Event getEventByDeleted(boolean deleted) {
+        return eventRepo.findOneByDeleted(deleted);
+    }
+
+    @Override
     public List<Event> getEventByTitle(String title) {
         return eventRepo.findByTitleContaining(title);
     }
@@ -65,7 +70,7 @@ public class Service implements IService{
 
     @Override
     public List<Event> search(String title, String description, Long category_id, Date dateBegin, Date dateEnd) {
-        return eventRepo.findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqual(title, description, category_id, dateEnd, dateBegin);
+        return eventRepo.findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndDeleted(title, description, category_id, dateEnd, dateBegin, false);
     }
 
     @Override

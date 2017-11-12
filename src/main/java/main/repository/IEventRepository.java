@@ -21,13 +21,13 @@ import java.util.List;
 
 public interface IEventRepository extends JpaRepository<Event, Long>{
     /**
-     * Nær í alla event-a
-     * @return listi af event-um
+     * Nær í alla viðburði
+     * @return listi af viðburðum
      */
     List<Event> findAll();
 
     /**
-     * Bætir við event
+     * Bætir við viðburði
      * @param event
      */
     @Override
@@ -42,17 +42,18 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
     @Override
     Event findOne(Long id);
 
-    List<Event> findByTitle(String title);
+    Event findOneByDeleted(boolean deleted);
 
     List<Event> findByTitleContaining(String title);
 
-    List<Event> findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqual(String title, String description, Long category_id, Date dateEnd, Date dateBegin);
-
+    List<Event> findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndDeleted(String title, String description, Long category_id, Date dateEnd, Date dateBegin, boolean deleted);
 
     /**
      *  Nær í 10 event.
      * @return List<event>
      */
-    @Query(value="SELECT * FROM event LIMIT 10", nativeQuery = true)
+    @Query(value="SELECT * FROM event WHERE deleted=false LIMIT 10", nativeQuery = true)
     List<Event> findTop10();
+
+
 }

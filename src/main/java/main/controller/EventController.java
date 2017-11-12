@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -66,14 +68,6 @@ public class EventController {
                            @RequestParam(value = "description", required=false) String description,
                            ModelMap model){
 
-        Calendar c = Calendar.getInstance();
-        c.setTime(timeEnd);
-        c.add(Calendar.DATE, 1);
-        timeEnd = c.getTime();
-        c.setTime(timeBegin);
-        c.add(Calendar.DATE, 1);
-        timeBegin = c.getTime();
-
         Location location = service.getLocationById(locationId);
         Artist artist = service.getArtistById(artistId);
         Category category = service.getCategoryById(categoryId);
@@ -82,13 +76,25 @@ public class EventController {
         return getEventById(e.getId(), model);
     }
 
-    //Þetta fall eyðir viðburði
-    public void deleteEvent(){
-
+    /**
+     * Fall sem skilgreinir viðburð sem eyddan viðburð
+     * @param id
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
+    public String deleteEvent(@PathVariable(value = "id", required=false) Long id,
+                              HttpServletResponse response,
+                              ModelMap model) throws IOException {
+        Event event = service.getEventById(id);
+        event.setDeleted(true);
+        Event e = service.addEvent(event);
+        response.sendRedirect("../../");
+        return "view/MainPage";
     }
 
     /**
-     * Þetta fall nær í viðbuðr eftir auðkenni hans
+     * Þetta fall nær í viðburð eftir auðkenni hans
      * @param id
      * @param model
      * @return
