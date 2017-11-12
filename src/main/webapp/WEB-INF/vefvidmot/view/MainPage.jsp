@@ -93,7 +93,7 @@
 </div>
 
 <div class="container">
-    <h2>Viðburðir</h2>
+    <h2>Topp 10 viðburðir</h2>
 </div>
 
 <c:choose>

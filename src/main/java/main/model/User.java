@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date September 2017

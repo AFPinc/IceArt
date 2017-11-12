@@ -46,21 +46,21 @@
 
     <form class="form-horizontal" action="/user/addUser" method="POST" id="signUp" >
         <div class="form-group">
-            <label for="username" class="col-sm-2 control-label">Name:</label>
+            <label for="username" class="col-sm-2 control-label">Nafn:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Name" id="name" name="name" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Nafn" id="name" name="name" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="username" class="col-sm-2 control-label">Notendanafn:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Username" id="username" name="username" pattern=".{1,50}" required>
+                <input type="text" class="form-control" placeholder="Lykilorð" id="username" name="username" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">
             <label for="password" class="col-sm-2 control-label">Lykilorð:</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" placeholder="Password" id="password" name="password" pattern=".{1,50}" required>
+                <input type="password" class="form-control" placeholder="Lykilorð" id="password" name="password" pattern=".{1,50}" required>
             </div>
         </div>
         <div class="form-group">

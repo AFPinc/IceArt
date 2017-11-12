@@ -11,6 +11,17 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
+/**
+ * @author Ása Júlía Aðalsteinsdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
+ * @author Sigurlaug Þórðardóttir
+ * @author Vagerður Sigfinnsdóttir
+ * @date September 2017
+ * Háskóli Íslands
+ *
+ * Stýriklasi fyrir villumeðhöndlun
+ */
+
 @Controller
 public class ErrorController implements org.springframework.boot.autoconfigure.web.ErrorController{
 

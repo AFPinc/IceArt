@@ -46,66 +46,71 @@
     <h1>Upplýsingar um viðburð</h1>
     <hr />
     <form id="deleteEvent" action="/event/delete/${event.getId()}" method="POST" class="form-horizontal">
-        <dl class="dl-horizontal">
-            <dt>
-                Title:
-            </dt>
+        <div class="form-group">
+            <dl class="dl-horizontal">
+                <dt>
+                    Title:
+                </dt>
 
-            <dd>
-                ${event.getTitle()}
-            </dd>
+                <dd>
+                    ${event.getTitle()}
+                </dd>
 
-            <dt>
-                Location:
-            </dt>
+                <dt>
+                    Location:
+                </dt>
 
-            <dd>
-                <a class="a-info" href="../location/${event.getLocationId()}">${event.getLocation()}</a>
-            </dd>
+                <dd>
+                    <a class="a-info" href="../location/${event.getLocationId()}">${event.getLocation()}</a>
+                </dd>
 
-            <dt>
-                From:
-            </dt>
+                <dt>
+                    From:
+                </dt>
 
-            <dd>
-                ${event.getDateBegin()}
-            </dd>
+                <dd>
+                    ${event.getDateBegin()}
+                </dd>
 
-            <dt>
-                To:
-            </dt>
+                <dt>
+                    To:
+                </dt>
 
-            <dd>
-                ${event.getDateEnd()}
-            </dd>
-            <dt>
-                Artist:
-            </dt>
+                <dd>
+                    ${event.getDateEnd()}
+                </dd>
+                <dt>
+                    Artist:
+                </dt>
 
-            <dd>
-                <a class="a-info" href="../artist/${event.getArtistId()}">${event.getArtist()}</a>
-            </dd>
-            <dt>
-                Category:
-            </dt>
+                <dd>
+                    <a class="a-info" href="../artist/${event.getArtistId()}">${event.getArtist()}</a>
+                </dd>
+                <dt>
+                    Category:
+                </dt>
 
-            <dd>
-                ${event.getCategory()}
-            </dd>
-            <dt>
-                Description:
-            </dt>
+                <dd>
+                    ${event.getCategory()}
+                </dd>
+                <dt>
+                    Description:
+                </dt>
 
-            <dd>
-                ${event.getDescription()}
-            </dd>
-
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Eyða viðburði</button>
-                </div>
-            </div>
-        </dl>
+                <dd>
+                    ${event.getDescription()}
+                </dd>
+            </dl>
+        </div>
+        <div class="form-group">
+                <c:if test="${currentUser != null}">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Eyða viðburði</button>
+                        </div>
+                    </div>
+                </c:if>
+        </div>
     </form>
 
 </div>

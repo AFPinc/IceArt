@@ -7,24 +7,24 @@ import java.util.List;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date 13. október 2017
  * Háskóli Íslands
  *
- * Geymsla fyrir allar categories
+ * Geymsla fyrir alla flokka
  */
 
 public interface ICategoryRepository extends JpaRepository<Category, Long> {
     /**
-     * gets all categories
+     * Nær í alla flokka
      * @return list of categories
      */
     List<Category> findAll();
 
     /**
-     * Gets category by Id
+     * Nær í flokk eftir auðkenni
      * @param id
      * @return category
      */

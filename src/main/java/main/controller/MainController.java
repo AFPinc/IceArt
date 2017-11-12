@@ -20,7 +20,7 @@ import java.util.List;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date Október 2017
@@ -36,7 +36,7 @@ public class MainController {
     IService service;
 
     /**
-     * Þetta fall birtir upphafssíðuna með 10 eventum
+     * Þetta fall birtir upphafssíðuna með 10 viðburðum
      * @return
      */
     @RequestMapping(value = "")

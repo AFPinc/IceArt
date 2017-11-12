@@ -24,7 +24,7 @@ import java.util.List;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date September 2017
@@ -72,7 +72,6 @@ public class EventController {
         Event event = new Event(title, location, artist, dateBegin, timeBegin, dateEnd, timeEnd, category, description, false);
         Event e = service.addEvent(event);
         return getEventById(e.getId(), model, session);
-        return getEventById(e.getId(), model);
     }
 
     /**

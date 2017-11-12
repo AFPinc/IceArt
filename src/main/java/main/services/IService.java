@@ -11,14 +11,14 @@ import java.util.List;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
 
  * @date September 2017
  * Háskóli Íslands
  *
- * Þjónustuklasi.
+ * Þjónustuklasi
  */
 
 public interface IService {
@@ -35,21 +35,6 @@ public interface IService {
      * @return
      */
     Event getEventById(Long id);
-
-    /**
-     * Fall sem nær í alla viðburði í kerfinu
-     * @return
-     */
-    List<Event> getAllEvents();
-
-    /**
-     * Fall sem nær í viðburði eftir titli
-     * @param title
-     * @return
-     */
-    List<Event> getEventByTitle(String title);
-
-    Event getEventByDeleted(boolean deleted);
 
     /**
      * Fall sem nær í 10 viðburði
@@ -126,11 +111,9 @@ public interface IService {
     User addUser(User user);
 
     /**
-     * Fall sem nær í notanda eftir auðkenni
-     * @param id
+     * Fall sem nær í notanda eftir notendanafni
+     * @param username
      * @return
      */
-    User getUserById(Long id);
-
     User getUserByUserName(String username);
 }

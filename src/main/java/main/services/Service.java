@@ -7,12 +7,10 @@ import main.model.Category;
 import main.model.User;
 import main.repository.IArtistRepository;
 import main.repository.IEventRepository;
-import main.repository.ILocationRepositroy;
+import main.repository.ILocationRepository;
 import main.repository.ICategoryRepository;
 import main.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 
 import java.util.Date;
 import java.util.List;
@@ -35,7 +33,7 @@ public class Service implements IService{
     @Autowired
     IEventRepository eventRepo;
     @Autowired
-    ILocationRepositroy locationRepo;
+    ILocationRepository locationRepo;
     @Autowired
     IArtistRepository artistRepo;
     @Autowired
@@ -54,16 +52,6 @@ public class Service implements IService{
     }
 
     @Override
-    public Event getEventByDeleted(boolean deleted) {
-        return eventRepo.findOneByDeleted(deleted);
-    }
-
-    @Override
-    public List<Event> getEventByTitle(String title) {
-        return eventRepo.findByTitleContaining(title);
-    }
-
-    @Override
     public List<Event> getTop10Events() {
         return eventRepo.findTop10();
     }
@@ -72,9 +60,6 @@ public class Service implements IService{
     public List<Event> search(String title, String description, Long category_id, Date dateBegin, Date dateEnd) {
         return eventRepo.findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndDeleted(title, description, category_id, dateEnd, dateBegin, false);
     }
-
-    @Override
-    public List<Event> getAllEvents() { return eventRepo.findAll(); }
 
     @Override
     public Location addLocation(Location location) {
@@ -118,10 +103,6 @@ public class Service implements IService{
 
     public User addUser(User user) {
         return userRepo.save(user);
-    }
-
-    public User getUserById(Long id) {
-        return userRepo.findOne(id);
     }
 
      @Override

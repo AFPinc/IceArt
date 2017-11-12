@@ -7,30 +7,30 @@ import java.util.List;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date Október 2017
  * Háskóli Íslands
  *
- * Location Repository
+ * Geymsla fyrir allar staðsetningar
  */
-public interface ILocationRepositroy extends JpaRepository<Location, Long> {
+public interface ILocationRepository extends JpaRepository<Location, Long> {
     /**
-     * gets all locations
+     * Nær í allar staðsetningar
      * @return list of locations
      */
     List<Location> findAll();
 
     /**
-     * Saves new location
+     * Vistar nýja staðsetningu
      * @param location
      */
     @Override
     Location save(Location location);
 
     /**
-     * Gets location by Id
+     * Nær í staðsetningu eftir auðkenni
      * @param id
      * @return location
      */

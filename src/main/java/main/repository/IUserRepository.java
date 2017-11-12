@@ -13,30 +13,35 @@ import java.util.List;
  * @date Október 2017
  * Háskóli Íslands
  *
- * User Repository
+ * Geymsla fyrir alla notendur
  */
 
 public interface IUserRepository extends JpaRepository<User, Long> {
     /**
-     * gets all user
+     * Nær í alla notendur
      * @return list of users
      */
     List<User> findAll();
 
     /**
-     * Saves new user
+     * Vistar nýjan notanda
      * @param user
      */
     @Override
     User save(User user);
 
     /**
-     * Gets user by Id
+     * Nær í notanda eftir auðkenni
      * @param id
      * @return artist
      */
     @Override
     User findOne(Long id);
 
+    /**
+     * Nær í notanda eftir nafni
+     * @param username
+     * @return
+     */
     User findTopByUsername(String username);
 }

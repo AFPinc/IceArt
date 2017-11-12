@@ -7,30 +7,30 @@ import java.util.List;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date Október 2017
  * Háskóli Íslands
  *
- * Artist Repository
+ * Geymsla fyrir alla listamenn
  */
 public interface IArtistRepository extends JpaRepository<Artist, Long> {
     /**
-     * gets all artists
+     * Nær í alla listamenn
      * @return list of artists
      */
     List<Artist> findAll();
 
     /**
-     * Saves new artist
+     * Vistar nýjan listamann
      * @param artist
      */
     @Override
     Artist save(Artist artist);
 
     /**
-     * Gets artist by Id
+     * Nær í listamann eftir auðkenni
      * @param id
      * @return artist
      */

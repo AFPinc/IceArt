@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
- * @author Melkorka Mjöll Jóhansdóttir
+ * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
  * @author Vagerður Sigfinnsdóttir
  * @date September 2017
@@ -76,6 +76,6 @@ public class ArtistController {
         User currentUser = (User) session.getAttribute("user");
         model.addAttribute("currentUser", currentUser);
         model.addAttribute("artist", artist);
-        return "view/ShowArtist";
+        return "view/showArtist";
     }
 }
