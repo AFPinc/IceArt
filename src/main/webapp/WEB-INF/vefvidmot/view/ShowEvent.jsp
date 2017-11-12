@@ -49,7 +49,7 @@
         <div class="form-group">
             <dl class="dl-horizontal">
                 <dt>
-                    Title:
+                    Titill:
                 </dt>
 
                 <dd>
@@ -57,7 +57,7 @@
                 </dd>
 
                 <dt>
-                    Location:
+                    Staðsetning:
                 </dt>
 
                 <dd>
@@ -65,7 +65,7 @@
                 </dd>
 
                 <dt>
-                    From:
+                    Frá:
                 </dt>
 
                 <dd>
@@ -73,28 +73,28 @@
                 </dd>
 
                 <dt>
-                    To:
+                    Til:
                 </dt>
 
                 <dd>
                     ${event.getDateEnd()}
                 </dd>
                 <dt>
-                    Artist:
+                    Listamaður:
                 </dt>
 
                 <dd>
                     <a class="a-info" href="../artist/${event.getArtistId()}">${event.getArtist()}</a>
                 </dd>
                 <dt>
-                    Category:
+                    Flokkur:
                 </dt>
 
                 <dd>
                     ${event.getCategory()}
                 </dd>
                 <dt>
-                    Description:
+                    Lýsing:
                 </dt>
 
                 <dd>

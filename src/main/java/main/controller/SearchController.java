@@ -52,6 +52,6 @@ public class SearchController {
         User currentUser = (User) session.getAttribute("user");
         model.addAttribute("events", events);
         model.addAttribute("currentUser", currentUser);
-        return "view/ShowSearchResults";
+        return "view/ShowAllEvent";
     }
 }

@@ -42,8 +42,16 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
     @Override
     Event findOne(Long id);
 
-    List<Event> findByTitleContaining(String title);
-
+    /**
+     * Nær í viðburði eftir ýmsum upplýsingum
+     * @param title
+     * @param description
+     * @param category_id
+     * @param dateEnd
+     * @param dateBegin
+     * @param deleted
+     * @return
+     */
     List<Event> findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndDeleted(String title, String description, Long category_id, Date dateEnd, Date dateBegin, boolean deleted);
 
     /**
