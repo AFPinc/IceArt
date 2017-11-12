@@ -29,17 +29,16 @@
 <div class="navbar">
     <a href="/">Forsíða</a>
 
-    <% if (session == null) { %><a></a>
-    <% } else { %><a href="/event/add">Skrá viðburð</a><% } %>
+    <c:if test="${currentUser != null}"><a href="/event/add">Skrá viðburð</a></c:if>
 
-    <% if (session == null) { %><a></a>
-    <% } else { %><a href="/location/add">Skrá staðsetningu</a><% } %>
+    <c:if test="${currentUser != null}"><a href="/location/add">Skrá staðsetningu</a></c:if>
 
-    <% if (session == null) { %><a></a>
-    <% } else { %><a href="/artist/add">Skrá listamann</a><% } %>
+    <c:if test="${currentUser != null}"><a href="/artist/add">Skrá listamann</a></c:if>
 
-    <% if (session == null) { %><a href="/user/login">Innskrá</a>
-    <% } else { %><a href="/user/logout">Útskrá</a><% } %>
+    <c:choose>
+        <c:when test="${currentUser == null}"><a href="/user/loginPage">Innskrá</a></c:when>
+        <c:otherwise><a href="/user/logout">Útskrá</a></c:otherwise>
+    </c:choose>
 </div>
 
 <h1 class="container">Eitthvað fór úrskeiðis</h1>

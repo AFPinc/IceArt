@@ -1,7 +1,9 @@
 package main.controller;
 
 import main.model.Artist;
+import main.model.User;
 import main.services.IService;
+import org.apache.coyote.http2.Http2Error;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -9,6 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpSession;
 
 
 /**
@@ -34,7 +38,9 @@ public class ArtistController {
      * @return
      */
     @RequestMapping(value = "/add")
-    public String showPage(){
+    public String showPage(ModelMap model, HttpSession session){
+        User currentUser = (User) session.getAttribute("user");
+        model.addAttribute("currentUser", currentUser);
         return "view/AddArtist";
     }
 
@@ -52,10 +58,10 @@ public class ArtistController {
                             @RequestParam(value = "description") String description,
                             @RequestParam(value = "age") int age,
                             @RequestParam(value = "country") String country,
-                            ModelMap model){
+                            ModelMap model, HttpSession session){
         Artist artist = new Artist(name, description, age, country);
         Artist a = service.addArtist(artist);
-        return getArtistById(a.getId(), model);
+        return getArtistById(a.getId(), model, session);
     }
 
     /**
@@ -65,8 +71,10 @@ public class ArtistController {
      * @return
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String getArtistById(@PathVariable(value = "id") Long id, ModelMap model){
+    public String getArtistById(@PathVariable(value = "id") Long id, ModelMap model, HttpSession session){
         Artist artist = service.getArtistById(id);
+        User currentUser = (User) session.getAttribute("user");
+        model.addAttribute("currentUser", currentUser);
         model.addAttribute("artist", artist);
         return "view/ShowArtist";
     }

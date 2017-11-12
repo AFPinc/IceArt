@@ -1,5 +1,6 @@
 package main.controller;
 
+import main.model.User;
 import main.services.IService;
 import main.model.Location;
 import main.model.Event;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * @author Ása Júlía Aðalsteinsdóttir
@@ -34,7 +37,9 @@ public class LocationController {
      * @return
      */
     @RequestMapping(value = "/add")
-    public String showPage(){
+    public String showPage(ModelMap model, HttpSession session){
+        User currentUser = (User) session.getAttribute("user");
+        model.addAttribute("currentUser", currentUser);
         return "view/AddLocation";
     }
 
@@ -52,15 +57,10 @@ public class LocationController {
                               @RequestParam(value = "description") String description,
                               @RequestParam(value = "openHours") String openHours,
                               @RequestParam(value = "maxPeople") int maxPeople,
-                              ModelMap model){
+                              ModelMap model, HttpSession session){
         Location location = new Location(name, description, openHours, maxPeople);
         Location l = service.addLocation(location);
-        return getLocationById(l.getId(), model);
-    }
-
-    //Þetta fall eyðir staðsetningu
-    public void deleteLocation(){
-
+        return getLocationById(l.getId(), model, session);
     }
 
     /**
@@ -70,8 +70,10 @@ public class LocationController {
      * @return
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String getLocationById(@PathVariable(value = "id") Long id, ModelMap model){
+    public String getLocationById(@PathVariable(value = "id") Long id, ModelMap model, HttpSession session){
         Location location = service.getLocationById(id);
+        User currentUser = (User) session.getAttribute("user");
+        model.addAttribute("currentUser", currentUser);
         model.addAttribute("location", location);
         return "view/ShowLocation";
     }

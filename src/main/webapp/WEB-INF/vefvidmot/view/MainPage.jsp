@@ -31,24 +31,21 @@
 <div class="navbar">
     <a href="/">Forsíða</a>
 
-    <c:if test="${cookie}"><a></a></c:if>
-    <c:otherwise><a href="/event/add">Skrá viðburð</a></c:otherwise>
+    <c:if test="${currentUser != null}"><a href="/event/add">Skrá viðburð</a></c:if>
+
+    <c:if test="${currentUser != null}"><a href="/location/add">Skrá staðsetningu</a></c:if>
+
+    <c:if test="${currentUser != null}"><a href="/artist/add">Skrá listamann</a></c:if>
 
     <c:choose>
-    <c:when test="${cookie}"><a></a></c:when>
-    <c:otherwise><a href="/location/add">Skrá staðsetningu</a></c:otherwise>
-    </c:choose>
-
-    <c:choose>
-    <c:when test="${cookie}"><a></a></c:when>
-    <c:otherwise><a href="/artist/add">Skrá listamann</a></c:otherwise>
-    </c:choose>
-
-    <c:choose>
-    <c:when test="${cookie}"><a href="/user/login">Innskrá</a></c:when>
+    <c:when test="${currentUser == null}"><a href="/user/loginPage">Innskrá</a></c:when>
     <c:otherwise><a href="/user/logout">Útskrá</a></c:otherwise>
     </c:choose>
 </div>
+
+<c:forEach items="${sessionScope}" var="attr">
+    <p>${attr.key}=${attr.value}</p><br>
+</c:forEach>
 
 <div class="container">
     <h1>Viðburðarleit IceArt</h1>
