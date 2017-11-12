@@ -76,6 +76,6 @@ public class ArtistController {
         User currentUser = (User) session.getAttribute("user");
         model.addAttribute("currentUser", currentUser);
         model.addAttribute("artist", artist);
-        return "view/showArtist";
+        return "view/ShowArtist";
     }
 }
