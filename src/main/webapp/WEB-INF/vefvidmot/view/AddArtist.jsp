@@ -42,11 +42,6 @@
     </c:choose>
 </div>
 
-<c:forEach items="${sessionScope}" var="attr">
-    <p>${attr.key}=${attr.value}</p>
-    <br>
-</c:forEach>
-
 <div class="addDiv">
     <h1>Skrá nýjan listamann</h1>
 

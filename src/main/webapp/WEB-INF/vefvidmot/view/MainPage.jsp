@@ -43,10 +43,6 @@
     </c:choose>
 </div>
 
-<c:forEach items="${sessionScope}" var="attr">
-    <p>${attr.key}=${attr.value}</p><br>
-</c:forEach>
-
 <div class="container">
     <h1>Viðburðarleit IceArt</h1>
 </div>
