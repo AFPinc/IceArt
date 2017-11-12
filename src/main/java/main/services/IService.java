@@ -45,13 +45,12 @@ public interface IService {
     /**
      * Fall sem nær í viðburði eftir titli og flokk
      * @param title
-     * @param description
      * @param category_id
      * @param dateBegin
      * @param dateEnd
      * @return
      */
-    List<Event> search(String title, String description, Long category_id, Date dateBegin, Date dateEnd);
+    List<Event> search(String title, Long category_id, Date dateBegin, Date dateEnd);
 
     /**
      * Fall sem vistar staðsetningu

@@ -44,15 +44,14 @@ public interface IEventRepository extends JpaRepository<Event, Long>{
 
     /**
      * Nær í viðburði eftir ýmsum upplýsingum
-     * @param title
-     * @param description
+     * @param searchValue
      * @param category_id
      * @param dateEnd
      * @param dateBegin
-     * @param deleted
      * @return
      */
-    List<Event> findByTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCaseAndCategoryIdAndDateBeginLessThanEqualAndDateEndGreaterThanEqualAndDeleted(String title, String description, Long category_id, Date dateEnd, Date dateBegin, boolean deleted);
+    @Query(value ="SELECT * FROM event WHERE (upper(title) LIKE upper(?1) OR upper(description) LIKE upper(?1)) AND category_id = ?2 AND date_begin <= ?3 AND date_end >= ?4 and deleted=false", nativeQuery = true)
+    List<Event> findBySearchCritera(String searchValue, Long category_id, Date dateEnd, Date dateBegin);
 
     /**
      *  Nær í 10 viðburði

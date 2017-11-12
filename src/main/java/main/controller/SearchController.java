@@ -48,7 +48,7 @@ public class SearchController {
                          @RequestParam(value = "dateBegin", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateBegin,
                          @RequestParam(value = "dateEnd", required = true) @DateTimeFormat(pattern="yyyy-MM-dd") Date dateEnd,
                          ModelMap model, HttpSession session) {
-        List<Event> events = service.search(text, text, category_id, dateBegin, dateEnd);
+        List<Event> events = service.search("%" + text + "%", category_id, dateBegin, dateEnd);
         User currentUser = (User) session.getAttribute("user");
         model.addAttribute("events", events);
         model.addAttribute("currentUser", currentUser);

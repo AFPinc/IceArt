@@ -11,7 +11,7 @@ When all the dependencies are downloaded, you can run the project by running the
 I used IntelliJ Ultimate with Maven to setup this project. Students and Teachers get the Ultimate edition for free, apply [here](https://www.jetbrains.com/student/).
 
 ### Database
-This project assumes there is a postgres database called IceArt at the URL: postgresql://localhost:5432/IceArt . See username and password in [application.properties](https://github.com/ArtyFartyParty/IceArt/blob/master/src/main/resources/application.properties) modify these fields to match your own username and password. We are using version 9.6 og postgreSQL.
+This project assumes there is a postgres database called IceArt at the URL: postgresql://localhost:5432/IceArtDB . See username and password in [application.properties](https://github.com/ArtyFartyParty/IceArt/blob/master/src/main/resources/application.properties) modify these fields to match your own username and password. We are using version 9.6 og postgreSQL.
 
 ### Credits
 This project was created by Ása Júlía Aðalsteinsdóttir (aja11@hi.is), Melkorka Mjöll Jóhannesdóttir (mmj8@hi.is), Sigurlaug Þórðardóttir (sth301@hi.is) and Valgerður Sigfinnsdóttir (vas30@hi.is) in the HBV501G course fall 2017.
