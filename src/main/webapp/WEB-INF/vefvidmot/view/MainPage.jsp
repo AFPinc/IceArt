@@ -70,7 +70,7 @@
         </div>
         <div class="form-group col-xs-3 col-md-3">
             <div class="form-group row">
-                <label for="category" class="control-label">Tegund</label>
+                <label for="category" class="control-label">Flokkur</label>
                 <c:choose>
                     <c:when test="${not empty categories}">
                         <select name="category" id="category" class="form-control">
