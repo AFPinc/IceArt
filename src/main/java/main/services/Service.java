@@ -109,4 +109,8 @@ public class Service implements IService{
      public User getUserByUserName(String username) {
          return userRepo.findTopByUsername(username);
      }
+
+     public Category addCategory(Category category) {
+         return categoryRepo.save(category);
+     }
  }

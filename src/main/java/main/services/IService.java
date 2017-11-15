@@ -118,4 +118,6 @@ public interface IService {
      * @return
      */
     User getUserByUserName(String username);
+
+    Category addCategory(Category category);
 }
