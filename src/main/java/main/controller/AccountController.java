@@ -35,7 +35,7 @@ public class AccountController extends HttpServlet {
      * @return
      */
     @RequestMapping(value = "/login")
-    public String showPage() {
+    public String showLogin() {
         return "view/Login";
     }
 
@@ -44,7 +44,7 @@ public class AccountController extends HttpServlet {
      * @return
      */
     @RequestMapping(value = "/signUp")
-    public String showPage2() {
+    public String showSignUp() {
         return "view/SignUp";
     }
 
@@ -66,6 +66,12 @@ public class AccountController extends HttpServlet {
         return "view/MainPage";
     }
 
+    /**
+     * Þetta fall athugar hvort user er til og hvort lykilorð sé rétt og innskráir notanda
+     * @param username
+     * @param password
+     * @return
+     */
     @RequestMapping(value = "/loginUser", method = RequestMethod.GET)
     public String login(@RequestParam(value = "username") String username,
                         @RequestParam(value = "password") String password,
@@ -83,6 +89,10 @@ public class AccountController extends HttpServlet {
         }
     }
 
+    /**
+     * Þetta fall sér um að útskrá notanda
+     * @return
+     */
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(HttpSession session, HttpServletResponse response) throws ServletException, IOException {
         session.setAttribute("user", null);
