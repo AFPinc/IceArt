@@ -37,7 +37,7 @@
     <c:if test="${currentUser != null}"><a href="/artist/add">Skrá listamann</a></c:if>
 
     <c:choose>
-        <c:when test="${currentUser == null}"><a href="/user/loginPage">Innskrá</a></c:when>
+        <c:when test="${currentUser == null}"><a href="/user/login">Innskrá</a></c:when>
         <c:otherwise><a href="/user/logout">Útskrá</a></c:otherwise>
     </c:choose>
 </div>
@@ -45,7 +45,7 @@
 <div class="addDiv">
     <h1>Innskráning</h1>
 
-    <form class="form-horizontal" action="/user/login" method="GET" id="login" >
+    <form class="form-horizontal" action="/user/loginUser" method="GET" id="login" >
         <div class="form-group">
             <label for="username" class="col-sm-2 control-label">Notendanafn:</label>
             <div class="col-sm-10">
@@ -65,7 +65,7 @@
         </div>
     </form>
 
-    <form class="form-horizontal" action="/user/signUpPage" method="GET" id="newUserButton">
+    <form class="form-horizontal" action="/user/signUp" method="GET" id="newUserButton">
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default">Stofna nýjan aðgang</button>
