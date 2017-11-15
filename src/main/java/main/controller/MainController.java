@@ -36,26 +36,12 @@ public class MainController {
     @Autowired
     IService service;
 
-    public void addCategory() {
-        Category one = new Category("Dans");
-        Category two = new Category("Tónleikar");
-        Category three = new Category("Listasýning");
-        Category four = new Category("Annað");
-        Category c = service.addCategory(one);
-        Category ca = service.addCategory(two);
-        Category cat = service.addCategory(three);
-        Category cate = service.addCategory(four);
-        return;
-    }
-
     /**
      * Þetta fall birtir upphafssíðuna með 10 viðburðum
      * @return
      */
     @RequestMapping(value = "")
     public String showPage(ModelMap model, HttpSession session, HttpServletResponse response){
-
-        addCategory();
 
         List<Event> events = service.getTop10Events();
         List<Category> categories = service.getAllCategories();
