@@ -16,7 +16,7 @@ import java.io.IOException;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *
@@ -34,13 +34,16 @@ public class AccountController extends HttpServlet {
      * Birtir Login síðuna
      * @return
      */
-
-    @RequestMapping(value = "/loginPage")
+    @RequestMapping(value = "/login")
     public String showPage() {
         return "view/Login";
     }
 
-    @RequestMapping(value = "/signUpPage")
+    /**
+     * Birtir SignUp síðuna
+     * @return
+     */
+    @RequestMapping(value = "/signUp")
     public String showPage2() {
         return "view/SignUp";
     }
@@ -63,7 +66,7 @@ public class AccountController extends HttpServlet {
         return "view/MainPage";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/loginUser", method = RequestMethod.GET)
     public String login(@RequestParam(value = "username") String username,
                         @RequestParam(value = "password") String password,
                         HttpSession session, HttpServletResponse response) throws IOException {

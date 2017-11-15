@@ -39,7 +39,7 @@
     <c:if test="${currentUser != null}"><a href="/artist/add">Skrá listamann</a></c:if>
 
     <c:choose>
-    <c:when test="${currentUser == null}"><a href="/user/loginPage">Innskrá</a></c:when>
+    <c:when test="${currentUser == null}"><a href="/user/login">Innskrá</a></c:when>
     <c:otherwise><a href="/user/logout">Útskrá</a></c:otherwise>
     </c:choose>
 </div>
