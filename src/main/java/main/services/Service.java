@@ -19,7 +19,7 @@ import java.util.List;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhansdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
 
  * @date September 2017
  * Háskóli Íslands
@@ -105,12 +105,10 @@ public class Service implements IService{
         return userRepo.save(user);
     }
 
-     @Override
-     public User getUserByUserName(String username) {
-         return userRepo.findTopByUsername(username);
-     }
+    @Override
+    public User getUserByUserName(String username) { return userRepo.findTopByUsername(username); }
 
-     public Category addCategory(Category category) {
+    public Category addCategory(Category category) {
          return categoryRepo.save(category);
      }
  }

@@ -14,7 +14,6 @@ import org.springframework.ui.ModelMap;
 
 import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -22,7 +21,7 @@ import java.util.List;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *
@@ -37,7 +36,7 @@ public class SearchController {
     IService service;
 
     /**
-     * Þetta fall sér um að leita af viðburði eftir titli
+     * Þetta fall sér um að leita af viðburði eftir leitarskilyrðum
      * @param text
      * @param model
      * @return

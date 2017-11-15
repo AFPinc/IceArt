@@ -23,6 +23,7 @@
     <title>Leitarniðurstöður - IceArt</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/static.css/main.css"/>" as=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="../resources/picture/icon.png" sizes="16x16">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
     <c:if test="${currentUser != null}"><a href="/artist/add">Skrá listamann</a></c:if>
 
     <c:choose>
-        <c:when test="${currentUser == null}"><a href="/user/loginPage">Innskrá</a></c:when>
+        <c:when test="${currentUser == null}"><a href="/user/login">Innskrá</a></c:when>
         <c:otherwise><a href="/user/logout">Útskrá</a></c:otherwise>
     </c:choose>
 </div>
@@ -97,10 +98,10 @@
         </div>
         <c:forEach var ="event" items="${events}">
             <div class="container well">
-                <h3>${event.getTitle()}</h3><br>
-                <p>${event.getArtist()} - ${event.getLocation()}</p><br>
+                <h3>${event.getTitle()}</h3>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
-                <p> ${event.getCategory()}${category.getTitle()}</p>
+                <p>${event.getArtist()}</p>
+
                 <form method="GET" action="../event/${event.getId()}">
                     <button type="submit" class="btn btn-default">
                         Nánar

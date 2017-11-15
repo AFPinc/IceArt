@@ -26,7 +26,7 @@ import java.util.List;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *
@@ -107,7 +107,7 @@ public class EventController {
     }
 
     /**
-     * Þetta fall birtir upphafssíðuna
+     * Þetta fall birtir addEvent síðuna
      * @param model
      * @return
      */

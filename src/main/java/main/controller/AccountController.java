@@ -16,7 +16,7 @@ import java.io.IOException;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *
@@ -34,14 +34,17 @@ public class AccountController extends HttpServlet {
      * Birtir Login síðuna
      * @return
      */
-
-    @RequestMapping(value = "/loginPage")
-    public String showPage() {
+    @RequestMapping(value = "/login")
+    public String showLogin() {
         return "view/Login";
     }
 
-    @RequestMapping(value = "/signUpPage")
-    public String showPage2() {
+    /**
+     * Birtir SignUp síðuna
+     * @return
+     */
+    @RequestMapping(value = "/signUp")
+    public String showSignUp() {
         return "view/SignUp";
     }
 
@@ -63,7 +66,13 @@ public class AccountController extends HttpServlet {
         return "view/MainPage";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    /**
+     * Þetta fall athugar hvort user er til og hvort lykilorð sé rétt og innskráir notanda
+     * @param username
+     * @param password
+     * @return
+     */
+    @RequestMapping(value = "/loginUser", method = RequestMethod.GET)
     public String login(@RequestParam(value = "username") String username,
                         @RequestParam(value = "password") String password,
                         HttpSession session, HttpServletResponse response) throws IOException {
@@ -80,6 +89,10 @@ public class AccountController extends HttpServlet {
         }
     }
 
+    /**
+     * Þetta fall sér um að útskrá notanda
+     * @return
+     */
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(HttpSession session, HttpServletResponse response) throws ServletException, IOException {
         session.setAttribute("user", null);
