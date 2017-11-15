@@ -101,9 +101,9 @@
     <c:when test="${not empty events}">
         <c:forEach var ="event" items="${events}">
             <div class="container well">
-                <h3>${event.getTitle()}</h3><br>
-                <p>${event.getArtist()} - ${event.getLocation()}</p><br>
+                <h3>${event.getTitle()}</h3>
                 <p>${event.getDateBegin()} - ${event.getTimeBegin()}</p>
+                <p>${event.getArtist()}</p>
 
                 <form method="GET" action="event/${event.getId()}">
                     <button type="submit" class="btn btn-default">
