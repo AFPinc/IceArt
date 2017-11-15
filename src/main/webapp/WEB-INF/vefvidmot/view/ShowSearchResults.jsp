@@ -42,8 +42,59 @@
     </c:choose>
 </div>
 
+<div class="container">
+    <h1>Viðburðarleit IceArt</h1>
+</div>
+
+<div class="container">
+    <form method="GET" action="../search/">
+        <div class="form-group col-xs-3 col-md-3">
+            <div class="form-group row">
+                <label for="search" class="control-label">Leitarorð</label>
+                <input type="text" name="text" id="search" class="form-control" placeholder="Leitarorð" value="${searchText}" \>
+            </div>
+        </div>
+        <div class="form-group col-xs-6 col-md-6">
+            <label for="dateBegin" class="control-label">Dagsetning</label>
+            <div class="form-group row">
+                <div class="col-md-5">
+                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" required value="${dateBegin}">
+                </div>
+                <label for="dateEnd" class="col-md-1 control-label"> - </label>
+                <div class="col-md-5">
+                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" required value="${dateEnd}">
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-xs-3 col-md-3">
+            <div class="form-group row">
+                <label for="category" class="control-label">Tegund</label>
+                <c:choose>
+                    <c:when test="${not empty categories}">
+                        <select name="category" id="category" class="form-control">
+                            <c:forEach var="category" items="${categories}">
+                                <option value="${category.getId()}" ${category.getId() == selectedCategory ? 'selected' : ''}>${category.getTitle()}</option>
+                            </c:forEach>
+                        </select>
+                    </c:when>
+                    <c:otherwise>
+                        Enginn flokkur hefur verið skráður.<br>
+                    </c:otherwise>
+                </c:choose>
+            </div>
+        </div>
+        <button type="submit" value="Search" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span> Leita
+        </button>
+    </form>
+    <br>
+</div>
+
 <c:choose>
     <c:when test="${not empty events}">
+        <div class="container">
+            <h2>Viðburðir</h2>
+        </div>
         <c:forEach var ="event" items="${events}">
             <div class="container well">
                 <h3>${event.getTitle()}</h3><br>
