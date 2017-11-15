@@ -70,18 +70,14 @@
 
                 <dd>
                     ${event.getDateBegin()}
-                    </br>
-                        kl. ${event.getTimeBegin()}
                 </dd>
+
                 <dt>
                     Til:
                 </dt>
 
                 <dd>
                     ${event.getDateEnd()}
-                </br>
-                       kl. ${event.getTimeEnd()}
-
                 </dd>
                 <dt>
                     Listamaður:
