@@ -44,7 +44,6 @@
 <h1 class="container">Eitthvað fór úrskeiðis</h1>
 <div class ="container">
     <h3>HTTP ${attrs.status} ${attrs.error}</h3>
-    <p>${attrs.message}</p>
 </div>
 
 </body>
