@@ -60,11 +60,11 @@
             <label for="dateBegin" class="control-label">Dagsetning</label>
             <div class="form-group row">
                 <div class="col-md-5">
-                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" value="${todayDate}">
+                    <input type="date" class="form-control" id="dateBegin" name="dateBegin" required value="${todayDate}">
                 </div>
                 <label for="dateEnd" class="col-md-1 control-label"> - </label>
                 <div class="col-md-5">
-                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" value="${inWeekDate}">
+                    <input type="date" class="form-control" id="dateEnd" name="dateEnd" required value="${inWeekDate}">
                 </div>
             </div>
         </div>
