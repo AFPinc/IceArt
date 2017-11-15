@@ -6,7 +6,7 @@ import javax.persistence.*;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *
@@ -14,10 +14,12 @@ import javax.persistence.*;
  *
  */
 
+// Búum til töflu í gagnagrunninum sem heitir User
 @Entity
 @Table(name = "users")
 public class User {
 
+    // Skilgreinum vensl í töflunni User
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;                // Auðkenni notanda

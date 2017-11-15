@@ -8,7 +8,7 @@ import java.util.Set;
  * @author Ása Júlía Aðalsteinsdóttir
  * @author Melkorka Mjöll Jóhannesdóttir
  * @author Sigurlaug Þórðardóttir
- * @author Vagerður Sigfinnsdóttir
+ * @author Valgerður Sigfinnsdóttir
  * @date September 2017
  * Háskóli Íslands
  *
@@ -16,10 +16,12 @@ import java.util.Set;
  *
  */
 
+// Búum til töflu í gagnagrunninum sem heitir Artist
 @Entity
 @Table(name="artist")
 public class Artist {
 
+    // Skilgreinum vensl í töflunni Artist
     @Id
     @Column(name="artistId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
