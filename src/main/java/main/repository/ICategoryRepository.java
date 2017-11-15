@@ -30,4 +30,6 @@ public interface ICategoryRepository extends JpaRepository<Category, Long> {
      */
     @Override
     Category findOne(Long id);
+
+    Category save(Category category);
 }
